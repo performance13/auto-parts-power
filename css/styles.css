@@ -524,3 +524,30 @@ body {
 
 
 
+/* Лупа */
+
+
+
+.svg-icon.search-icon {
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    left: 1131px;
+    top: -14px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.svg-icon.search-icon:focus .search-path,
+.svg-icon.search-icon:hover .search-path {
+    stroke: var(--color-schemes-accent-logo);
+}
+
+.svg-icon.search-icon:active .search-path {
+    stroke:var(--color-schemes-maine);
+    stroke-width: 1px;
+}
+
+.svg-icon.search-icon:hover .svg{
+    border: var(--color-schemes-accent-logo);
+}
