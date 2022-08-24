@@ -15,9 +15,9 @@
   overflow: hidden;
 }
 
-.slider__wrapper {
+/* .slider__wrapper {
   /* overflow: hidden; */
-}
+/* } */ 
 
 .slider__items {
   display: flex;
@@ -50,7 +50,7 @@
   border: none;
   transform: translateY(-50%);
   cursor: pointer;
-  
+
 /* кастомные */
   border-radius: 4px;
 }
