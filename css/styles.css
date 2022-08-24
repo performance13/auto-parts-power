@@ -526,10 +526,17 @@ body {
 
 /* Лупа */
 
-
+.search-holder{
+    /* position: relative; */
+    /* width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: helvetica, arial, sans-serif; */
+    width: 100%;
+}
 
 .svg-icon.search-icon {
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 9px;
     position: absolute;
     left: 1131px;
     top: -14px;
@@ -537,6 +544,7 @@ body {
     width: 30px;
     height: 30px;
 }
+
 
 .svg-icon.search-icon:focus .search-path,
 .svg-icon.search-icon:hover .search-path {
@@ -546,8 +554,4 @@ body {
 .svg-icon.search-icon:active .search-path {
     stroke:var(--color-schemes-maine);
     stroke-width: 1px;
-}
-
-.svg-icon.search-icon:hover .svg{
-    border: var(--color-schemes-accent-logo);
 }
