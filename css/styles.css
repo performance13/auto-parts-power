@@ -387,7 +387,7 @@ body {
 /* Section__title */
 
 .section__title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: var(--secondary-text);
     text-align: center;
 }
@@ -397,6 +397,9 @@ body {
     font-size: 18.72px;
 }
 
+.section__title.section__title--secondary{
+    margin-bottom: 20px;
+}
 
 /* Section slider */
 
@@ -410,7 +413,8 @@ body {
     max-width: 16.66%;
 }
 /* смещение индикаторов на слайдере ниже */
-.slider__indicators.slider__indicators--bottom{
+.slider__indicators.slider__indicators--bottom,
+.slider__indicators.slider__indicators--models{
     bottom: -30px;
 }
 
@@ -525,24 +529,21 @@ body {
 
 
 /* Лупа */
+/* .search-path{
+     order: -1; }
 
-.search-holder{
-    /* position: relative; */
-    /* width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    font-family: helvetica, arial, sans-serif; */
-    width: 100%;
+.input-search:hover ~ .search-path{   
+
+    color:var(--color-schemes-base);
 }
 
 .svg-icon.search-icon {
-    padding: 0px 0px 0px 9px;
     position: absolute;
-    left: 1131px;
-    top: -14px;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+        left: 1240px;
+        top: 64px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
 }
 
 
@@ -554,4 +555,11 @@ body {
 .svg-icon.search-icon:active .search-path {
     stroke:var(--color-schemes-maine);
     stroke-width: 1px;
+} */
+
+
+/* Footer */
+
+.footer{
+    padding-top: 75px;
 }

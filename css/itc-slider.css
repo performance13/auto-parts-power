@@ -15,9 +15,9 @@
   overflow: hidden;
 }
 
-/* .slider__wrapper {
-  /* overflow: hidden; */
-/* } */ 
+ .slider__wrapper {
+  overflow: hidden;
+} 
 
 .slider__items {
   display: flex;

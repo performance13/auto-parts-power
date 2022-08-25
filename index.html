@@ -25,48 +25,6 @@
 
 
 
-  <style type="text/css">
-    @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
-
-    #feedControl {
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 440px;
-      font-size: 16px;
-      color: #9CADD0;
-    }
-  </style>
-
-  <script src="https://www.google.com/jsapi/" type="text/javascript"></script>
-  <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript"></script>
-
-  <script type="text/javascript">
-    function showControl() {
-      var feeds = [
-        {
-          title: 'CNN',
-          url: 'http://rss.cnn.com/rss/edition_world.rss'
-        },
-        {
-          title: 'NY Times',
-          url: 'http://feeds.nytimes.com/nyt/rss/World'
-        },
-        {
-          title: 'Reuters',
-          url: 'http://feeds.reuters.com/Reuters/worldNews'
-        }];
-
-      new GFdynamicFeedControl(feeds, 'feedControl',
-        {
-          numResults: 6, stacked: true,
-          title: "World News"
-        });
-    }
-    google.load("feeds", "1");
-    google.setonloadCallback(showControl);
-  </script>
-
 
 
 
@@ -88,10 +46,15 @@
 
 
 
-
 </head>
 
 <body>
+
+
+
+
+
+
 
 
   <header class="header-top">
@@ -139,21 +102,6 @@
           </a>
         </div>
 
-
-
-        <div class="search-holder">
-          <!-- Here's the inline SVG icon -->
-          <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 19.9 19.7">
-            <g class="search-path" fill="none" stroke="#848F91">
-              <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
-              <circle cx="8" cy="8" r="7" />
-            </g>
-          </svg>
-
-        </div>
-
-
       </div>
 
 
@@ -182,7 +130,33 @@
 
 
 
+
+
+
       <input class="input-search" type="search" placeholder="Какую запчасть ищите?">
+
+      <!-- 
+/* Лупа */ -->
+      <!-- Here's the inline SVG icon -->
+      <!-- <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 19.9 19.7">
+        <g class="search-path" fill="none" stroke="#848F91">
+          <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+          <circle cx="8" cy="8" r="7" />
+        </g>
+      </svg> -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -237,74 +211,77 @@
     <!-- Карусель "Главный каталог" -->
     <!-- <h2 class="section__title">Основные категории запчастей</h2> -->
     <section class="slider-section">
-      <h2 class="section__title">Автомобильные запчасти по категориям</h2>
-      <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="7000">
-        <div class="slider__wrapper">
-          <div class="slider__items">
-            <div class="slider__item">
-              <img src="./test/10101.png" alt="Кузовные детали">
-              <p>Кузовные детали</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10435.png" alt="Охлаждение и отопление">
-              <p>Охлаждение и отопление</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10102.png" alt="Двигатель и компоненты">
-              <p>Двигатель и компоненты</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10105.png" alt="Турбины">
-              <p>Турбины</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10106.png" alt="">
-              <p>Трансмиссия</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10111.png" alt="Подвеска">
-              <p>Подвеска</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10112.png" alt="Рулевое управление">
-              <p>Рулевое управление</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10108.png" alt="Тормозная система">
-              <p>Тормозная система</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10110.png" alt="Электрические механизмы">
-              <p>Электрические механизмы</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10113.png" alt="Оптика">
-              <p>Оптика</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10118.png" alt="Система выпуска">
-              <p>Система выпуска</p>
+
+      <div class="container">
+        <h2 class="section__title">Автомобильные запчасти по категориям</h2>
+        <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="7000">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div class="slider__item">
+                <img src="./test/10101.png" alt="Кузовные детали">
+                <p>Кузовные детали</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10435.png" alt="Охлаждение и отопление">
+                <p>Охлаждение и отопление</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10102.png" alt="Двигатель и компоненты">
+                <p>Двигатель и компоненты</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10105.png" alt="Турбины">
+                <p>Турбины</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10106.png" alt="">
+                <p>Трансмиссия</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10111.png" alt="Подвеска">
+                <p>Подвеска</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10112.png" alt="Рулевое управление">
+                <p>Рулевое управление</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10108.png" alt="Тормозная система">
+                <p>Тормозная система</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10110.png" alt="Электрические механизмы">
+                <p>Электрические механизмы</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10113.png" alt="Оптика">
+                <p>Оптика</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10118.png" alt="Система выпуска">
+                <p>Система выпуска</p>
+              </div>
             </div>
           </div>
+          <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+          <button class="slider__control" data-slide="prev"></button>
+          <button class="slider__control" data-slide="next"></button>
+
+          <ol class="slider__indicators slider__indicators--bottom">
+            <li data-slide-to="0"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+            <li data-slide-to="3"></li>
+            <li data-slide-to="4"></li>
+            <li data-slide-to="5"></li>
+            <li data-slide-to="6"></li>
+            <li data-slide-to="7"></li>
+            <li data-slide-to="8"></li>
+            <li data-slide-to="9"></li>
+            <li data-slide-to="10"></li>
+          </ol>
+
         </div>
-        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-        <button class="slider__control" data-slide="prev"></button>
-        <button class="slider__control" data-slide="next"></button>
-
-        <ol class="slider__indicators slider__indicators--bottom">
-          <li data-slide-to="0"></li>
-          <li data-slide-to="1"></li>
-          <li data-slide-to="2"></li>
-          <li data-slide-to="3"></li>
-          <li data-slide-to="4"></li>
-          <li data-slide-to="5"></li>
-          <li data-slide-to="6"></li>
-          <li data-slide-to="7"></li>
-          <li data-slide-to="8"></li>
-          <li data-slide-to="9"></li>
-          <li data-slide-to="10"></li>
-        </ol>
-
       </div>
     </section>
 
@@ -429,206 +406,696 @@
 
     <!-- Второй слайдер/Слайдер подкатегорий -->
     <section class="slider-section">
-      <h2 class="section__title">Автомобильные запчасти по подкатегориям</h2>
-      <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="" data-interval="">
-        <div class="slider__wrapper">
-          <div class="slider__items">
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Кузовные детали">
-              <p>Кузовные детали</p>
+      <div class="container">
+        <h2 class="section__title">Автомобильные запчасти по подкатегориям</h2>
+        <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="10000">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Кузовные детали">
+                <p>Кузовные детали</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Охлаждение и отопление">
+                <p>Охлаждение и отопление</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Двигатель и компоненты">
+                <p>Двигатель и компоненты</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Турбины">
+                <p>Турбины</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="">
+                <p>Трансмиссия</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Подвеска">
+                <p>Подвеска</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Рулевое управление">
+                <p>Рулевое управление</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Тормозная система">
+                <p>Тормозная система</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Электрические механизмы">
+                <p>Электрические механизмы</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Оптика">
+                <p>Оптика</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Система выпуска">
+                <p>Система выпуска</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Кузовные детали">
+                <p>Кузовные детали</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Охлаждение и отопление">
+                <p>Охлаждение и отопление</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Двигатель и компоненты">
+                <p>Двигатель и компоненты</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Турбины">
+                <p>Турбины</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="">
+                <p>Трансмиссия</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Подвеска">
+                <p>Подвеска</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Рулевое управление">
+                <p>Рулевое управление</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Тормозная система">
+                <p>Тормозная система</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Электрические механизмы">
+                <p>Электрические механизмы</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Оптика">
+                <p>Оптика</p>
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/svg/logo-2.svg" alt="Система выпуска">
+                <p>Система выпуска</p>
+              </div>
             </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Охлаждение и отопление">
-              <p>Охлаждение и отопление</p>
+          </div>
+          <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+          <button class="slider__control" data-slide="prev"></button>
+          <button class="slider__control" data-slide="next"></button>
+
+          <ol class="slider__indicators slider__indicators--bottom">
+            <li data-slide-to="0"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+            <li data-slide-to="3"></li>
+            <li data-slide-to="4"></li>
+            <li data-slide-to="5"></li>
+            <li data-slide-to="6"></li>
+            <li data-slide-to="7"></li>
+            <li data-slide-to="8"></li>
+            <li data-slide-to="9"></li>
+            <li data-slide-to="10"></li>
+            <li data-slide-to="11"></li>
+            <li data-slide-to="12"></li>
+            <li data-slide-to="13"></li>
+            <li data-slide-to="14"></li>
+            <li data-slide-to="15"></li>
+            <li data-slide-to="16"></li>
+            <li data-slide-to="17"></li>
+            <li data-slide-to="18"></li>
+            <li data-slide-to="19"></li>
+            <li data-slide-to="20"></li>
+            <li data-slide-to="21"></li>
+          </ol>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Третий слайдер/Слайдер  по марке автомобиля -->
+    <section class="slider-section">
+      <div class="container">
+        <h2 class="section__title">Автомобильные запчасти по подкатегориям</h2>
+        <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="15000">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/audi-logo.png" alt="Audi" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/alfa-romeo-logo.png" alt="Alfa Romeo" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/aston-martin-logo.png" alt="Aston Martin" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/bmw-logo.png" alt="BMW" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/bentley-logo.png" alt="Bentley" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/buick-logo.png" alt="Buick" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/chevrolet-logo.png" alt="Chevrolet" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/cadillac-logo.png" alt="Cadillac" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/chrysler-logo.png" alt="Chrysler" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/citroën-logo.png" alt="Citroën" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/dacia-logo.png" alt="Dacia" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/daewoo-logo.png" alt="Daewoo" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/daihatsu-logo.png" alt="Daihatsu" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/dodge-logo.png" alt="Dodge" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/ferrari-logo.png" alt="Ferrari" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/fiat-logo.png" alt="Fiat">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/ford-logo.png" alt="Ford">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/gmc-logo.png" alt="GMC">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/honda-logo.png" alt="Honda">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/hummer-logo.png" alt="Hummer">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/hyundai-logo.png" alt="Hundai">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/infiniti-logo.png" alt="Infiniti">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/isuzu-logo.png" alt="Isuzu">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/iveco-logo.png" alt="Iveco">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/jaguar-logo.png" alt="Jaguar">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/jeep-logo.png" alt="Jeep">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/kia-logo.png" alt="Kia">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/lamborghini-logo.png" alt="lamborghini">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/lancia-logo.png" alt="lancia">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/land-rover-logo.png" alt="land-rover">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/lexus-logo.png" alt="lexus">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/lincoln-logo.png" alt="lincoln">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/lotus-logo.png" alt="lotus">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/maserati-logo.png" alt="Maserati">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/mazda-logo.png" alt="Mazda">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/mercedes-benz-logo.png" alt="Mercedes-benz">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/mini-logo.png" alt="Mini">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/mitsubishi-logo.png" alt="Mitsubishi">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/nissan-logo.png" alt="Nissan">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/opel-logo.png" alt="Opel">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/peugeot-logo.png" alt="Peugeot">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/plymouth-logo.png" alt="Plymouth">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/pontiac-logo.png" alt="Pontiac">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/porsche-logo.png" alt="Porsche">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/renault-logo.png" alt="Renault">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/rover-logo.png" alt="Rover">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/saab-logo.png" alt="Saab">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/seat-logo.png" alt="Seat">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/skoda-logo.png" alt="Skoda">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/smart-logo.png" alt="Smart">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/ssangyong-logo.png" alt="Ssangyong">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/subaru-logo.png" alt="Subaru">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/suzuki-logo.png" alt="Suzuki">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/tesla-logo.png" alt="Tesla">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/toyota-logo.png" alt="Toyota">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/volvo-logo.png" alt="Volvo">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/vw-logo.png" alt="VW">
+              </div>
             </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Двигатель и компоненты">
-              <p>Двигатель и компоненты</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Турбины">
-              <p>Турбины</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="">
-              <p>Трансмиссия</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Подвеска">
-              <p>Подвеска</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Рулевое управление">
-              <p>Рулевое управление</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Тормозная система">
-              <p>Тормозная система</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Электрические механизмы">
-              <p>Электрические механизмы</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Оптика">
-              <p>Оптика</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Система выпуска">
-              <p>Система выпуска</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Кузовные детали">
-              <p>Кузовные детали</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Охлаждение и отопление">
-              <p>Охлаждение и отопление</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Двигатель и компоненты">
-              <p>Двигатель и компоненты</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Турбины">
-              <p>Турбины</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="">
-              <p>Трансмиссия</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Подвеска">
-              <p>Подвеска</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Рулевое управление">
-              <p>Рулевое управление</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Тормозная система">
-              <p>Тормозная система</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Электрические механизмы">
-              <p>Электрические механизмы</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Оптика">
-              <p>Оптика</p>
-            </div>
-            <div class="slider__item slider__subitem">
-              <img src="./images/svg/logo-2.svg" alt="Система выпуска">
-              <p>Система выпуска</p>
+          </div>
+          <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+          <button class="slider__control" data-slide="prev"></button>
+          <button class="slider__control" data-slide="next"></button>
+
+          <ol class="slider__indicators slider__indicators--models">
+            <li data-slide-to="0"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+            <li data-slide-to="3"></li>
+            <li data-slide-to="4"></li>
+            <li data-slide-to="5"></li>
+            <li data-slide-to="6"></li>
+            <li data-slide-to="7"></li>
+            <li data-slide-to="8"></li>
+            <li data-slide-to="9"></li>
+            <li data-slide-to="10"></li>
+            <li data-slide-to="11"></li>
+            <li data-slide-to="12"></li>
+            <li data-slide-to="13"></li>
+            <li data-slide-to="14"></li>
+            <li data-slide-to="15"></li>
+            <li data-slide-to="16"></li>
+            <li data-slide-to="17"></li>
+            <li data-slide-to="18"></li>
+            <li data-slide-to="19"></li>
+            <li data-slide-to="20"></li>
+            <li data-slide-to="21"></li>
+            <li data-slide-to="22"></li>
+            <li data-slide-to="23"></li>
+            <li data-slide-to="24"></li>
+            <li data-slide-to="25"></li>
+            <li data-slide-to="26"></li>
+            <li data-slide-to="27"></li>
+            <li data-slide-to="28"></li>
+            <li data-slide-to="29"></li>
+            <li data-slide-to="30"></li>
+            <li data-slide-to="31"></li>
+            <li data-slide-to="32"></li>
+            <li data-slide-to="33"></li>
+            <li data-slide-to="34"></li>
+            <li data-slide-to="35"></li>
+            <li data-slide-to="36"></li>
+            <li data-slide-to="37"></li>
+            <li data-slide-to="38"></li>
+            <li data-slide-to="39"></li>
+            <li data-slide-to="40"></li>
+            <li data-slide-to="41"></li>
+            <li data-slide-to="42"></li>
+            <li data-slide-to="43"></li>
+            <li data-slide-to="44"></li>
+            <li data-slide-to="45"></li>
+            <li data-slide-to="46"></li>
+            <li data-slide-to="47"></li>
+            <li data-slide-to="48"></li>
+            <li data-slide-to="49"></li>
+            <li data-slide-to="50"></li>
+            <li data-slide-to="51"></li>
+            <li data-slide-to="52"></li>
+            <li data-slide-to="53"></li>
+            <li data-slide-to="54"></li>
+            <li data-slide-to="55"></li>
+            <li data-slide-to="56"></li>
+          </ol>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Третий слайдер/Слайдер  по марке автомобиля -->
+    <!-- <section class="slider-section">
+      <div class="container">
+        <h2 class="section__title">Автомобильные запчасти по марке автомобиля</h2>
+        <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="15000">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/audi-logo.png" alt="Audi" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/alfa-romeo-logo.png" alt="Alfa Romeo" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/aston-martin-logo.png" alt="Aston Martin" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/bmw-logo.png" alt="BMW" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/bentley-logo.png" alt="Bentley" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/buick-logo.png" alt="Buick" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/chevrolet-logo.png" alt="Chevrolet" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/cadillac-logo.png" alt="Cadillac" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/chrysler-logo.png" alt="Chrysler" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/citroën-logo.png" alt="Citroën" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/dacia-logo.png" alt="Dacia" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/daewoo-logo.png" alt="Daewoo" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/daihatsu-logo.png" alt="Daihatsu" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/dodge-logo.png" alt="Dodge" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/ferrari-logo.png" alt="Ferrari" width="120" />
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/fiat-logo.png" alt="Fiat">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/ford-logo.png" alt="Ford">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/gmc-logo.png" alt="GMC">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/honda-logo.png" alt="Honda">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/hummer-logo.png" alt="Hummer">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/hyundai-logo.png" alt="Hundai">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/infiniti-logo.png" alt="Infiniti">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/isuzu-logo.png" alt="Isuzu">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/iveco-logo.png" alt="Iveco">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/jaguar-logo.png" alt="Jaguar">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/jeep-logo.png" alt="Jeep">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/kia-logo.png" alt="Kia">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/lamborghini-logo.png" alt="lamborghini">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/lancia-logo.png" alt="lancia">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/land-rover-logo.png" alt="land-rover">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/lexus-logo.png" alt="lexus">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/lincoln-logo.png" alt="lincoln">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/lotus-logo.png" alt="lotus">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/maserati-logo.png" alt="Maserati">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/mazda-logo.png" alt="Mazda">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/mercedes-benz-logo.png" alt="Mercedes-benz">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/mini-logo.png" alt="Mini">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/mitsubishi-logo.png" alt="Mitsubishi">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/nissan-logo.png" alt="Nissan">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/opel-logo.png" alt="Opel">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/peugeot-logo.png" alt="Peugeot">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/plymouth-logo.png" alt="Plymouth">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/pontiac-logo.png" alt="Pontiac">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/porsche-logo.png" alt="Porsche">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/renault-logo.png" alt="Renault">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/rover-logo.png" alt="Rover">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/saab-logo.png" alt="Saab">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/seat-logo.png" alt="Seat">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/skoda-logo.png" alt="Skoda">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/smart-logo.png" alt="Smart">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/ssangyong-logo.png" alt="Ssangyong">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/subaru-logo.png" alt="Subaru">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/suzuki-logo.png" alt="Suzuki">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/tesla-logo.png" alt="Tesla">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/toyota-logo.png" alt="Toyota">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/volvo-logo.png" alt="Volvo">
+              </div>
+              <div class="slider__item slider__subitem">
+                <img src="./images/png/models/vw-logo.png" alt="VW">
+              </div>
             </div>
           </div>
         </div>
         <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-        <button class="slider__control" data-slide="prev"></button>
-        <button class="slider__control" data-slide="next"></button>
+    <!-- <button class="slider__control" data-slide="prev"></button>
+    <button class="slider__control" data-slide="next"></button>
 
-        <ol class="slider__indicators slider__indicators--bottom">
-          <li data-slide-to="0"></li>
-          <li data-slide-to="1"></li>
-          <li data-slide-to="2"></li>
-          <li data-slide-to="3"></li>
-          <li data-slide-to="4"></li>
-          <li data-slide-to="5"></li>
-          <li data-slide-to="6"></li>
-          <li data-slide-to="7"></li>
-          <li data-slide-to="8"></li>
-          <li data-slide-to="9"></li>
-          <li data-slide-to="10"></li>
-          <li data-slide-to="11"></li>
-          <li data-slide-to="12"></li>
-          <li data-slide-to="13"></li>
-          <li data-slide-to="14"></li>
-          <li data-slide-to="15"></li>
-          <li data-slide-to="16"></li>
-          <li data-slide-to="17"></li>
-          <li data-slide-to="18"></li>
-          <li data-slide-to="19"></li>
-          <li data-slide-to="20"></li>
-          <li data-slide-to="21"></li>
-        </ol>
 
-      </div>
-    </section>
-
-    <!-- <section class="section">
-      <h2 class="section__title">"Карусель подкатегорий"</h2>
-      <a class="text" href="/" class="logo" lang="en" title="Auto parts sales web service">
-        <img src="./images/svg/logo-2.svg" alt="логотип Auto-parts - сцепление" srcset="" width="270" />
-        <a class="text" href="/" class="logo" lang="en" title="Auto parts sales web service">
-          <img src="./images/svg/logo-2.svg" alt="логотип Auto-parts - сцепление" srcset="" width="270" />
-          <a class="text" href="/" class="logo" lang="en" title="Auto parts sales web service">
-            <img src="./images/svg/logo-2.svg" alt="логотип Auto-parts - сцепление" srcset="" width="270" />
-            <a class="text" href="/" class="logo" lang="en" title="Auto parts sales web service">
-              <img src="./images/svg/logo-2.svg" alt="логотип Auto-parts - сцепление" srcset="" width="270" />
-              <a class="text" href="/" class="logo" lang="en" title="Auto parts sales web service">
-                <img src="./images/svg/logo-2.svg" alt="логотип Auto-parts - сцепление" srcset="" width="270" />
-    </section> -->
+    <ol class="slider__indicators slider__indicators--models">
+      <li data-slide-to="0"></li>
+      <li data-slide-to="1"></li>
+      <li data-slide-to="2"></li>
+      <li data-slide-to="3"></li>
+      <li data-slide-to="4"></li>
+      <li data-slide-to="5"></li>
+      <li data-slide-to="6"></li>
+      <li data-slide-to="7"></li>
+      <li data-slide-to="8"></li>
+      <li data-slide-to="9"></li>
+      <li data-slide-to="10"></li>
+      <li data-slide-to="11"></li>
+      <li data-slide-to="12"></li>
+      <li data-slide-to="13"></li>
+      <li data-slide-to="14"></li>
+      <li data-slide-to="15"></li>
+      <li data-slide-to="16"></li>
+      <li data-slide-to="17"></li>
+      <li data-slide-to="18"></li>
+      <li data-slide-to="19"></li>
+      <li data-slide-to="20"></li>
+      <li data-slide-to="21"></li>
+      <li data-slide-to="22"></li>
+      <li data-slide-to="23"></li>
+      <li data-slide-to="24"></li>
+      <li data-slide-to="25"></li>
+      <li data-slide-to="26"></li>
+      <li data-slide-to="27"></li>
+      <li data-slide-to="28"></li>
+      <li data-slide-to="29"></li>
+      <li data-slide-to="30"></li>
+      <li data-slide-to="31"></li>
+      <li data-slide-to="32"></li>
+      <li data-slide-to="33"></li>
+      <li data-slide-to="34"></li>
+      <li data-slide-to="35"></li>
+      <li data-slide-to="36"></li>
+      <li data-slide-to="37"></li>
+      <li data-slide-to="38"></li>
+      <li data-slide-to="39"></li>
+      <li data-slide-to="40"></li>
+      <li data-slide-to="41"></li>
+      <li data-slide-to="42"></li>
+      <li data-slide-to="43"></li>
+      <li data-slide-to="44"></li>
+      <li data-slide-to="45"></li>
+      <li data-slide-to="46"></li>
+      <li data-slide-to="47"></li>
+      <li data-slide-to="48"></li>
+      <li data-slide-to="49"></li>
+      <li data-slide-to="50"></li>
+      <li data-slide-to="51"></li>
+      <li data-slide-to="52"></li>
+      <li data-slide-to="53"></li>
+      <li data-slide-to="54"></li>
+      <li data-slide-to="55"></li>
+      <li data-slide-to="56"></li>
+    </ol>
+    </div>
+    </section> --> -->
 
 
 
 
 
     <section class="slider-section--new">
-      <h2 class="section__title section__title--secondary">Что новенького</h2>
-      <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="" data-interval="">
-        <div class="slider__wrapper">
-          <div class="slider__items">
-            <div class="slider__item">
-              <img src="./test/10101.png" alt="Кузовные детали">
-              <p>Кузовные детали</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10435.png" alt="Охлаждение и отопление">
-              <p>Охлаждение и отопление</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10102.png" alt="Двигатель и компоненты">
-              <p>Двигатель и компоненты</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10105.png" alt="Турбины">
-              <p>Турбины</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10106.png" alt="">
-              <p>Трансмиссия</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10111.png" alt="Подвеска">
-              <p>Подвеска</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10112.png" alt="Рулевое управление">
-              <p>Рулевое управление</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10108.png" alt="Тормозная система">
-              <p>Тормозная система</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10110.png" alt="Электрические механизмы">
-              <p>Электрические механизмы</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10113.png" alt="Оптика">
-              <p>Оптика</p>
-            </div>
-            <div class="slider__item">
-              <img src="./test/10118.png" alt="Система выпуска">
-              <p>Система выпуска</p>
+      <div class="container">
+        <h2 class="section__title section__title--secondary">Что новенького</h2>
+        <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="" data-interval="">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div class="slider__item">
+                <img src="./test/10101.png" alt="Кузовные детали">
+                <p>Кузовные детали</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10435.png" alt="Охлаждение и отопление">
+                <p>Охлаждение и отопление</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10102.png" alt="Двигатель и компоненты">
+                <p>Двигатель и компоненты</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10105.png" alt="Турбины">
+                <p>Турбины</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10106.png" alt="">
+                <p>Трансмиссия</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10111.png" alt="Подвеска">
+                <p>Подвеска</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10112.png" alt="Рулевое управление">
+                <p>Рулевое управление</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10108.png" alt="Тормозная система">
+                <p>Тормозная система</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10110.png" alt="Электрические механизмы">
+                <p>Электрические механизмы</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10113.png" alt="Оптика">
+                <p>Оптика</p>
+              </div>
+              <div class="slider__item">
+                <img src="./test/10118.png" alt="Система выпуска">
+                <p>Система выпуска</p>
+              </div>
             </div>
           </div>
+          <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+          <button class="slider__control" data-slide="prev"></button>
+          <button class="slider__control" data-slide="next"></button>
+
+
         </div>
-        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-        <button class="slider__control" data-slide="prev"></button>
-        <button class="slider__control" data-slide="next"></button>
-
-
       </div>
     </section>
 
@@ -667,61 +1134,63 @@
     </section> -->
 
     <section class="slider-section--viewed">
-      <h2 class="section__title section__title--secondary">Ранее просматривали</h2>
-      <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="" data-interval="">
-        <div class="slider__wrapper">
-          <div class="slider__items">
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
-            </div>
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
-            </div>
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
-            </div>
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
-            </div>
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
-            </div>
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
-            </div>
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
-            </div>
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
-            </div>
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
-            </div>
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
-            </div>
-            <div class="slider__item slider__item--viewed">
-              <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-              <p></p>
+      <div class="container">
+        <h2 class="section__title section__title--secondary">Ранее просматривали</h2>
+        <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="" data-interval="">
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
+              <div class="slider__item slider__item--viewed">
+                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
+                <p></p>
+              </div>
             </div>
           </div>
+          <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+          <button class="slider__control" data-slide="prev"></button>
+          <button class="slider__control" data-slide="next"></button>
+
+
         </div>
-        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-        <button class="slider__control" data-slide="prev"></button>
-        <button class="slider__control" data-slide="next"></button>
-
-
       </div>
     </section>
 
@@ -761,205 +1230,207 @@
       </ul>
     </section> -->
 
-    <section class="section">
-      <h2 class="section__title section__title--secondary">Новости</h2>
 
 
-      <div id="feedControl">Loading...</div>
 
 
-      <ul>
-        <li>Автоиндустрия</li>
-        <li>Спорт</li>
-        <li>Наука и открытия</li>
-        <li>Экология</li>
-      </ul>
-    </section>
 
-    <footer>
-      <a class="text" href="" class="" lang="" title="">
-        <span>........Auto</span>
 
-        <img src="./images/svg/logo-1 copy 6.svg" alt="логотип Auto-parts - Главная дорога" srcset="" width="50" />
-        <span>parts</span>
-        <br />
-        <span>.................Ukraine</span>
-        <br />
-        <span>оригинальные автозапчасти</span>
-      </a>
 
-      <nav>
-        <h3><a class="text" href="./master-catalog.html">Каталог</a></h3>
+
+
+    <footer class="footer">
+
+      <div class="container">
+
+
+        <div class="logo__holder">
+          <a href=" index.html" class="logo" lang="" title="">
+            <img class="logo-img" src="./images/svg/logo.svg" alt="Auto-parts Ukraine" srcset="" width="90" />
+
+            <div class="logo__text">
+              <span class="logo__text--auto">Auto</span>
+
+
+              <span class="logo__text--parts">parts</span>
+          </a>
+        </div>
+
+
+
+
+        <nav>
+          <h3><a class="text" href="./master-catalog.html">Каталог</a></h3>
+          <ul>
+            <li>
+              <a class="text" href="./master-catalog.html">Кузовные детали</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Тормозная система</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Полуоси</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Вентиляторы охлаждения</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Радиаторы охлаждения</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Электронные компоненты</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Двигатели, детали двигателя</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Выхлопная система</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Топливная система</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Коробка передач</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Система кондиционирования</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Интерьер</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Фары, фонари, поворотники, противотумаки</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Замки, ручки</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Зеркала</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Радио и аудио техника, аккустика</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Рули</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Рулевые рейки</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Кнопки и переключатели</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Стеклоподъемники</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Инструменты</a>
+            </li>
+            <li>
+              <a class="text" href="./master-catalog.html">Механизм дворников</a>
+            </li>
+          </ul>
+
+          <h3>Необходимое для каждого авто
+            </br>...........Товары для ТО
+          </h3>
+          <ul>
+            <li><a class="text" href="./service-catalog.html"></a>Моторные масла</li>
+            <li><a class="text" href="./service-catalog.html"></a>Трансмиссионные масла</li>
+            <li><a class="text" href="./service-catalog.html"></a>Гидравлические масла</li>
+            <li><a class="text" href="./service-catalog.html"></a>Специальные масла</li>
+            <li><a class="text" href="./service-catalog.html"></a>Масла для мототехники</li>
+            <li><a class="text" href="./service-catalog.html"></a>Присадки в масло</li>
+            <li><a class="text" href="./service-catalog.html"></a>Смазки</li>
+            <li><a class="text" href="./service-catalog.html"></a>Масляные фильтры</li>
+            <li><a class="text" href="./service-catalog.html"></a>Воздушные фильтры</li>
+            <li><a class="text" href="./service-catalog.html"></a>Топливные фильтры</li>
+            <li><a class="text" href="./service-catalog.html"></a>АКПП фильтры</li>
+            <li><a class="text" href="./service-catalog.html"></a>Фильтры салона</li>
+            <li><a class="text" href="./service-catalog.html"></a>Тормозные жидкости</li>
+            <li><a class="text" href="./service-catalog.html"></a>Тормозные диски</li>
+            <li><a class="text" href="./service-catalog.html"></a>Тормозные колодки</li>
+            <li><a class="text" href="./service-catalog.html"></a>Промывка</li>
+            <li><a class="text" href="./service-catalog.html"></a>Антифризы</li>
+            <li><a class="text" href="./service-catalog.html"></a>Омыватель стекла</li>
+            <li><a class="text" href="./service-catalog.html"></a>Дворники</li>
+            <li><a class="text" href="./service-catalog.html"></a>Аккумуляторы</li>
+            <li><a class="text" href="./service-catalog.html"></a>Лампы</li>
+            <li><a class="text" href="./service-catalog.html"></a>Предохранители</li>
+            <li><a class="text" href="./service-catalog.html"></a>Свечи зажигания</li>
+            <li><a class="text" href="./service-catalog.html"></a>Свечи накаливания</li>
+            <li><a class="text" href="./service-catalog.html"></a>Шланги</li>
+            <li><a class="text" href="./service-catalog.html"></a>Хомуты</li>
+            <li><a class="text" href="./service-catalog.html"></a>Герметики</li>
+            <li><a class="text" href="./service-catalog.html"></a>Ремни,цепи, ролики, натяжители</li>
+
+          </ul>
+
+          <h3>Автотовары и автохимия</h3>
+          <ul>
+            <li><a class="text" href="./service-catalog.html"></a>Автокосметика</li>
+            <li><a class="text" href="./service-catalog.html"></a>Автотехпомощь</li>
+            <li><a class="text" href="./service-catalog.html"></a>Автобезопасность</li>
+            <li><a class="text" href="./service-catalog.html"></a>Автохимия</li>
+            <li><a class="text" href="./service-catalog.html"></a>Автосвет</li>
+            <li><a class="text" href="./service-catalog.html"></a>Автоаксесуары</li>
+            <li><a class="text" href="./service-catalog.html"></a>Автопикник</li>
+            <li><a class="text" href="./service-catalog.html"></a>Автоинструменты</li>
+            <li><a class="text" href="./service-catalog.html"></a>Автоэлектроника</li>
+            <li><a class="text" href="./service-catalog.html"></a>Авторасходники</li>
+          </ul>
+
+          <h3>Информация</h3>
+
+          <ul>
+            <li><a class="text" href="">О компании</a></li>
+            <li><a class="text" href="">Контакты</a></li>
+            <li><a class="text" href="">Оплата</a></li>
+            <li><a class="text" href="">Доставка</a></li>
+            <li><a class="text" href="">Гарантия</a></li>
+            <li><a class="text" href="">Избранное</a></li>
+          </ul>
+
+        </nav>
+
         <ul>
-          <li>
-            <a class="text" href="./master-catalog.html">Кузовные детали</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Тормозная система</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Полуоси</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Вентиляторы охлаждения</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Радиаторы охлаждения</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Электронные компоненты</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Двигатели, детали двигателя</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Выхлопная система</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Топливная система</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Коробка передач</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Система кондиционирования</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Интерьер</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Фары, фонари, поворотники, противотумаки</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Замки, ручки</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Зеркала</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Радио и аудио техника, аккустика</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Рули</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Рулевые рейки</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Кнопки и переключатели</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Стеклоподъемники</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Инструменты</a>
-          </li>
-          <li>
-            <a class="text" href="./master-catalog.html">Механизм дворников</a>
-          </li>
+          <li><a class="text" href="">On-line заказ</a></li>
+          <li><a class="text" href="">Регистрация</a></li>
+          <li><a class="text" href="">Личный кабинет</a></li>
         </ul>
 
-        <h3>Необходимое для каждого авто
-          </br>...........Товары для ТО
-        </h3>
+        <h3>Мы принимаем</h3>
         <ul>
-          <li><a class="text" href="./service-catalog.html"></a>Моторные масла</li>
-          <li><a class="text" href="./service-catalog.html"></a>Трансмиссионные масла</li>
-          <li><a class="text" href="./service-catalog.html"></a>Гидравлические масла</li>
-          <li><a class="text" href="./service-catalog.html"></a>Специальные масла</li>
-          <li><a class="text" href="./service-catalog.html"></a>Масла для мототехники</li>
-          <li><a class="text" href="./service-catalog.html"></a>Присадки в масло</li>
-          <li><a class="text" href="./service-catalog.html"></a>Смазки</li>
-          <li><a class="text" href="./service-catalog.html"></a>Масляные фильтры</li>
-          <li><a class="text" href="./service-catalog.html"></a>Воздушные фильтры</li>
-          <li><a class="text" href="./service-catalog.html"></a>Топливные фильтры</li>
-          <li><a class="text" href="./service-catalog.html"></a>АКПП фильтры</li>
-          <li><a class="text" href="./service-catalog.html"></a>Фильтры салона</li>
-          <li><a class="text" href="./service-catalog.html"></a>Тормозные жидкости</li>
-          <li><a class="text" href="./service-catalog.html"></a>Тормозные диски</li>
-          <li><a class="text" href="./service-catalog.html"></a>Тормозные колодки</li>
-          <li><a class="text" href="./service-catalog.html"></a>Промывка</li>
-          <li><a class="text" href="./service-catalog.html"></a>Антифризы</li>
-          <li><a class="text" href="./service-catalog.html"></a>Омыватель стекла</li>
-          <li><a class="text" href="./service-catalog.html"></a>Дворники</li>
-          <li><a class="text" href="./service-catalog.html"></a>Аккумуляторы</li>
-          <li><a class="text" href="./service-catalog.html"></a>Лампы</li>
-          <li><a class="text" href="./service-catalog.html"></a>Предохранители</li>
-          <li><a class="text" href="./service-catalog.html"></a>Свечи зажигания</li>
-          <li><a class="text" href="./service-catalog.html"></a>Свечи накаливания</li>
-          <li><a class="text" href="./service-catalog.html"></a>Шланги</li>
-          <li><a class="text" href="./service-catalog.html"></a>Хомуты</li>
-          <li><a class="text" href="./service-catalog.html"></a>Герметики</li>
-          <li><a class="text" href="./service-catalog.html"></a>Ремни,цепи, ролики, натяжители</li>
-
+          <li>VISA <img src="./images/svg/card/visa.svg" alt="" srcset="" width="35"></li>
+          <li>MasterCard <img src="./images/svg/card/mastercard.svg" alt="" srcset="" width="35"></li>
+          <li>VISA <img src="./images/visa.webp" alt="" srcset="" width="35"></li>
+          <li>MasterCard <img src="./images/mc.webp" alt="" srcset="" width="35"></li>
+          <li>UAH <img src="" alt="" srcset="" width=""> &#8372;</li>
+          <li>USDT <img src="./images/svg/card/usdt.svg" alt="" srcset="" width="25"></li>
+          <li>BTC <img src="./images/svg/card/btc.svg" alt="" srcset="" width="25"></li>
+          <li>ETH <img src="./images/svg/card/eth.svg" alt="" srcset="" width="25"></li>
         </ul>
 
-        <h3>Автотовары и автохимия</h3>
-        <ul>
-          <li><a class="text" href="./service-catalog.html"></a>Автокосметика</li>
-          <li><a class="text" href="./service-catalog.html"></a>Автотехпомощь</li>
-          <li><a class="text" href="./service-catalog.html"></a>Автобезопасность</li>
-          <li><a class="text" href="./service-catalog.html"></a>Автохимия</li>
-          <li><a class="text" href="./service-catalog.html"></a>Автосвет</li>
-          <li><a class="text" href="./service-catalog.html"></a>Автоаксесуары</li>
-          <li><a class="text" href="./service-catalog.html"></a>Автопикник</li>
-          <li><a class="text" href="./service-catalog.html"></a>Автоинструменты</li>
-          <li><a class="text" href="./service-catalog.html"></a>Автоэлектроника</li>
-          <li><a class="text" href="./service-catalog.html"></a>Авторасходники</li>
-        </ul>
+        <h3>Контакты</h3>
+        <address>
+          <ul>
+            <li><a class="text" href="tel:+380997177427">+38 099 717 74 27</a><img
+                src="./images/svg/messengers/phone.svg" alt="" srcset="" width="25"></li>
+            <li><a class="text" href="mailto:info@auto-parts.com">info@auto-parts.com</a><img
+                src="./images/svg/messengers/gmail.svg" alt="" srcset="" width="25"></li>
+            <li><a class="text" href="">+38 099 717 74 27</a> <img src="./images/svg/messengers/viber.svg" alt=""
+                srcset="" width="25">
+            </li>
+            <li><a class="text" href="">+38 099 717 74 27</a> <img src="./images/svg/messengers/whatsapp.svg" alt=""
+                srcset="" width="25"></li>
+            <li><a class="text" href="">+38 099 717 74 27</a> <img src="./images/svg/messengers/telegram.svg" alt=""
+                srcset="" width="25"></li>
+          </ul>
+        </address>
 
-        <h3>Информация</h3>
+        <h3>Авторские права</h3>
 
-        <ul>
-          <li><a class="text" href="">О компании</a></li>
-          <li><a class="text" href="">Контакты</a></li>
-          <li><a class="text" href="">Оплата</a></li>
-          <li><a class="text" href="">Доставка</a></li>
-          <li><a class="text" href="">Гарантия</a></li>
-          <li><a class="text" href="">Избранное</a></li>
-        </ul>
-
-      </nav>
-
-      <ul>
-        <li><a class="text" href="">On-line заказ</a></li>
-        <li><a class="text" href="">Регистрация</a></li>
-        <li><a class="text" href="">Личный кабинет</a></li>
-      </ul>
-
-      <h3>Мы принимаем</h3>
-      <ul>
-        <li>VISA <img src="./images/svg/card/visa.svg" alt="" srcset="" width="35"></li>
-        <li>MasterCard <img src="./images/svg/card/mastercard.svg" alt="" srcset="" width="35"></li>
-        <li>VISA <img src="./images/visa.webp" alt="" srcset="" width="35"></li>
-        <li>MasterCard <img src="./images/mc.webp" alt="" srcset="" width="35"></li>
-        <li>UAH <img src="" alt="" srcset="" width=""> &#8372;</li>
-        <li>USDT <img src="./images/svg/card/usdt.svg" alt="" srcset="" width="25"></li>
-        <li>BTC <img src="./images/svg/card/btc.svg" alt="" srcset="" width="25"></li>
-        <li>ETH <img src="./images/svg/card/eth.svg" alt="" srcset="" width="25"></li>
-      </ul>
-
-      <h3>Контакты</h3>
-      <address>
-        <ul>
-          <li><a class="text" href="tel:+380997177427">+38 099 717 74 27</a><img src="./images/svg/messengers/phone.svg"
-              alt="" srcset="" width="25"></li>
-          <li><a class="text" href="mailto:info@auto-parts.com">info@auto-parts.com</a><img
-              src="./images/svg/messengers/gmail.svg" alt="" srcset="" width="25"></li>
-          <li><a class="text" href="">+38 099 717 74 27</a> <img src="./images/svg/messengers/viber.svg" alt=""
-              srcset="" width="25">
-          </li>
-          <li><a class="text" href="">+38 099 717 74 27</a> <img src="./images/svg/messengers/whatsapp.svg" alt=""
-              srcset="" width="25"></li>
-          <li><a class="text" href="">+38 099 717 74 27</a> <img src="./images/svg/messengers/telegram.svg" alt=""
-              srcset="" width="25"></li>
-        </ul>
-      </address>
-
-      <h3>Авторские права</h3>
-
-      &copy; Auto-parts Ukraine community, 2022. Все права защищены
-
+        &copy; Auto-parts Ukraine community, 2022. Все права защищены
+      </div>
     </footer>
   </main>
 </body>
