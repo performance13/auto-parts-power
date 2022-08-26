@@ -708,8 +708,8 @@ body {
 
 .second-column__item:last-child {
     font-size: 16px;
-    font-weight: 200;
-    margin-top: 50px;
+    font-weight: 400;
+    margin-top: 60px;
 }
 
 /* Footer: third-column */
@@ -768,11 +768,11 @@ margin-top: 10px;
 
 .footer-box__bottom {
     border-top: 1px solid var(--line-header);
-    padding-top: 30px;
-    height: 80px;
+    padding-top: 24px;
+    height: 66px;
     background-color: var(--background-top);
 }
 
 .copyright-text{
-    font-size: 14px;
+    font-size: 12px;
 }
