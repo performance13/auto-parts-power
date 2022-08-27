@@ -4,6 +4,7 @@
     --color-schemes-maine:#00cbff;
     --color-schemes-accent:#ff0065;
     --color-schemes-accent-logo: #ffcd00;
+    --color-schemes-accent-logo-current:#ffd93f;
 
     --primary-text:#000000;
     --secondary-text:#494545;
@@ -380,10 +381,29 @@ body {
     /* letter-spacing: 0.06em; */
     text-align: center;
     
-    color: var(--background-bottom);
-
-    
+    /* color: var(--background-bottom); */
 }
+
+/* Баннер поверх основы с тенью */
+
+.overlays {
+    /* max-width: 1600px; */
+    /* min-height: 600px; */
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/jpg/banner-autoparts.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: var(--opposite-text);
+
+}
+
 /* Section__title */
 
 .section__title {
@@ -514,16 +534,45 @@ body {
     ;
 }
 
+.button__primary:hover{
+background-color:var(--color-schemes-base);
+}
+
 .button__secondary {
     background-color: var(--color-schemes-accent-logo);
 
     color: var(--primary-background);
    }
 
+   .button__secondary:hover{
+    background-color:var(--color-schemes-accent-logo-current);
+   }
+
+   /* Текущая страница */
 
 .current {
     color:var(--color-schemes-base);
+
+/* Для установки ::after */
+    position: relative;
 }
+
+.current::after{
+    display: block;
+    content: '';
+    text-align: center;
+    width: 100%;
+    height: 1px;
+    bottom: -1px;
+
+    background-repeat: 40px;
+    background-color:var(--color-schemes-base);
+    border: 1px solid;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
 
 
 
@@ -768,7 +817,7 @@ margin-top: 10px;
 
 .footer-box__bottom {
     border-top: 1px solid var(--line-header);
-    padding-top: 24px;
+    padding-top: 28px;
     height: 66px;
     background-color: var(--background-top);
 }
