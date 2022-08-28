@@ -32,8 +32,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Train+One&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
 
   <link rel="stylesheet"
@@ -134,6 +133,7 @@
 
 
       <input class="input-search" type="search" placeholder="Какую запчасть ищите?">
+
 
       <!-- 
 /* Лупа */ -->
@@ -792,11 +792,82 @@
         <h2 class="section__title section__title--secondary">Что новенького</h2>
         <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="" data-interval="">
           <div class="slider__wrapper">
+
             <div class="slider__items">
+
               <div class="slider__item">
-                <img src="./test/10101.png" alt="Кузовные детали">
-                <p>Кузовные детали</p>
+
+
+
+                <article class="product-card">
+                  <img class="product-link" src="./test/10101.png" alt="Радиатор охлаждения двигателя">
+
+                  <div class="product-text">
+                    <h3 class="product-text--title">Радиатор охлаждения двигателя</h3>
+                    <p class="product-text--description">Радиатор охлаждения двигателя Ford Mondeo MK-3 2000-2007гг.</p>
+                  </div>
+
+                  <div class="product-rating">
+
+                    <div class="product-rating--star">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <div class="product-rating--recommend">
+                      <p>13 рекомендаций</p>
+                    </div>
+
+                  </div>
+
+                  <div class="product-price">
+
+                    <div class="product-price--old">
+                      <p><span class="price--old">2500 грн.</span>
+                      </p>
+                    </div>
+
+                    <div class="product-price--current">
+                    </div>
+                    <p><span>2000</span> <span>грн.</span>
+                    </p>
+
+                  </div>
+
+                  <div class="product--delivery-day">
+                    <p>Отправим завтра</p>
+                  </div>
+
+                  <div class="product-favorites">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </div>
+
+                  <div class="add-to-basket">
+                    <a href="" class="product-card__button-basket button">В корзину</a>
+                  </div>
+
+                  <div class="add-to-buy">
+                    <a href="" class="product-card__button-buy button">Купить</a>
+                  </div>
+
+                  <div class="product-detail">
+                    <a href="">Подробнее</a>
+                  </div>
+
+
+                </article>
+
+
+
+
+
               </div>
+
+
+
               <div class="slider__item">
                 <img src="./test/10435.png" alt="Охлаждение и отопление">
                 <p>Охлаждение и отопление</p>
@@ -1024,7 +1095,7 @@
 
         <div class="third-column">
           <ul class="site-nav__list--bottom">
-            <li class="site-nav__item--bottom"><a href="#" class="site-nav__link--bottom current">Главная</a>
+            <li class="site-nav__item--bottom"><a href="#" class="site-nav__link--bottom current--bottom">Главная</a>
             </li>
             <li class="site-nav__item--bottom"><a href="./about.html" class="site-nav__link--bottom">О нас</a>
             </li>
@@ -1079,6 +1150,13 @@
         <!-- </div> -->
     </footer>
   </main>
+
+  <!-- https://ionic.io/ionicons/usage -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- https://ionic.io/ionicons/usage -->
+
+
 </body>
 
 </html>

@@ -22,7 +22,7 @@
 
     --line-header:#8d8b8c;
 
-    
+
 }
 
 /*! отмена стилей по умолчанию */
@@ -160,85 +160,8 @@ body {
     margin-left: 100px;
 }
 
-/* Logo 1*/
 
-/* .logo__holder{
-    position: relative;
-    font-family: 'Train One', cursive;
-    font-size: 24px;
-}
-
-.logo-img{
-    position: absolute;
-    left: 38px;
-    top: -46px;
-}
-   
-.logo__text--auto{
-    position: absolute;
-    padding-left: 0px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    margin-right: 83px;
-    
-    z-index: 10;
-    top: -37px;
-    left: -4px;
-    letter-spacing: 0.3em;
-}
-
-.logo__text--parts{
-    position: absolute;
-    padding-left: 0px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    
-    z-index: 10;
-    top: -37px;
-    left: 88px;
-    letter-spacing: 0.3em;
-} */
-
-/* Logo 2 */
-
-/* .logo__holder {
-    position: relative;
-    font-family: 'Michroma', sans-serif;
-    font-size: 24px;
-}
-
-.logo-img {
-    position: absolute;
-    left: 38px;
-    top: -44px;
-}
-
-.logo__text--auto {
-    position: absolute;
-    padding-left: 0px;
-    padding-right: 90px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-
-    z-index: 10;
-    top: -33px;
-    left: -10px;
-    letter-spacing: 0em;
-}
-
-.logo__text--parts {
-    position: absolute;
-    padding-left: 0px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-
-    z-index: 10;
-    top: -33px;
-    left: 127px;
-    letter-spacing: 0.3em;
-} */
-
-/* Logo 3 */
+/* Logo */
 
 .logo__holder {
     position: relative;
@@ -376,7 +299,7 @@ body {
     margin-bottom: 30px;
 
     font-weight: 700;
-    font-size: 42px;
+    font-size: 44px;
     line-height: 1.363;
     /* letter-spacing: 0.06em; */
     text-align: center;
@@ -789,7 +712,7 @@ background-color:var(--color-schemes-base);
     margin-top: 0px;
 }
 
-.site-nav__link--bottom .current{color:var(--color-schemes-base);
+.site-nav__link--bottom .current--bottom{color:var(--color-schemes-base);
 }
 
 
@@ -824,4 +747,32 @@ margin-top: 10px;
 
 .copyright-text{
     font-size: 12px;
+}
+
+
+/* Карточка */
+
+ion-icon{
+    font-size: 24px;
+    color: var(--color-schemes-accent-logo);
+}
+
+.product-price--old{
+    color:var(--color-schemes-accent);
+    text-decoration:line-through;
+}
+
+.price--old {
+color: var(--line-header);
+} 
+
+.product-card__button-basket,
+.product-card__button-buy{
+    background-color: var(--color-schemes-maine);
+    color:var(--primary-background);
+}
+
+.product-card__button-basket:hover,
+.product-card__button-buy:hover{
+    background-color: var(--color-schemes-base);
 }
