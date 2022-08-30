@@ -22,7 +22,6 @@
 
     --line-header:#8d8b8c;
 
-
 }
 
 /*! отмена стилей по умолчанию */
@@ -440,7 +439,7 @@ body {
     background-color:var(--primary-background);
     color:var(--primary-text);
 
-    font-size: 16px;
+    font-size: 20px;
     padding: 8px 16px;
     display: inline-block;
     border: 1px solid var(--color-schemes-accent);
@@ -754,11 +753,22 @@ margin-top: 10px;
 .product-card{
 position: relative;
 margin: 0px 10px 0px 10px;
-}
+
+/* display: flex; */
+/* align-items: stretch; */
+
+/* background-color: var(--background-middler); */
+
+    }
+
 
 .product-card:hover .product-photo {
-transition: 2s linear;
-    transform: scale(1.1);
+transform: scale(1.2);
+    /* transition: 1s ease-in-out; */
+}
+
+.product-photo{
+transition: 1s ease-in-out;
 }
 
 .product-promo span{
@@ -796,7 +806,7 @@ transition: 2s linear;
  }
 
  .product-text--description{
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 10px;
     color: var(--primary-text);
  }
@@ -870,19 +880,147 @@ color: var(--line-header);
 }
 
 .product-card__button-buy{
-    /* position: absolute;
-    top: 450px; */
-    display: block;
+    position: absolute;
+    top: 530px;
+    display: inline-block;
     margin: 0 auto;
-    padding: 12px;
-    font-size: 24px;
+    /* padding: 8px 16px;
+    font-size: 20px; */
     text-align: center;
+    width: 100%;
 }
 
-.{
+/* растягивание слайдера по высоте, - решило задачу одинаковой карточки */
+.stretch{
+    height: 570px;
+}
+
+
+
+/* Ранее просматривали 2 */
+
+
+.product-item {
+    width: 292px;
+    margin: 0 auto;
+    padding: 10px 10px 5px 10px;
+    border: 1px solid #eee;
+    background: white;
+    font-family: "Open Sans";
+    overflow: hidden;
+    transition: .4s linear;
+}
+
+.product-img {
+    transition: 1s ease-in-out;
+}
+
+.product-img:hover {
+    transform: scale(1.1);
+}
+
+.product-img img {
+    display: block;
+    width: 100%;
+}
+
+.product-list {
+    margin-top: 15px;
+}
+
+.product-list h3 {
+    font-weight: 700;
+    color: #39404B;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.price {
+    color: #E34D38;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.stars {
+    height: 14px;
+    line-height: 14px;
+    margin: 7px 0;
+}
+
+.stars:before {
+    content: "\f005\f005\f005\f005\f006";
+    color: #EFB71C;
+    font-size: 14px;
+    font-family: FontAwesome;
+}
+
+.actions {
+    border-top: 1px solid #eee;
+    padding-top: 4px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.actions:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.add-to-cart,
+.add-to-links {
+    float: left;
+}
+
+.cart-button {
+    text-decoration: none;
+    color: #8C877C;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    transition: .4s linear;
+}
+
+.cart-button:before {
+    content: "\f07a";
+    font-family: FontAwesome;
+    margin-right: 10px;
+}
+
+.add-to-cart:hover .cart-button,
+.wishlist:hover,
+.compare:hover {
+    color: #E34D38;
+}
+
+.wishlist,
+.compare {
+    color: #8C877C;
+    padding-left: 20px;
+    transition: .4s linear;
+}
+
+.wishlist:after,
+.compare:after {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 13px;
+}
+
+.wishlist:after {
+    content: "\f004";
+}
+
+.compare:after {
+    content: "\f079";
+}
+
+.flex-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: stretch;
-    /* align-content:stretch; */
-    /* flex-direction: row; */
-    
+    align-content: stretch;
 }
