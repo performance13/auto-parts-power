@@ -899,16 +899,24 @@ color: var(--line-header);
 
 /* Ранее просматривали 2 */
 
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
 
 .product-item {
     width: 292px;
     margin: 0 auto;
     padding: 10px 10px 5px 10px;
     border: 1px solid #eee;
-    background: white;
-    font-family: "Open Sans";
+    /* background: white; */
+    /* font-family: "Open Sans"; */
     overflow: hidden;
-    transition: .4s linear;
+    /* transition: .4s linear; */
 }
 
 .product-img {
@@ -943,17 +951,12 @@ color: var(--line-header);
     margin-bottom: 12px;
 }
 
-.stars {
+.stars__list {
+    font-size: 24px;
+    color: var(--color-schemes-accent-logo);
     height: 14px;
     line-height: 14px;
     margin: 7px 0;
-}
-
-.stars:before {
-    content: "\f005\f005\f005\f005\f006";
-    color: #EFB71C;
-    font-size: 14px;
-    font-family: FontAwesome;
 }
 
 .actions {
@@ -1009,18 +1012,10 @@ color: var(--line-header);
     font-size: 13px;
 }
 
-.wishlist:after {
+/* .wishlist:after {
     content: "\f004";
-}
+} */
 
 .compare:after {
     content: "\f079";
-}
-
-.flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
 }
