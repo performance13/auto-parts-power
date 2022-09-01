@@ -898,6 +898,10 @@ color: var(--line-header);
 
 
 /* Ранее просматривали 2 */
+.viewed {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
 
 .flex-container{
     display: flex;
@@ -905,117 +909,131 @@ color: var(--line-header);
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
+    align-self: stretch;
+    
 }
+
+.product-list {}
 
 
 .product-item {
-    width: 292px;
+    width: 250px;
     margin: 0 auto;
-    padding: 10px 10px 5px 10px;
-    border: 1px solid #eee;
-    /* background: white; */
-    /* font-family: "Open Sans"; */
-    overflow: hidden;
-    /* transition: .4s linear; */
+    padding: 10px 10px 0px 10px;
+    flex-grow: 1;
+    /* border: 1px solid var(--line-header); */
 }
 
-.product-img {
+.wishlist-offer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount{
+    font-size: 14px;
+    background-color: var(--color-schemes-accent);
+    color: var(--opposite-text);
+    padding: 4px;
+    border: 1px solid var(--color-schemes-accent);
+    border-radius: 4px;
+    border: transparent;
+}
+
+.add-to-wishlist{
+    font-size: 28px;
+    color: var(--color-schemes-accent-logo);
+}
+
+.product-img-wrapper {
     transition: 1s ease-in-out;
+    margin-bottom: 10px;
 }
 
-.product-img:hover {
-    transform: scale(1.1);
+.product-img-wrapper:hover {
+    transform: scale(1.05);
 }
 
-.product-img img {
+.product-photo {
     display: block;
     width: 100%;
 }
 
-.product-list {
-    margin-top: 15px;
+
+.product-text {
+    /* text-transform: uppercase; */
+    /* font-size: 24px; */
+    color: var(--primary-text);
 }
 
-.product-list h3 {
-    font-weight: 700;
-    color: #39404B;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 2;
+.product-title {
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
-.price {
-    color: #E34D38;
-    display: block;
-    margin-bottom: 12px;
+.product-description {
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
-.stars__list {
+.feedback {
+    margin-bottom: 10px;
+}
+
+.feedback-rating {
+    display: inline-flex;
     font-size: 24px;
     color: var(--color-schemes-accent-logo);
-    height: 14px;
-    line-height: 14px;
-    margin: 7px 0;
 }
 
-.actions {
-    border-top: 1px solid #eee;
-    padding-top: 4px;
-    font-size: 13px;
-    height: 30px;
-    line-height: 30px;
+.feedback-recommend {
+    font-size: 14px;
 }
 
-.actions:after {
-    content: "";
-    display: table;
-    clear: both;
+
+.price-old {
+    font-size: 16px;
+    color: var(--line-header);
+    text-decoration: line-through;
+    text-decoration-color: var(--color-schemes-accent);
 }
 
-.add-to-cart,
-.add-to-links {
-    float: left;
+.price-current {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.cart-button {
-    text-decoration: none;
-    color: #8C877C;
-    padding-right: 20px;
-    border-right: 1px solid #ddd;
-    transition: .4s linear;
+.price-basket-wrapper{
+    display: flex;
+    justify-content: space-between;
 }
 
-.cart-button:before {
-    content: "\f07a";
-    font-family: FontAwesome;
-    margin-right: 10px;
+.add-basket{
+    font-size: 24px;
+    text-align:center;
+    vertical-align: baseline;
+
+    color: var(--color-schemes-accent-logo);
+  
+    padding: 6px 6px 0px 6px;
+    border: 1px solid var(--color-schemes-accent-logo);
+    border-radius: 4px;
+
+
 }
 
-.add-to-cart:hover .cart-button,
-.wishlist:hover,
-.compare:hover {
-    color: #E34D38;
+.delivery-day {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--color-schemes-accent-logo);
 }
 
-.wishlist,
-.compare {
-    color: #8C877C;
-    padding-left: 20px;
-    transition: .4s linear;
-}
-
-.wishlist:after,
-.compare:after {
+.buy-button {
     display: inline-block;
-    font-family: FontAwesome;
-    font-size: 13px;
-}
-
-/* .wishlist:after {
-    content: "\f004";
-} */
-
-.compare:after {
-    content: "\f079";
+    margin: 0 auto;
+    background-color: var(--color-schemes-maine);
+    color: var(--opposite-text);
+    /* padding: 8px 16px;
+    font-size: 20px; */
+    text-align: center;
+    width: 100%;
 }
