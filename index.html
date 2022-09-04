@@ -789,7 +789,16 @@
 
     <section class="slider-section--new">
       <div class="container">
-        <h2 class="section__title section__title--secondary">Что новенького</h2>
+
+        <div class="title-wrapper">
+          <h2 class="section__title section__title--secondary">Что новенького</h2>
+
+          <div class="title-search-wrapper">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+        </div>
+
+
         <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="" data-interval="">
           <div class="slider__wrapper stretch">
 
@@ -797,881 +806,770 @@
 
               <div class="slider__item">
 
-                <article class="product-card">
+                <li class="product-item">
 
-                  <a href="" class="">
+                  <article class="product-card">
 
-                    <div class="product-promo">
-                      <span>25 %</span>
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
                     </div>
 
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
                     </div>
 
-                    <img class="product-photo" src="./test/10101.png" alt="Радиатор охлаждения двигателя">
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="product-text">
-                      <h3 class="product-text--title">Радиатор охлаждения двигателя</h3>
-                      <p class="product-text--description">Радиатор охлаждения двигателя Ford Focus 1998-2004гг.
-                      </p>
-                    </div>
+                    <div class="feedback-recommend-basket-wrapper">
 
-                    <div class="product-rating">
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
 
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </ul>
 
-
-                      <div class="product-rating--recommend">
-                        <p>13 рекомендаций</p>
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
                       </div>
 
                     </div>
 
-                    <div class="product-price">
+                    <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="product-price--old">
-                        <p><span class="price--old">2500 грн.</span>
-                        </p>
-                      </div>
+                    <p class="price-current">5000 грн.</p>
 
-                      <div class="product-price--current">
-                        <p>1875 грн.</p>
-                      </div>
 
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
                     </div>
 
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
-
-              </div>
-
-
-
-              <div class="slider__item">
-
-
-
-                <article class="product-card">
-
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>10 %</span>
-                    </div>
-
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </div>
-
-                    <img class="product-photo" src="./test/10110.png" alt="Генератор">
-
-                    <div class="product-text">
-                      <h3 class="product-text--title">Генератор Peugeot</h3>
-                      <p class="product-text--description">Генератор Peugeot 2000-2010гг.
-                      </p>
-                    </div>
-
-                    <div class="product-rating">
-
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-half"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </ul>
-
-
-                      <div class="product-rating--recommend">
-                        <p>17 рекомендаций</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product-price">
-
-                      <div class="product-price--old">
-                        <p><span class="price--old">2100 грн.</span>
-                        </p>
-                      </div>
-
-                      <div class="product-price--current">
-                        <p>1890 грн.</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
-
-              </div>
-
-
-
-              <div class="slider__item">
-
-
-
-                <article class="product-card">
-
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>5 %</span>
-                    </div>
-
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </div>
-
-                    <img class="product-photo" src="./test/10101.png" alt="Вентилятор охлаждения радиатора">
-
-                    <div class="product-text">
-                      <h3 class="product-text--title">Вентилятор охлаждения радиатора</h3>
-                      <p class="product-text--description">Вентилятор охлаждения радиатора Opel Astra G 1998-2005гг.
-                      </p>
-                    </div>
-
-                    <div class="product-rating">
-
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </ul>
-
-
-                      <div class="product-rating--recommend">
-                        <p>13 рекомендаций</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product-price">
-
-                      <div class="product-price--old">
-                        <p><span class="price--old">1500 грн.</span>
-                        </p>
-                      </div>
-
-                      <div class="product-price--current">
-                        <p>1425 грн.</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
+                  </article>
+                </li>
 
               </div>
 
 
               <div class="slider__item">
 
+                <li class="product-item">
 
+                  <article class="product-card">
 
-                <article class="product-card">
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
 
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>15 %</span>
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
                     </div>
 
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
                     </div>
 
-                    <img class="product-photo" src="./test/10112.png" alt="Рулевая рейка">
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="product-text">
-                      <h3 class="product-text--title">Рулевая рейка</h3>
-                      <p class="product-text--description">Рулевая рейка Mitsubishi Carisma/Space Star
-                      </p>
-                    </div>
+                    <div class="feedback-recommend-basket-wrapper">
 
-                    <div class="product-rating">
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
 
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-half"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </ul>
 
-
-                      <div class="product-rating--recommend">
-                        <p>10 рекомендаций</p>
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
                       </div>
 
                     </div>
 
-                    <div class="product-price">
+                    <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="product-price--old">
-                        <p><span class="price--old">4100 грн.</span>
-                        </p>
-                      </div>
+                    <p class="price-current">5000 грн.</p>
 
-                      <div class="product-price--current">
-                        <p>3485 грн.</p>
-                      </div>
 
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
                     </div>
 
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
-
-              </div>
-
-
-
-              <div class="slider__item">
-
-
-
-                <article class="product-card">
-
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>5 %</span>
-                    </div>
-
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </div>
-
-                    <img class="product-photo" src="./test/10110.png" alt="Стартер">
-
-                    <div class="product-text">
-                      <h3 class="product-text--title">Стартер</h3>
-                      <p class="product-text--description">Стартер VW T-4 2000-2005гг.
-                      </p>
-                    </div>
-
-                    <div class="product-rating">
-
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </ul>
-
-
-                      <div class="product-rating--recommend">
-                        <p>3 рекомендаций</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product-price">
-
-                      <div class="product-price--old">
-                        <p><span class="price--old">2000 грн.</span>
-                        </p>
-                      </div>
-
-                      <div class="product-price--current">
-                        <p>1900 грн.</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
-
-              </div>
-
-
-
-              <div class="slider__item">
-
-
-
-                <article class="product-card">
-
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>25 %</span>
-                    </div>
-
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </div>
-
-                    <img class="product-photo" src="./test/10102.png" alt="Двигатель">
-
-                    <div class="product-text">
-                      <h3 class="product-text--title">Двигатель</h3>
-                      <p class="product-text--description">Двигатель Peugeot 307 1998-2003гг.
-                      </p>
-                    </div>
-
-                    <div class="product-rating">
-
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </ul>
-
-
-                      <div class="product-rating--recommend">
-                        <p>13 рекомендаций</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product-price">
-
-                      <div class="product-price--old">
-                        <p><span class="price--old">25000 грн.</span>
-                        </p>
-                      </div>
-
-                      <div class="product-price--current">
-                        <p>18750 грн.</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
-
-              </div>
-
-
-
-              <div class="slider__item">
-
-
-
-                <article class="product-card">
-
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>35 %</span>
-                    </div>
-
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </div>
-
-                    <img class="product-photo" src="./test/10108.png" alt="Форсунки">
-
-                    <div class="product-text">
-                      <h3 class="product-text--title">Форсунки</h3>
-                      <p class="product-text--description">Форсунки Audi A6 2.6tdi 2000-2010гг.
-                      </p>
-                    </div>
-
-                    <div class="product-rating">
-
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </ul>
-
-
-                      <div class="product-rating--recommend">
-                        <p>13 рекомендаций</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product-price">
-
-                      <div class="product-price--old">
-                        <p><span class="price--old">6000 грн.</span>
-                        </p>
-                      </div>
-
-                      <div class="product-price--current">
-                        <p>3900 грн.</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
-
-              </div>
-
-
-
-              <div class="slider__item">
-
-
-
-                <article class="product-card">
-
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>25 %</span>
-                    </div>
-
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
-                    </div>
-
-                    <img class="product-photo" src="./test/10106.png" alt="Диски тормозные передние">
-
-                    <div class="product-text">
-                      <h3 class="product-text--title">Диски тормозные передние</h3>
-                      <p class="product-text--description">Диски тормозные передние вентелируемые VW Golf-4
-                        1995-2005гг.
-                      </p>
-                    </div>
-
-                    <div class="product-rating">
-
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-half"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </ul>
-
-
-                      <div class="product-rating--recommend">
-                        <p>13 рекомендаций</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product-price">
-
-                      <div class="product-price--old">
-                        <p><span class="price--old">1200 грн.</span>
-                        </p>
-                      </div>
-
-                      <div class="product-price--current">
-                        <p>900 грн.</p>
-                      </div>
-
-                    </div>
-
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
+                  </article>
+                </li>
 
               </div>
 
 
               <div class="slider__item">
 
+                <li class="product-item">
 
+                  <article class="product-card">
 
-                <article class="product-card">
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
 
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>5 %</span>
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
                     </div>
 
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
                     </div>
 
-                    <img class="product-photo" src="./test/10111.png" alt=Амортизаторы задние">
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="product-text">
-                      <h3 class="product-text--title">Амортизаторы задние</h3>
-                      <p class="product-text--description">Амортизаторы задние Ford Transit 1994-2000 гг.
-                      </p>
-                    </div>
+                    <div class="feedback-recommend-basket-wrapper">
 
-                    <div class="product-rating">
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
 
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </ul>
 
-
-                      <div class="product-rating--recommend">
-                        <p>23 рекомендаций</p>
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
                       </div>
 
                     </div>
 
-                    <div class="product-price">
+                    <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="product-price--old">
-                        <p><span class="price--old">2500 грн.</span>
-                        </p>
-                      </div>
+                    <p class="price-current">5000 грн.</p>
 
-                      <div class="product-price--current">
-                        <p>2375 грн.</p>
-                      </div>
 
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
                     </div>
 
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
+                  </article>
+                </li>
 
               </div>
 
 
               <div class="slider__item">
 
+                <li class="product-item">
 
+                  <article class="product-card">
 
-                <article class="product-card">
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
 
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>25 %</span>
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
                     </div>
 
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
                     </div>
 
-                    <img class="product-photo" src="./test/10101.png" alt="Радиатор охлаждения двигателя">
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="product-text">
-                      <h3 class="product-text--title">Радиатор охлаждения двигателя</h3>
-                      <p class="product-text--description">Радиатор охлаждения двигателя Ford Mondeo MK-3 2000-2007гг.
-                      </p>
-                    </div>
+                    <div class="feedback-recommend-basket-wrapper">
 
-                    <div class="product-rating">
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
 
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-half"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </ul>
 
-
-                      <div class="product-rating--recommend">
-                        <p>13 рекомендаций</p>
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
                       </div>
 
                     </div>
 
-                    <div class="product-price">
+                    <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="product-price--old">
-                        <p><span class="price--old">2500 грн.</span>
-                        </p>
-                      </div>
+                    <p class="price-current">5000 грн.</p>
 
-                      <div class="product-price--current">
-                        <p>1875 грн.</p>
-                      </div>
 
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
                     </div>
 
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
+                  </article>
+                </li>
 
               </div>
 
 
               <div class="slider__item">
 
+                <li class="product-item">
 
+                  <article class="product-card">
 
-                <article class="product-card">
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
 
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>20 %</span>
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
                     </div>
 
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
                     </div>
 
-                    <img class="product-photo" src="./test/10111.png" alt="Радиатор охлаждения двигателя">
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="product-text">
-                      <h3 class="product-text--title">Амортизаторы передние</h3>
-                      <p class="product-text--description">Амортизаторы передние Ford Mondeo MK-3 2000-2007гг.
-                      </p>
-                    </div>
+                    <div class="feedback-recommend-basket-wrapper">
 
-                    <div class="product-rating">
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
 
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </ul>
 
-
-                      <div class="product-rating--recommend">
-                        <p>15 рекомендаций</p>
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
                       </div>
 
                     </div>
 
-                    <div class="product-price">
+                    <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="product-price--old">
-                        <p><span class="price--old">3600 грн.</span>
-                        </p>
-                      </div>
+                    <p class="price-current">5000 грн.</p>
 
-                      <div class="product-price--current">
-                        <p>2880 грн.</p>
-                      </div>
 
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
                     </div>
 
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
-                    </div>
-
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
-                    </div>
-
-                  </a>
-
-                </article>
+                  </article>
+                </li>
 
               </div>
 
 
               <div class="slider__item">
 
+                <li class="product-item">
 
+                  <article class="product-card">
 
-                <article class="product-card">
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
 
-                  <a href="">
-
-                    <div class="product-promo">
-                      <span>5 %</span>
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
                     </div>
 
-                    <div class="add-to-favorites">
-                      <ion-icon name="heart-outline"></ion-icon>
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
                     </div>
 
-                    <img class="product-photo" src="./test/10113.png" alt="Ступица">
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="product-text">
-                      <h3 class="product-text--title">Ступица передняя левая</h3>
-                      <p class="product-text--description">Ступица передняя левая Ford Mondeo MK-3 2000-2007гг.
-                      </p>
-                    </div>
+                    <div class="feedback-recommend-basket-wrapper">
 
-                    <div class="product-rating">
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
 
-                      <ul class="product-rating--star">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-half"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </ul>
 
-
-                      <div class="product-rating--recommend">
-                        <p>13 рекомендаций</p>
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
                       </div>
 
                     </div>
 
-                    <div class="product-price">
+                    <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="product-price--old">
-                        <p><span class="price--old">1500 грн.</span>
-                        </p>
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
+
+              </div>
+
+
+              <div class="slider__item">
+
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
                       </div>
 
-                      <div class="product-price--current">
-                        <p>1425 грн.</p>
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
                       </div>
 
                     </div>
 
-                    <div class="product--delivery-day">
-                      <p>Отправим завтра</p>
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
                     </div>
 
-                    <div class="add-to-basket">
-                      <ion-icon name="cart-outline"></ion-icon>
+                  </article>
+                </li>
+
+              </div>
+
+
+              <div class="slider__item">
+
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
                     </div>
 
-                    <div class="add-to-buy">
-                      <a href="" class="product-card__button-buy button">Купить</a>
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
                     </div>
 
-                  </a>
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                </article>
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
+
+              </div>
+
+
+              <div class="slider__item">
+
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
+
+              </div>
+
+
+              <div class="slider__item">
+
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
+
+              </div>
+
+
+              <div class="slider__item">
+
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
 
               </div>
 
@@ -1689,56 +1587,748 @@
 
 
 
-    <!-- Ранее просматривали -->
+    <!-- Ранее просматривали, карусель -->
     <section class="slider-section--viewed">
       <div class="container">
-        <h2 class="section__title section__title--secondary">Ранее просматривали</h2>
+
+        <div class="title-wrapper">
+          <h2 class="section__title section__title--secondary">Ранее просматривали</h2>
+
+          <div class="title-eye-wrapper">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+        </div>
+
         <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="" data-interval="">
           <div class="slider__wrapper">
             <div class="slider__items">
+
               <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
+              </div>
+
+              <div class="slider__item slider__item--viewed">
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
               </div>
               <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
               </div>
               <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
               </div>
               <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
               </div>
               <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
               </div>
               <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
               </div>
               <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
               </div>
               <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
               </div>
               <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
               </div>
               <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
-              </div>
-              <div class="slider__item slider__item--viewed">
-                <img src="./test/istockphoto-480739962-612x612.jpg" alt="" width="250px">
-                <p></p>
+                <li class="product-item">
+
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <h3 class="product-title">Головка блока цилиндров</h3>
+                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                    <div class="feedback-recommend-basket-wrapper">
+
+                      <div class="feedback-recommend-wrapper">
+                        <ul class="feedback-rating">
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star"></ion-icon>
+                          </li>
+                          <li>
+                            <ion-icon name="star-outline"></ion-icon>
+                          </li>
+                        </ul>
+                        <p class="feedback-recommend">13 рекомендаций</p>
+                      </div>
+
+
+                      <div class="add-basket">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </div>
+
+                    </div>
+
+                    <p class="price-old">10000 <small>грн.</small> </p>
+
+                    <p class="price-current">5000 грн.</p>
+
+
+                    <p class="delivery-day">Отправим завтра</p>
+
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
               </div>
             </div>
           </div>
@@ -1755,29 +2345,35 @@
 
 
 
-    <!-- Ранее просматривали 2 -->
+    <!-- Избранное -->
     <section class="viewed">
 
       <div class="container">
 
-        <h2 class="section__title section__title--secondary">Ранее просматривали</h2>
+        <div class="title-wrapper">
+          <h2 class="section__title section__title--secondary">Избранное</h2>
 
-        <ul class="product-list flex-container">
+          <div class="title-heart-wrapper">
+            <ion-icon name="heart-outline"></ion-icon>
+          </div>
+        </div>
+
+        <!-- <h2 class="section__title section__title--secondary">Избранное</h2>
+        <ion-icon name="heart-outline"></ion-icon> -->
+
+
+        <ul class="product-list">
 
           <li class="product-item">
 
-            <article class="product">
+            <article class="product-card">
 
-              <div class="wishlist-offer-wrapper">
-
-                <div class="special-offer">
-                  <p class="discount">50 %</p>
-                </div>
+              <div class="discount-wishlist-wrapper">
+                <p class="discount">50 %</p>
 
                 <div class="add-to-wishlist">
                   <ion-icon name="heart-outline"></ion-icon>
                 </div>
-
               </div>
 
               <div class="product-img-wrapper">
@@ -1786,43 +2382,32 @@
                 </a>
               </div>
 
-              <div class="product-text">
-                <h3 class="product-title">Головка блока цилиндров</h3>
-                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-              </div>
+              <h3 class="product-title">Головка блока цилиндров</h3>
+              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback">
+              <div class="feedback-recommend-basket-wrapper">
 
-                <ul class="feedback-rating">
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </li>
-                </ul>
-
-                <p class="feedback-recommend">13 рекомендаций</p>
-              </div>
-
-              <div class="">
-                <p class="price-old">10000 <small>грн.</small> </p>
-              </div>
-
-              <div class="price-basket-wrapper">
-
-                <div class="price">
-                  <p class="price-current">5000 грн.</p>
+                <div class="feedback-recommend-wrapper">
+                  <ul class="feedback-rating">
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </li>
+                  </ul>
+                  <p class="feedback-recommend">13 рекомендаций</p>
                 </div>
+
 
                 <div class="add-basket">
                   <ion-icon name="cart-outline"></ion-icon>
@@ -1830,11 +2415,14 @@
 
               </div>
 
-              <div class="delivery">
-                <p class="delivery-day">Отправим завтра</p>
-              </div>
+              <p class="price-old">10000 <small>грн.</small> </p>
 
-              <div class="buy">
+              <p class="price-current">5000 грн.</p>
+
+
+              <p class="delivery-day">Отправим завтра</p>
+
+              <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
               </div>
 
@@ -1843,18 +2431,14 @@
 
           <li class="product-item">
 
-            <article class="product">
+            <article class="product-card">
 
-              <div class="wishlist-offer-wrapper">
-
-                <div class="special-offer">
-                  <p class="discount">50 %</p>
-                </div>
+              <div class="discount-wishlist-wrapper">
+                <p class="discount">50 %</p>
 
                 <div class="add-to-wishlist">
                   <ion-icon name="heart-outline"></ion-icon>
                 </div>
-
               </div>
 
               <div class="product-img-wrapper">
@@ -1863,44 +2447,32 @@
                 </a>
               </div>
 
-              <div class="product-text">
-                <h3 class="product-title">Головка блока цилиндров</h3>
-                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в. Головка блока
-                  цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-              </div>
+              <h3 class="product-title">Головка блока цилиндров</h3>
+              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback">
+              <div class="feedback-recommend-basket-wrapper">
 
-                <ul class="feedback-rating">
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </li>
-                </ul>
-
-                <p class="feedback-recommend">13 рекомендаций</p>
-              </div>
-
-              <div class="">
-                <p class="price-old">10000 <small>грн.</small> </p>
-              </div>
-
-              <div class="price-basket-wrapper">
-
-                <div class="price">
-                  <p class="price-current">5000 грн.</p>
+                <div class="feedback-recommend-wrapper">
+                  <ul class="feedback-rating">
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </li>
+                  </ul>
+                  <p class="feedback-recommend">13 рекомендаций</p>
                 </div>
+
 
                 <div class="add-basket">
                   <ion-icon name="cart-outline"></ion-icon>
@@ -1908,11 +2480,14 @@
 
               </div>
 
-              <div class="delivery">
-                <p class="delivery-day">Отправим завтра</p>
-              </div>
+              <p class="price-old">10000 <small>грн.</small> </p>
 
-              <div class="buy">
+              <p class="price-current">5000 грн.</p>
+
+
+              <p class="delivery-day">Отправим завтра</p>
+
+              <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
               </div>
 
@@ -1921,18 +2496,14 @@
 
           <li class="product-item">
 
-            <article class="product">
+            <article class="product-card">
 
-              <div class="wishlist-offer-wrapper">
-
-                <div class="special-offer">
-                  <p class="discount">50 %</p>
-                </div>
+              <div class="discount-wishlist-wrapper">
+                <p class="discount">50 %</p>
 
                 <div class="add-to-wishlist">
                   <ion-icon name="heart-outline"></ion-icon>
                 </div>
-
               </div>
 
               <div class="product-img-wrapper">
@@ -1941,43 +2512,32 @@
                 </a>
               </div>
 
-              <div class="product-text">
-                <h3 class="product-title">Головка блока цилиндров</h3>
-                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-              </div>
+              <h3 class="product-title">Головка блока цилиндров</h3>
+              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback">
+              <div class="feedback-recommend-basket-wrapper">
 
-                <ul class="feedback-rating">
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </li>
-                </ul>
-
-                <p class="feedback-recommend">13 рекомендаций</p>
-              </div>
-
-              <div class="">
-                <p class="price-old">10000 <small>грн.</small> </p>
-              </div>
-
-              <div class="price-basket-wrapper">
-
-                <div class="price">
-                  <p class="price-current">5000 грн.</p>
+                <div class="feedback-recommend-wrapper">
+                  <ul class="feedback-rating">
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </li>
+                  </ul>
+                  <p class="feedback-recommend">13 рекомендаций</p>
                 </div>
+
 
                 <div class="add-basket">
                   <ion-icon name="cart-outline"></ion-icon>
@@ -1985,11 +2545,14 @@
 
               </div>
 
-              <div class="delivery">
-                <p class="delivery-day">Отправим завтра</p>
-              </div>
+              <p class="price-old">10000 <small>грн.</small> </p>
 
-              <div class="buy">
+              <p class="price-current">5000 грн.</p>
+
+
+              <p class="delivery-day">Отправим завтра</p>
+
+              <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
               </div>
 
@@ -1998,18 +2561,14 @@
 
           <li class="product-item">
 
-            <article class="product">
+            <article class="product-card">
 
-              <div class="wishlist-offer-wrapper">
-
-                <div class="special-offer">
-                  <p class="discount">50 %</p>
-                </div>
+              <div class="discount-wishlist-wrapper">
+                <p class="discount">50 %</p>
 
                 <div class="add-to-wishlist">
                   <ion-icon name="heart-outline"></ion-icon>
                 </div>
-
               </div>
 
               <div class="product-img-wrapper">
@@ -2018,43 +2577,32 @@
                 </a>
               </div>
 
-              <div class="product-text">
-                <h3 class="product-title">Головка блока цилиндров</h3>
-                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-              </div>
+              <h3 class="product-title">Головка блока цилиндров</h3>
+              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback">
+              <div class="feedback-recommend-basket-wrapper">
 
-                <ul class="feedback-rating">
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </li>
-                </ul>
-
-                <p class="feedback-recommend">13 рекомендаций</p>
-              </div>
-
-              <div class="">
-                <p class="price-old">10000 <small>грн.</small> </p>
-              </div>
-
-              <div class="price-basket-wrapper">
-
-                <div class="price">
-                  <p class="price-current">5000 грн.</p>
+                <div class="feedback-recommend-wrapper">
+                  <ul class="feedback-rating">
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </li>
+                  </ul>
+                  <p class="feedback-recommend">13 рекомендаций</p>
                 </div>
+
 
                 <div class="add-basket">
                   <ion-icon name="cart-outline"></ion-icon>
@@ -2062,11 +2610,14 @@
 
               </div>
 
-              <div class="delivery">
-                <p class="delivery-day">Отправим завтра</p>
-              </div>
+              <p class="price-old">10000 <small>грн.</small> </p>
 
-              <div class="buy">
+              <p class="price-current">5000 грн.</p>
+
+
+              <p class="delivery-day">Отправим завтра</p>
+
+              <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
               </div>
 
@@ -2075,18 +2626,14 @@
 
           <li class="product-item">
 
-            <article class="product">
+            <article class="product-card">
 
-              <div class="wishlist-offer-wrapper">
-
-                <div class="special-offer">
-                  <p class="discount">50 %</p>
-                </div>
+              <div class="discount-wishlist-wrapper">
+                <p class="discount">50 %</p>
 
                 <div class="add-to-wishlist">
                   <ion-icon name="heart-outline"></ion-icon>
                 </div>
-
               </div>
 
               <div class="product-img-wrapper">
@@ -2095,43 +2642,32 @@
                 </a>
               </div>
 
-              <div class="product-text">
-                <h3 class="product-title">Головка блока цилиндров</h3>
-                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-              </div>
+              <h3 class="product-title">Головка блока цилиндров</h3>
+              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback">
+              <div class="feedback-recommend-basket-wrapper">
 
-                <ul class="feedback-rating">
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </li>
-                </ul>
-
-                <p class="feedback-recommend">13 рекомендаций</p>
-              </div>
-
-              <div class="">
-                <p class="price-old">10000 <small>грн.</small> </p>
-              </div>
-
-              <div class="price-basket-wrapper">
-
-                <div class="price">
-                  <p class="price-current">5000 грн.</p>
+                <div class="feedback-recommend-wrapper">
+                  <ul class="feedback-rating">
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </li>
+                  </ul>
+                  <p class="feedback-recommend">13 рекомендаций</p>
                 </div>
+
 
                 <div class="add-basket">
                   <ion-icon name="cart-outline"></ion-icon>
@@ -2139,11 +2675,14 @@
 
               </div>
 
-              <div class="delivery">
-                <p class="delivery-day">Отправим завтра</p>
-              </div>
+              <p class="price-old">10000 <small>грн.</small> </p>
 
-              <div class="buy">
+              <p class="price-current">5000 грн.</p>
+
+
+              <p class="delivery-day">Отправим завтра</p>
+
+              <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
               </div>
 
@@ -2152,18 +2691,14 @@
 
           <li class="product-item">
 
-            <article class="product">
+            <article class="product-card">
 
-              <div class="wishlist-offer-wrapper">
-
-                <div class="special-offer">
-                  <p class="discount">50 %</p>
-                </div>
+              <div class="discount-wishlist-wrapper">
+                <p class="discount">50 %</p>
 
                 <div class="add-to-wishlist">
                   <ion-icon name="heart-outline"></ion-icon>
                 </div>
-
               </div>
 
               <div class="product-img-wrapper">
@@ -2172,43 +2707,32 @@
                 </a>
               </div>
 
-              <div class="product-text">
-                <h3 class="product-title">Головка блока цилиндров</h3>
-                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-              </div>
+              <h3 class="product-title">Головка блока цилиндров</h3>
+              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback">
+              <div class="feedback-recommend-basket-wrapper">
 
-                <ul class="feedback-rating">
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </li>
-                </ul>
-
-                <p class="feedback-recommend">13 рекомендаций</p>
-              </div>
-
-              <div class="">
-                <p class="price-old">10000 <small>грн.</small> </p>
-              </div>
-
-              <div class="price-basket-wrapper">
-
-                <div class="price">
-                  <p class="price-current">5000 грн.</p>
+                <div class="feedback-recommend-wrapper">
+                  <ul class="feedback-rating">
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </li>
+                  </ul>
+                  <p class="feedback-recommend">13 рекомендаций</p>
                 </div>
+
 
                 <div class="add-basket">
                   <ion-icon name="cart-outline"></ion-icon>
@@ -2216,11 +2740,14 @@
 
               </div>
 
-              <div class="delivery">
-                <p class="delivery-day">Отправим завтра</p>
-              </div>
+              <p class="price-old">10000 <small>грн.</small> </p>
 
-              <div class="buy">
+              <p class="price-current">5000 грн.</p>
+
+
+              <p class="delivery-day">Отправим завтра</p>
+
+              <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
               </div>
 
@@ -2229,18 +2756,14 @@
 
           <li class="product-item">
 
-            <article class="product">
+            <article class="product-card">
 
-              <div class="wishlist-offer-wrapper">
-
-                <div class="special-offer">
-                  <p class="discount">50 %</p>
-                </div>
+              <div class="discount-wishlist-wrapper">
+                <p class="discount">50 %</p>
 
                 <div class="add-to-wishlist">
                   <ion-icon name="heart-outline"></ion-icon>
                 </div>
-
               </div>
 
               <div class="product-img-wrapper">
@@ -2249,43 +2772,32 @@
                 </a>
               </div>
 
-              <div class="product-text">
-                <h3 class="product-title">Головка блока цилиндров</h3>
-                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-              </div>
+              <h3 class="product-title">Головка блока цилиндров</h3>
+              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback">
+              <div class="feedback-recommend-basket-wrapper">
 
-                <ul class="feedback-rating">
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </li>
-                </ul>
-
-                <p class="feedback-recommend">13 рекомендаций</p>
-              </div>
-
-              <div class="">
-                <p class="price-old">10000 <small>грн.</small> </p>
-              </div>
-
-              <div class="price-basket-wrapper">
-
-                <div class="price">
-                  <p class="price-current">5000 грн.</p>
+                <div class="feedback-recommend-wrapper">
+                  <ul class="feedback-rating">
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </li>
+                  </ul>
+                  <p class="feedback-recommend">13 рекомендаций</p>
                 </div>
+
 
                 <div class="add-basket">
                   <ion-icon name="cart-outline"></ion-icon>
@@ -2293,11 +2805,14 @@
 
               </div>
 
-              <div class="delivery">
-                <p class="delivery-day">Отправим завтра</p>
-              </div>
+              <p class="price-old">10000 <small>грн.</small> </p>
 
-              <div class="buy">
+              <p class="price-current">5000 грн.</p>
+
+
+              <p class="delivery-day">Отправим завтра</p>
+
+              <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
               </div>
 
@@ -2306,18 +2821,14 @@
 
           <li class="product-item">
 
-            <article class="product">
+            <article class="product-card">
 
-              <div class="wishlist-offer-wrapper">
-
-                <div class="special-offer">
-                  <p class="discount">50 %</p>
-                </div>
+              <div class="discount-wishlist-wrapper">
+                <p class="discount">50 %</p>
 
                 <div class="add-to-wishlist">
                   <ion-icon name="heart-outline"></ion-icon>
                 </div>
-
               </div>
 
               <div class="product-img-wrapper">
@@ -2326,43 +2837,32 @@
                 </a>
               </div>
 
-              <div class="product-text">
-                <h3 class="product-title">Головка блока цилиндров</h3>
-                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-              </div>
+              <h3 class="product-title">Головка блока цилиндров</h3>
+              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback">
+              <div class="feedback-recommend-basket-wrapper">
 
-                <ul class="feedback-rating">
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </li>
-                </ul>
-
-                <p class="feedback-recommend">13 рекомендаций</p>
-              </div>
-
-              <div class="">
-                <p class="price-old">10000 <small>грн.</small> </p>
-              </div>
-
-              <div class="price-basket-wrapper">
-
-                <div class="price">
-                  <p class="price-current">5000 грн.</p>
+                <div class="feedback-recommend-wrapper">
+                  <ul class="feedback-rating">
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </li>
+                  </ul>
+                  <p class="feedback-recommend">13 рекомендаций</p>
                 </div>
+
 
                 <div class="add-basket">
                   <ion-icon name="cart-outline"></ion-icon>
@@ -2370,11 +2870,14 @@
 
               </div>
 
-              <div class="delivery">
-                <p class="delivery-day">Отправим завтра</p>
-              </div>
+              <p class="price-old">10000 <small>грн.</small> </p>
 
-              <div class="buy">
+              <p class="price-current">5000 грн.</p>
+
+
+              <p class="delivery-day">Отправим завтра</p>
+
+              <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
               </div>
 
@@ -2383,18 +2886,14 @@
 
           <li class="product-item">
 
-            <article class="product">
+            <article class="product-card">
 
-              <div class="wishlist-offer-wrapper">
-
-                <div class="special-offer">
-                  <p class="discount">50 %</p>
-                </div>
+              <div class="discount-wishlist-wrapper">
+                <p class="discount">50 %</p>
 
                 <div class="add-to-wishlist">
                   <ion-icon name="heart-outline"></ion-icon>
                 </div>
-
               </div>
 
               <div class="product-img-wrapper">
@@ -2403,43 +2902,32 @@
                 </a>
               </div>
 
-              <div class="product-text">
-                <h3 class="product-title">Головка блока цилиндров</h3>
-                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-              </div>
+              <h3 class="product-title">Головка блока цилиндров</h3>
+              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback">
+              <div class="feedback-recommend-basket-wrapper">
 
-                <ul class="feedback-rating">
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </li>
-                </ul>
-
-                <p class="feedback-recommend">13 рекомендаций</p>
-              </div>
-
-              <div class="">
-                <p class="price-old">10000 <small>грн.</small> </p>
-              </div>
-
-              <div class="price-basket-wrapper">
-
-                <div class="price">
-                  <p class="price-current">5000 грн.</p>
+                <div class="feedback-recommend-wrapper">
+                  <ul class="feedback-rating">
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </li>
+                  </ul>
+                  <p class="feedback-recommend">13 рекомендаций</p>
                 </div>
+
 
                 <div class="add-basket">
                   <ion-icon name="cart-outline"></ion-icon>
@@ -2447,11 +2935,14 @@
 
               </div>
 
-              <div class="delivery">
-                <p class="delivery-day">Отправим завтра</p>
-              </div>
+              <p class="price-old">10000 <small>грн.</small> </p>
 
-              <div class="buy">
+              <p class="price-current">5000 грн.</p>
+
+
+              <p class="delivery-day">Отправим завтра</p>
+
+              <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
               </div>
 
@@ -2460,18 +2951,14 @@
 
           <li class="product-item">
 
-            <article class="product">
+            <article class="product-card">
 
-              <div class="wishlist-offer-wrapper">
-
-                <div class="special-offer">
-                  <p class="discount">50 %</p>
-                </div>
+              <div class="discount-wishlist-wrapper">
+                <p class="discount">50 %</p>
 
                 <div class="add-to-wishlist">
                   <ion-icon name="heart-outline"></ion-icon>
                 </div>
-
               </div>
 
               <div class="product-img-wrapper">
@@ -2480,43 +2967,32 @@
                 </a>
               </div>
 
-              <div class="product-text">
-                <h3 class="product-title">Головка блока цилиндров</h3>
-                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-              </div>
+              <h3 class="product-title">Головка блока цилиндров</h3>
+              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback">
+              <div class="feedback-recommend-basket-wrapper">
 
-                <ul class="feedback-rating">
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star"></ion-icon>
-                  </li>
-                  <li>
-                    <ion-icon name="star-outline"></ion-icon>
-                  </li>
-                </ul>
-
-                <p class="feedback-recommend">13 рекомендаций</p>
-              </div>
-
-              <div class="">
-                <p class="price-old">10000 <small>грн.</small> </p>
-              </div>
-
-              <div class="price-basket-wrapper">
-
-                <div class="price">
-                  <p class="price-current">5000 грн.</p>
+                <div class="feedback-recommend-wrapper">
+                  <ul class="feedback-rating">
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star"></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </li>
+                  </ul>
+                  <p class="feedback-recommend">13 рекомендаций</p>
                 </div>
+
 
                 <div class="add-basket">
                   <ion-icon name="cart-outline"></ion-icon>
@@ -2524,27 +3000,25 @@
 
               </div>
 
-              <div class="delivery">
-                <p class="delivery-day">Отправим завтра</p>
-              </div>
+              <p class="price-old">10000 <small>грн.</small> </p>
 
-              <div class="buy">
+              <p class="price-current">5000 грн.</p>
+
+
+              <p class="delivery-day">Отправим завтра</p>
+
+              <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
               </div>
 
             </article>
           </li>
+
         </ul>
       </div>
     </section>
 
 
-
-    <section class="test">
-      <div class="container-test">
-        <h2 class="title-test">Test</h2>
-      </div>
-    </section>
 
 
 
