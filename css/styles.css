@@ -347,6 +347,32 @@ body {
     margin-bottom: 50px;
 }
 
+/* Slider Автомобильные запчасти по категориям */
+
+.slider__item a{
+    color: inherit;
+    text-align: center;
+}
+
+.slider__item img {
+  display: block;
+    margin: 0 auto;
+        transition: 500ms ease-in-out;
+}
+
+.slider__item img:hover{
+transform: scale(1.1);
+}
+
+/* Slider Автомобильные запчасти по подкатегориям */
+
+.slider__item.slider__subitem a{
+    color: inherit;
+    text-align: center;
+}
+
+
+
 /* Section slider */
 
 .slider-section{
@@ -354,6 +380,7 @@ body {
     padding-bottom: 25px;
 }
 
+/* 6 карточек в слайдере*/
 .slider__item.slider__subitem{
     flex: 0 0 16.66%;
     max-width: 16.66%;
@@ -363,6 +390,16 @@ body {
 .slider__indicators.slider__indicators--models{
     bottom: -30px;
 }
+
+/* индикатор тоньше */
+.slider__indicators.slider__indicators--models li{
+    height: 3px;
+}
+
+.slider__indicators.slider__indicators--bottom li{
+    height: 3px;
+}
+
 
 /* Section features*/
 
@@ -418,11 +455,17 @@ body {
 }
 
 
+
 /* Slider-section--new */
 
 .slider-section--new{
     padding-top: 50px;
     padding-bottom: 25px;
+}
+
+.slider__item.slider__item--new{
+    flex: 0 0 20%;
+    max-width: 20%;
 }
 
 /* Slider-section--viewed */
@@ -1006,6 +1049,12 @@ transition: color 300ms cubic-bezier(0.2, 0, 0.2, 1);
 }
 
 
+/* Favorite */
+
+.favorite {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
 
 
 
