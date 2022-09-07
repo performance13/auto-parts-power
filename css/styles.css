@@ -349,9 +349,13 @@ body {
 
 /* Slider Автомобильные запчасти по категориям */
 
-.slider__item a{
-    color: inherit;
+.slider__item {
+    /* color: inherit; */
     text-align: center;
+}
+
+a {
+    color: var(--primary-text);
 }
 
 .slider__item img {
@@ -370,8 +374,19 @@ body {
     color: inherit;
     text-align: center;
 }
+/* название подкатегории становится в две строчки */
+.slider__subitem--text{
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
+/* Slider Автомобильные запчасти по марке автомобиля */
 
+/* Увеличение высоты слайдера; это также помогло при transform: scale не выходить эмблемам за рамки слайдера */
+.slider__items.slider__items--height {
+    height: 150px;
+    padding-top: 38px;
+}
 
 /* Section slider */
 
