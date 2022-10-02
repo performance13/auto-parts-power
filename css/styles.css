@@ -283,7 +283,13 @@ body {
     color: var(--color-schemes-maine);
 }
 
-
+/* header__wrapper */
+.header__wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 
 /* Hero */
@@ -294,6 +300,7 @@ body {
     text-align: center;
     background-color:var(--background-top);
     /* color: var(--opposite-text); */
+    height: 100vh;
 }
 
 .hero__title{
