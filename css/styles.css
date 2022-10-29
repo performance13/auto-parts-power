@@ -470,7 +470,8 @@ a {
     line-height: 1.4em;
 }
 
-.feature__text{
+.features__text, 
+.criteria{
     font-size: 14px;
 }
 
