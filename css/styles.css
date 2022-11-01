@@ -312,6 +312,8 @@ body {
     margin-right: auto;
     margin-bottom: 30px;
 
+    margin-top: 50px;;
+
     font-weight: 700;
     font-size: 44px;
     line-height: 1.363;
@@ -338,6 +340,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     color: var(--opposite-text);
+
+    /* width: 100%; */
+    /* max-height: 542px;
+    padding-bottom: 0%; */
+
+
+    
 
 }
 
@@ -510,7 +519,7 @@ a {
 /* Button */
 
 .button{
-    /* font-family:inherit; */
+    /* font-family: inherit; */
     font-family: "Open Sans", sans-serif;
 
     background-color:var(--primary-background);
