@@ -18,6 +18,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- Нормализация стилей -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
+  <!-- CSS файл -->
   <link rel="stylesheet" href="./css/styles.css" />
 
 
@@ -40,15 +45,14 @@
 
 
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
 
 
 </head>
 
 <body>
 
-  <div class="header__wrapper">
+  <div class="header__wrapper ">
     <header class="header-top">
       <div class="container">
 
@@ -157,14 +161,17 @@
     <section class="hero overlays">
       <div class="container">
         <h1 class="hero__title">Оригинальные автозапчасти без пробега в Украине</h1>
+        <div class="button__wrapper">
 
-        <a href="./master-catalog.html" class="button button__primary" target="_blank">Каталог товаров</a>
+          <a href="./master-catalog.html" class="button button__primary" target="_blank">Каталог товаров</a>
 
-        <button class="button button__secondary" type="button">
-          <span class="button__label">Запрос на поиск</span>
-        </button>
+          <button class="button button__secondary" type="button">
+            <span class="button__label">Запрос на поиск</span>
+          </button>
 
-        <!-- <img src="./images/jpg/banner-autoparts.jpg" alt="Баннер" srcset="" width="1600" /> -->
+        </div>
+
+
       </div>
     </section>
 
@@ -900,45 +907,52 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
 
-                    <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+
+
+                      <div class="feedback-recommend-basket-wrapper">
+
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -970,45 +984,120 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
 
-                    <p class="price-current">5000 грн.</p>
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
+
+              </div>
 
 
-                    <p class="delivery-day">Отправим завтра</p>
+              <div class="slider__item slider__item--new">
+
+                <li class="product-item">
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                      <div class="feedback-recommend-basket-wrapper">
+
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
+                      </div>
+
+                      <p class="price-old">10000 <small>грн.</small> </p>
+
+                      <p class="price-current">5000 грн.</p>
+
+
+                      <p class="delivery-day">Отправим завтра</p>
+                    </div>
+
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1040,45 +1129,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1110,45 +1202,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1180,45 +1275,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1250,45 +1348,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1320,45 +1421,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1390,45 +1494,120 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
 
-                    <p class="price-current">5000 грн.</p>
+                    <div class="buy-wrapper">
+                      <a href="" class=" buy-button button">Купить</a>
+                    </div>
+
+                  </article>
+                </li>
+
+              </div>
 
 
-                    <p class="delivery-day">Отправим завтра</p>
+              <div class="slider__item slider__item--new">
+
+                <li class="product-item">
+                  <article class="product-card">
+
+                    <div class="discount-wishlist-wrapper">
+                      <p class="discount">50 %</p>
+
+                      <div class="add-to-wishlist">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </div>
+                    </div>
+
+                    <div class="product-img-wrapper">
+                      <a href="product-link">
+                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
+                      </a>
+                    </div>
+
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+
+                      <div class="feedback-recommend-basket-wrapper">
+
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
+                      </div>
+
+                      <p class="price-old">10000 <small>грн.</small> </p>
+
+                      <p class="price-current">5000 грн.</p>
+
+
+                      <p class="delivery-day">Отправим завтра</p>
+                    </div>
+
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1460,185 +1639,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
-
-                    <div class="buy-wrapper">
-                      <a href="" class=" buy-button button">Купить</a>
-                    </div>
-
-                  </article>
-                </li>
-
-              </div>
-
-
-              <div class="slider__item slider__item--new">
-
-                <li class="product-item">
-
-                  <article class="product-card">
-
-                    <div class="discount-wishlist-wrapper">
-                      <p class="discount">50 %</p>
-
-                      <div class="add-to-wishlist">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </div>
-                    </div>
-
-                    <div class="product-img-wrapper">
-                      <a href="product-link">
-                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
-                      </a>
-                    </div>
-
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-
-                    <div class="feedback-recommend-basket-wrapper">
-
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
-                      </div>
-
-
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
-
-                    </div>
-
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
-
-                    <div class="buy-wrapper">
-                      <a href="" class=" buy-button button">Купить</a>
-                    </div>
-
-                  </article>
-                </li>
-
-              </div>
-
-
-              <div class="slider__item slider__item--new">
-
-                <li class="product-item">
-
-                  <article class="product-card">
-
-                    <div class="discount-wishlist-wrapper">
-                      <p class="discount">50 %</p>
-
-                      <div class="add-to-wishlist">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </div>
-                    </div>
-
-                    <div class="product-img-wrapper">
-                      <a href="product-link">
-                        <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
-                      </a>
-                    </div>
-
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-
-                    <div class="feedback-recommend-basket-wrapper">
-
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
-                      </div>
-
-
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
-
-                    </div>
-
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1696,45 +1738,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1763,45 +1808,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1829,45 +1877,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1895,45 +1946,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -1961,45 +2015,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -2027,45 +2084,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -2093,45 +2153,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -2159,45 +2222,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -2225,45 +2291,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -2291,45 +2360,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -2357,45 +2429,48 @@
                       </a>
                     </div>
 
-                    <h3 class="product-title">Головка блока цилиндров</h3>
-                    <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+                    <div class="product-text-wrapper">
+                      <h3 class="product-title">Головка блока цилиндров</h3>
+                      <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-                    <div class="feedback-recommend-basket-wrapper">
+                      <div class="feedback-recommend-basket-wrapper">
 
-                      <div class="feedback-recommend-wrapper">
-                        <ul class="feedback-rating">
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star"></ion-icon>
-                          </li>
-                          <li>
-                            <ion-icon name="star-outline"></ion-icon>
-                          </li>
-                        </ul>
-                        <p class="feedback-recommend">13 рекомендаций</p>
+                        <div class="feedback-recommend-wrapper">
+                          <ul class="feedback-rating">
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li>
+                              <ion-icon name="star-outline"></ion-icon>
+                            </li>
+                          </ul>
+                          <p class="feedback-recommend">13 рекомендаций</p>
+                        </div>
+
+
+                        <div class="add-basket">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+
                       </div>
 
+                      <p class="price-old">10000 <small>грн.</small> </p>
 
-                      <div class="add-basket">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </div>
+                      <p class="price-current">5000 грн.</p>
 
+
+                      <p class="delivery-day">Отправим завтра</p>
                     </div>
 
-                    <p class="price-old">10000 <small>грн.</small> </p>
-
-                    <p class="price-current">5000 грн.</p>
-
-
-                    <p class="delivery-day">Отправим завтра</p>
 
                     <div class="buy-wrapper">
                       <a href="" class=" buy-button button">Купить</a>
@@ -2521,45 +2596,48 @@
                 </a>
               </div>
 
-              <h3 class="product-title">Головка блока цилиндров</h3>
-              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+              <div class="product-text-wrapper">
+                <h3 class="product-title">Головка блока цилиндров</h3>
+                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback-recommend-basket-wrapper">
+                <div class="feedback-recommend-basket-wrapper">
 
-                <div class="feedback-recommend-wrapper">
-                  <ul class="feedback-rating">
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star-outline"></ion-icon>
-                    </li>
-                  </ul>
-                  <p class="feedback-recommend">13 рекомендаций</p>
+                  <div class="feedback-recommend-wrapper">
+                    <ul class="feedback-rating">
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </li>
+                    </ul>
+                    <p class="feedback-recommend">13 рекомендаций</p>
+                  </div>
+
+
+                  <div class="add-basket">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </div>
+
                 </div>
 
+                <p class="price-old">10000 <small>грн.</small> </p>
 
-                <div class="add-basket">
-                  <ion-icon name="cart-outline"></ion-icon>
-                </div>
+                <p class="price-current">5000 грн.</p>
 
+
+                <p class="delivery-day">Отправим завтра</p>
               </div>
 
-              <p class="price-old">10000 <small>грн.</small> </p>
-
-              <p class="price-current">5000 грн.</p>
-
-
-              <p class="delivery-day">Отправим завтра</p>
 
               <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
@@ -2586,45 +2664,48 @@
                 </a>
               </div>
 
-              <h3 class="product-title">Головка блока цилиндров</h3>
-              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+              <div class="product-text-wrapper">
+                <h3 class="product-title">Головка блока цилиндров</h3>
+                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback-recommend-basket-wrapper">
+                <div class="feedback-recommend-basket-wrapper">
 
-                <div class="feedback-recommend-wrapper">
-                  <ul class="feedback-rating">
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star-outline"></ion-icon>
-                    </li>
-                  </ul>
-                  <p class="feedback-recommend">13 рекомендаций</p>
+                  <div class="feedback-recommend-wrapper">
+                    <ul class="feedback-rating">
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </li>
+                    </ul>
+                    <p class="feedback-recommend">13 рекомендаций</p>
+                  </div>
+
+
+                  <div class="add-basket">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </div>
+
                 </div>
 
+                <p class="price-old">10000 <small>грн.</small> </p>
 
-                <div class="add-basket">
-                  <ion-icon name="cart-outline"></ion-icon>
-                </div>
+                <p class="price-current">5000 грн.</p>
 
+
+                <p class="delivery-day">Отправим завтра</p>
               </div>
 
-              <p class="price-old">10000 <small>грн.</small> </p>
-
-              <p class="price-current">5000 грн.</p>
-
-
-              <p class="delivery-day">Отправим завтра</p>
 
               <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
@@ -2651,45 +2732,48 @@
                 </a>
               </div>
 
-              <h3 class="product-title">Головка блока цилиндров</h3>
-              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+              <div class="product-text-wrapper">
+                <h3 class="product-title">Головка блока цилиндров</h3>
+                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback-recommend-basket-wrapper">
+                <div class="feedback-recommend-basket-wrapper">
 
-                <div class="feedback-recommend-wrapper">
-                  <ul class="feedback-rating">
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star-outline"></ion-icon>
-                    </li>
-                  </ul>
-                  <p class="feedback-recommend">13 рекомендаций</p>
+                  <div class="feedback-recommend-wrapper">
+                    <ul class="feedback-rating">
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </li>
+                    </ul>
+                    <p class="feedback-recommend">13 рекомендаций</p>
+                  </div>
+
+
+                  <div class="add-basket">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </div>
+
                 </div>
 
+                <p class="price-old">10000 <small>грн.</small> </p>
 
-                <div class="add-basket">
-                  <ion-icon name="cart-outline"></ion-icon>
-                </div>
+                <p class="price-current">5000 грн.</p>
 
+
+                <p class="delivery-day">Отправим завтра</p>
               </div>
 
-              <p class="price-old">10000 <small>грн.</small> </p>
-
-              <p class="price-current">5000 грн.</p>
-
-
-              <p class="delivery-day">Отправим завтра</p>
 
               <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
@@ -2716,45 +2800,48 @@
                 </a>
               </div>
 
-              <h3 class="product-title">Головка блока цилиндров</h3>
-              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+              <div class="product-text-wrapper">
+                <h3 class="product-title">Головка блока цилиндров</h3>
+                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback-recommend-basket-wrapper">
+                <div class="feedback-recommend-basket-wrapper">
 
-                <div class="feedback-recommend-wrapper">
-                  <ul class="feedback-rating">
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star-outline"></ion-icon>
-                    </li>
-                  </ul>
-                  <p class="feedback-recommend">13 рекомендаций</p>
+                  <div class="feedback-recommend-wrapper">
+                    <ul class="feedback-rating">
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </li>
+                    </ul>
+                    <p class="feedback-recommend">13 рекомендаций</p>
+                  </div>
+
+
+                  <div class="add-basket">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </div>
+
                 </div>
 
+                <p class="price-old">10000 <small>грн.</small> </p>
 
-                <div class="add-basket">
-                  <ion-icon name="cart-outline"></ion-icon>
-                </div>
+                <p class="price-current">5000 грн.</p>
 
+
+                <p class="delivery-day">Отправим завтра</p>
               </div>
 
-              <p class="price-old">10000 <small>грн.</small> </p>
-
-              <p class="price-current">5000 грн.</p>
-
-
-              <p class="delivery-day">Отправим завтра</p>
 
               <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
@@ -2781,45 +2868,48 @@
                 </a>
               </div>
 
-              <h3 class="product-title">Головка блока цилиндров</h3>
-              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+              <div class="product-text-wrapper">
+                <h3 class="product-title">Головка блока цилиндров</h3>
+                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback-recommend-basket-wrapper">
+                <div class="feedback-recommend-basket-wrapper">
 
-                <div class="feedback-recommend-wrapper">
-                  <ul class="feedback-rating">
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star-outline"></ion-icon>
-                    </li>
-                  </ul>
-                  <p class="feedback-recommend">13 рекомендаций</p>
+                  <div class="feedback-recommend-wrapper">
+                    <ul class="feedback-rating">
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </li>
+                    </ul>
+                    <p class="feedback-recommend">13 рекомендаций</p>
+                  </div>
+
+
+                  <div class="add-basket">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </div>
+
                 </div>
 
+                <p class="price-old">10000 <small>грн.</small> </p>
 
-                <div class="add-basket">
-                  <ion-icon name="cart-outline"></ion-icon>
-                </div>
+                <p class="price-current">5000 грн.</p>
 
+
+                <p class="delivery-day">Отправим завтра</p>
               </div>
 
-              <p class="price-old">10000 <small>грн.</small> </p>
-
-              <p class="price-current">5000 грн.</p>
-
-
-              <p class="delivery-day">Отправим завтра</p>
 
               <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
@@ -2846,45 +2936,48 @@
                 </a>
               </div>
 
-              <h3 class="product-title">Головка блока цилиндров</h3>
-              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+              <div class="product-text-wrapper">
+                <h3 class="product-title">Головка блока цилиндров</h3>
+                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback-recommend-basket-wrapper">
+                <div class="feedback-recommend-basket-wrapper">
 
-                <div class="feedback-recommend-wrapper">
-                  <ul class="feedback-rating">
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star-outline"></ion-icon>
-                    </li>
-                  </ul>
-                  <p class="feedback-recommend">13 рекомендаций</p>
+                  <div class="feedback-recommend-wrapper">
+                    <ul class="feedback-rating">
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </li>
+                    </ul>
+                    <p class="feedback-recommend">13 рекомендаций</p>
+                  </div>
+
+
+                  <div class="add-basket">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </div>
+
                 </div>
 
+                <p class="price-old">10000 <small>грн.</small> </p>
 
-                <div class="add-basket">
-                  <ion-icon name="cart-outline"></ion-icon>
-                </div>
+                <p class="price-current">5000 грн.</p>
 
+
+                <p class="delivery-day">Отправим завтра</p>
               </div>
 
-              <p class="price-old">10000 <small>грн.</small> </p>
-
-              <p class="price-current">5000 грн.</p>
-
-
-              <p class="delivery-day">Отправим завтра</p>
 
               <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
@@ -2911,45 +3004,48 @@
                 </a>
               </div>
 
-              <h3 class="product-title">Головка блока цилиндров</h3>
-              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+              <div class="product-text-wrapper">
+                <h3 class="product-title">Головка блока цилиндров</h3>
+                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback-recommend-basket-wrapper">
+                <div class="feedback-recommend-basket-wrapper">
 
-                <div class="feedback-recommend-wrapper">
-                  <ul class="feedback-rating">
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star-outline"></ion-icon>
-                    </li>
-                  </ul>
-                  <p class="feedback-recommend">13 рекомендаций</p>
+                  <div class="feedback-recommend-wrapper">
+                    <ul class="feedback-rating">
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </li>
+                    </ul>
+                    <p class="feedback-recommend">13 рекомендаций</p>
+                  </div>
+
+
+                  <div class="add-basket">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </div>
+
                 </div>
 
+                <p class="price-old">10000 <small>грн.</small> </p>
 
-                <div class="add-basket">
-                  <ion-icon name="cart-outline"></ion-icon>
-                </div>
+                <p class="price-current">5000 грн.</p>
 
+
+                <p class="delivery-day">Отправим завтра</p>
               </div>
 
-              <p class="price-old">10000 <small>грн.</small> </p>
-
-              <p class="price-current">5000 грн.</p>
-
-
-              <p class="delivery-day">Отправим завтра</p>
 
               <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
@@ -2976,110 +3072,48 @@
                 </a>
               </div>
 
-              <h3 class="product-title">Головка блока цилиндров</h3>
-              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
+              <div class="product-text-wrapper">
+                <h3 class="product-title">Головка блока цилиндров</h3>
+                <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
 
-              <div class="feedback-recommend-basket-wrapper">
+                <div class="feedback-recommend-basket-wrapper">
 
-                <div class="feedback-recommend-wrapper">
-                  <ul class="feedback-rating">
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star-outline"></ion-icon>
-                    </li>
-                  </ul>
-                  <p class="feedback-recommend">13 рекомендаций</p>
+                  <div class="feedback-recommend-wrapper">
+                    <ul class="feedback-rating">
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star"></ion-icon>
+                      </li>
+                      <li>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </li>
+                    </ul>
+                    <p class="feedback-recommend">13 рекомендаций</p>
+                  </div>
+
+
+                  <div class="add-basket">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </div>
+
                 </div>
 
+                <p class="price-old">10000 <small>грн.</small> </p>
 
-                <div class="add-basket">
-                  <ion-icon name="cart-outline"></ion-icon>
-                </div>
+                <p class="price-current">5000 грн.</p>
 
+
+                <p class="delivery-day">Отправим завтра</p>
               </div>
 
-              <p class="price-old">10000 <small>грн.</small> </p>
-
-              <p class="price-current">5000 грн.</p>
-
-
-              <p class="delivery-day">Отправим завтра</p>
-
-              <div class="buy-wrapper">
-                <a href="" class=" buy-button button">Купить</a>
-              </div>
-
-            </article>
-          </li>
-
-          <li class="product-item">
-
-            <article class="product-card">
-
-              <div class="discount-wishlist-wrapper">
-                <p class="discount">50 %</p>
-
-                <div class="add-to-wishlist">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </div>
-              </div>
-
-              <div class="product-img-wrapper">
-                <a href="product-link">
-                  <img class="product-photo" src="./test/istockphoto-480739962-612x612.jpg">
-                </a>
-              </div>
-
-              <h3 class="product-title">Головка блока цилиндров</h3>
-              <p class="product-description">Головка блока цилиндров Renault Kangoo 1995-2005 гг.в.</p>
-
-              <div class="feedback-recommend-basket-wrapper">
-
-                <div class="feedback-recommend-wrapper">
-                  <ul class="feedback-rating">
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star"></ion-icon>
-                    </li>
-                    <li>
-                      <ion-icon name="star-outline"></ion-icon>
-                    </li>
-                  </ul>
-                  <p class="feedback-recommend">13 рекомендаций</p>
-                </div>
-
-
-                <div class="add-basket">
-                  <ion-icon name="cart-outline"></ion-icon>
-                </div>
-
-              </div>
-
-              <p class="price-old">10000 <small>грн.</small> </p>
-
-              <p class="price-current">5000 грн.</p>
-
-
-              <p class="delivery-day">Отправим завтра</p>
 
               <div class="buy-wrapper">
                 <a href="" class=" buy-button button">Купить</a>
