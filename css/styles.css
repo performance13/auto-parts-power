@@ -1786,6 +1786,7 @@ iframe{
         rgba(47, 48, 58, 0.4)), */
         url(../images/jpg/about-background1.jpg);
         /* background-size: cover; */
+    display: none;
     position: fixed;
     z-index: 16;
     left: 0;
@@ -1847,6 +1848,12 @@ iframe{
     margin-right: 14px;
 }
 /* button fild end */
+
+
+
+
+
+
 
 
 /*   < !-- modal window master-catalog.html start --> */
@@ -1942,6 +1949,10 @@ iframe{
 .popup__title {
     font-size: 40px;
     margin: 0px 0px 1em 0px;
+}
+
+body.lock {
+    overflow: hidden;
 }
 
 .popup__text {}

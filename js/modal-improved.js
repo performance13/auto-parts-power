@@ -1,3 +1,7 @@
+// не сработал у меня, автор: 
+//https://www.youtube.com/watch?v=qoO1ZNi1LyI
+
+
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll(".lock-padding");
@@ -58,9 +62,11 @@ function popupClose(popupActive, doUnlock = true) {
 function bodyLock() {
   const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 
-  for (let index = 0; index < lockPadding.length; index++){
-    const el = lockPadding[index];
-    el.style.paddingRight = lockPaddingValue;
+  if (lockPadding.length > 0) {
+    for (let index = 0; index < lockPadding.length; index++) {
+      const el = lockPadding[index];
+      el.style.paddingRight = lockPaddingValue;
+    }
   }
   body.style.paddingRight = lockPaddingValue;
   body.classList.add('lock');
@@ -73,9 +79,11 @@ function bodyLock() {
 
 function bodyUnLock() {
   setTimeout(function () {
-    for (let index = 0; index < lockPadding.length; index++) {
-      const el = lockPadding[index];
-      el.style.lockPadding = '0px';
+    if (lockPadding.length > 0) {
+      for (let index = 0; index < lockPadding.length; index++) {
+        const el = lockPadding[index];
+        el.style.lockPadding = '0px';
+      }
     }
     body.style.paddingRight = '0px';
     body.classList.remove('lock');
