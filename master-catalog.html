@@ -72,9 +72,10 @@
             </li>
 
             <div class="quest">
-              <li class="site-nav__item"><a href="./master-catalog.html" class="site-nav__link  current">Каталог</a>
+              <li class="site-nav__item"><a href="./master-catalog.html" class="site-nav__link current">Каталог</a>
               </li>
-              <li class=" site-nav__item"><a href="#request" class="site-nav__link">Запрос по
+              <li class="site-nav__item"><a href="#modal-request" class="site-nav__link"
+                  data-modal-btn="modal-request">Запрос по
                   параметрам</a>
               </li>
             </div>
@@ -111,9 +112,17 @@
 
         <address>
           <ul class="contact__list">
-            <li class="contact__item"><a href="tel:+380997177427" class="contact__link">(099) 717 74 27</a>
+            <li class="contact__item">
+              <a href="tel:+380997177427" class="contact__link">
+                <svg width="10" height="16" class="contacts__icon">
+                  <use href="./images/svg/icons.svg#smartphone"></use>
+                </svg>(099) 717 74 27</a>
             </li>
-            <li class="contact__item"><a href="mailto:info@auto-parts.com" class="contact__link">info@auto-parts.com</a>
+
+            <li class="contact__item"><a href="mailto:info@auto-parts.com" class="contact__link">
+                <svg width="16" height="12" class="contacts__icon">
+                  <use href="./images/svg/icons.svg#envelope"></use>
+                </svg>info@auto-parts.com</a>
             </li>
           </ul>
         </address>
@@ -131,13 +140,13 @@
 
 
 
-        <form action="./index.html" class="form-input-search">
+        <!-- <form action="./index.html" class="form-input-search">
           <input class="input-search" type="search" placeholder="Какую запчасть ищите?">
           <button class="button-search" type="submit">
             <ion-icon name="search">
             </ion-icon>
           </button>
-        </form>
+        </form> -->
 
 
 
@@ -172,8 +181,6 @@
 
   <main>
 
-
-
     <section class="section">
       <div class="container">
         <div class="button__fild">
@@ -198,578 +205,591 @@
         <h2 class="title__visibility-hidden">Каталог автозапчастей</h2>
         <h3 id="car-model" class="section__title">Выбор запчастей по марке автомобиля</h3>
 
-        <ul class="brand__list">
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/audi-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+        <!--  form-search start -->
+        <section class="section"
+          style="background-color:var(--background-middle);padding-top:25px;                                         padding-bottom:100px">
+          <div class="container">
+            <form class="form-search" action="http://index.html/search/" method="get">
+              <h3 class="title__visibility-hidden">Поиск по сайту</h3>
+              <input class="form-search__input" type="text" name="" placeholder="">
+              <label class="form-search__label" for="">найти...</label>
+              <!-- <button type="submit" value="найти"> -->
+            </form>
+          </div>
+          <!-- form-search   end -->
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/alfa-romeo-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+          <ul class="brand__list">
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/audi-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/aston-martin-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/alfa-romeo-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/bmw-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/aston-martin-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/bentley-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/bmw-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/buick-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/bentley-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/chevrolet-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/buick-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/cadillac-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/chevrolet-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/chrysler-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/cadillac-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/citroën-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/chrysler-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/dacia-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/citroën-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/daewoo-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/dacia-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/daihatsu-logo.png" alt="" owidth="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/daewoo-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/dodge-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/daihatsu-logo.png" alt="" owidth="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/ferrari-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/dodge-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/fiat-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/ferrari-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/ford-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/fiat-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/gmc-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/ford-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/honda-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/gmc-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/hummer-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/honda-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/hyundai-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/hummer-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/infiniti-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/hyundai-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/isuzu-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/infiniti-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/iveco-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/isuzu-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/jaguar-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/iveco-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/jeep-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/jaguar-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/kia-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/jeep-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/lamborghini-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/kia-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/lancia-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/lamborghini-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/land-rover-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/lancia-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/lexus-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/land-rover-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/lincoln-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/lexus-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/lotus-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/lincoln-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/maserati-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/lotus-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/mazda-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/maserati-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/mercedes-benz-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/mazda-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/mini-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/mercedes-benz-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/mitsubishi-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/mini-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/nissan-logo.png"" width=" 100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/mitsubishi-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/opel-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/nissan-logo.png"" width=" 100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/peugeot-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/opel-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/plymouth-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/peugeot-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/pontiac-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/plymouth-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/porsche-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/pontiac-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/renault-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/porsche-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/rover-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/renault-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/saab-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/rover-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/seat-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/saab-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/skoda-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/seat-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/smart-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/skoda-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/ssangyong-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/smart-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/subaru-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/ssangyong-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/suzuki-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/subaru-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/tesla-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/suzuki-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/toyota-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/tesla-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/volvo-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/toyota-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-          <li class="brand__item">
-            <div class="auto-brand__thumb">
-              <a href="#" lang="en">
-                <div class="img-wrapper">
-                  <img src="./images/png/models/vw-logo.png" alt="" width="100%" />
-                </div>
-              </a>
-            </div>
-          </li>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/volvo-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
 
-        </ul>
+            <li class="brand__item">
+              <div class="auto-brand__thumb">
+                <a href="#" lang="en">
+                  <div class="img-wrapper">
+                    <img src="./images/png/models/vw-logo.png" alt="" width="100%" />
+                  </div>
+                </a>
+              </div>
+            </li>
+
+          </ul>
       </div>
 
     </section>
@@ -778,167 +798,180 @@
       <div class="container">
         <h3 id="car-category" class="section__title">Выбор запчастей по категориям</h3>
 
-        <ul class="parts-categories__list">
+        <!--  form-search start -->
+        <section class="section"
+          style="background-color:var(--background-middle);padding-top:25px;                                         padding-bottom:100px">
+          <div class="container">
+            <form class="form-search" action="http://index.html/search/" method="get">
+              <h3 class="title__visibility-hidden">Поиск по сайту</h3>
+              <input class="form-search__input" type="text" name="" placeholder="">
+              <label class="form-search__label" for="">найти...</label>
+              <!-- <button type="submit" value="найти"> -->
+            </form>
+          </div>
+          <!-- form-search   end -->
 
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/body-parts.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Кузовные детали</p>
-            </a>
+          <ul class="parts-categories__list">
 
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/brakes.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Тормозная система</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/chassis-shafts.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Полуоси</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/radiator-cooling-fan.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Вентиляторы охлаждения радиатора</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/cooling-radiator.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Радиатор охлаждения</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/electronic-parts.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Электронные компоненты</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/engine-engineparts.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Двигатели, детали двигателя</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/exhaust-system.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Выхлопная система</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/fuel-system.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Топливная система</p>
-            </a>
-          </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/body-parts.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Кузовные детали</p>
+              </a>
 
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/gearbox-transmission.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Коробка передач</p>
-            </a>
-          </li>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/brakes.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Тормозная система</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/chassis-shafts.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Полуоси</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/radiator-cooling-fan.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Вентиляторы охлаждения радиатора</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/cooling-radiator.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Радиатор охлаждения</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/electronic-parts.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Электронные компоненты</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/engine-engineparts.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Двигатели, детали двигателя</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/exhaust-system.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Выхлопная система</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/fuel-system.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Топливная система</p>
+              </a>
+            </li>
 
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/airconditioning-system.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Система кондиционирования</p>
-            </a>
-          </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/gearbox-transmission.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Коробка передач</p>
+              </a>
+            </li>
 
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/interior.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Интерьер</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/lights.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Фары, фонари, поворотники, противотуманки</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/locking-system.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Замки, ручки</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/mirrors.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Зеркала</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/radio-audio-infotainment.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Аудио техника и аккустика</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/steering.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Рули</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/steering.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Рулевые рейки</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/switches-contacts.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Кнопки и переключатели</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/switches-contacts.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Стеклоподъемники</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/tools-equipment.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Инструменты</p>
-            </a>
-          </li>
-          <li class="parts-categories__item"> <a href="">
-              <div class="img-wrapper">
-                <img src="./images/svg/categories/wipers.svg" alt="" width="100%" />
-              </div>
-              <p class="name-category">Механизм дворников</p>
-            </a>
-          </li>
-        </ul>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/airconditioning-system.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Система кондиционирования</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/interior.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Интерьер</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/lights.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Фары, фонари, поворотники, противотуманки</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/locking-system.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Замки, ручки</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/mirrors.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Зеркала</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/radio-audio-infotainment.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Аудио техника и аккустика</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/steering.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Рули</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/steering.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Рулевые рейки</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/switches-contacts.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Кнопки и переключатели</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/switches-contacts.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Стеклоподъемники</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/tools-equipment.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Инструменты</p>
+              </a>
+            </li>
+            <li class="parts-categories__item"> <a href="">
+                <div class="img-wrapper">
+                  <img src="./images/svg/categories/wipers.svg" alt="" width="100%" />
+                </div>
+                <p class="name-category">Механизм дворников</p>
+              </a>
+            </li>
+          </ul>
 
       </div>
 
@@ -1081,25 +1114,24 @@
   </footer>
 
 
-  <!-- modal-new start -->
-
+  <!-- modal window start -->
   <div class="modal__backdrop" data-modal-window="modal-request">
     <div class="modal__body">
 
-      <div class="modal__close">
+      <button class="button modal__close">
         <svg class="modal-form__svg modal-form__svg--close">
           <use href="./images/svg/icons.svg#close-icon"></use>
         </svg>
-      </div>
+      </button>
 
       <form action="" class="modal-form">
 
         <p class="modal__subtitle">Оставьте запрос - мы сообщим о наличии товара</p>
 
-        <label for="" class="modal-form__discription">
+        <label for="person" class="modal-form__discription">
           <span>Имя</span>
           <span class="modal-form__input-wrapper">
-            <input class="modal-form__input" name="person-form" type="text" required>
+            <input id="person" class="modal-form__input" name="person-form" type="text" required>
             <span class="modal-form__icon">
               <svg class="modal-form__svg">
                 <use href="./images/svg/icons.svg#person-form"></use>
@@ -1108,10 +1140,10 @@
           </span>
         </label>
 
-        <label for="" class="modal-form__discription">
+        <label for="phone" class="modal-form__discription">
           <span>Телефон</span>
           <span class="modal-form__input-wrapper">
-            <input class="modal-form__input" name="phone-form" title="xxx xxx xx xx" type="tel"
+            <input id="phone" class="modal-form__input" name="phone-form" title="xxx xxx xx xx" type="tel"
               pattern="[0-9]{3} [0-9}{3} [0-9}{2} [0-9]{2}" minlenght="10" required>
             <span class="modal-form__icon">
               <svg class="modal-form__svg">
@@ -1121,10 +1153,10 @@
           </span>
         </label>
 
-        <label for="" class="modal-form__discription">
+        <label for="email" class="modal-form__discription">
           <span>Почта</span>
           <span class="modal-form__input-wrapper">
-            <input class="modal-form__input" name="email-form" type="email" required>
+            <input id="email" class="modal-form__input" name="email-form" type="email" required>
             <span class="modal-form__icon">
               <svg class="modal-form__svg">
                 <use href="./images/svg/icons.svg#email-form"></use>
@@ -1172,11 +1204,11 @@
             </label>
           </li>
           <!-- <li class="input__comment-item">
-            <label class=" modal-form__discription modal-form__discription_textarea">
-              <span class="name-parametr">Сторона; размеры; вес; цвет</span>
-              <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
-            </label>
-          </li> -->
+              <label class=" modal-form__discription modal-form__discription_textarea">
+                <span class="name-parametr">Сторона; размеры; вес; цвет</span>
+                <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
+              </label>
+            </li> -->
           <li class="input__comment-item">
             <label class=" modal-form__discription modal-form__discription_textarea">
               <span class="name-parametr">Дополнительная информация</span>
@@ -1191,16 +1223,7 @@
             </label>
           </li>
 
-
-
-
-
-
-
-
-
         </ul>
-
 
         <label for="check-box" class="modal-form__agree-newsletter">
           <input type="checkbox" id="check-box" value="agree" name="check" class="modal-form__checkbox" required />
@@ -1220,15 +1243,9 @@
 
       </form>
 
-
-
-
     </div>
-
-
   </div>
-
-  <!-- modal-new end -->
+  <!-- modal window end -->
 
 
 

@@ -61,9 +61,9 @@
 
                         <div class="quest">
                             <li class="site-nav__item"><a href="./master-catalog.html"
-                                    class="site-nav__link">Каталог</a>
-                            </li>
-                            <li class=" site-nav__item"><a href="#request" class="site-nav__link">Запрос по
+                                    class="site-nav__link">Каталог</a></li>
+                            <li class=" site-nav__item"><a href="#modal-request" data-modal-btn="modal-request"
+                                    class="site-nav__link">Запрос по
                                     параметрам</a>
                             </li>
                         </div>
@@ -101,34 +101,41 @@
 
                 <address>
                     <ul class="contact__list">
-                        <li class="contact__item"><a href="tel:+380997177427" class="contact__link">(099) 717 74 27</a>
+                        <li class="contact__item">
+                            <a href="tel:+380997177427" class="contact__link">
+                                <svg width="10" height="16" class="contacts__icon">
+                                    <use href="./images/svg/icons.svg#smartphone"></use>
+                                </svg>(099) 717 74 27</a>
                         </li>
-                        <li class="contact__item"><a href="mailto:info@auto-parts.com"
-                                class="contact__link">info@auto-parts.com</a>
+
+                        <li class="contact__item"><a href="mailto:info@auto-parts.com" class="contact__link">
+                                <svg width="16" height="12" class="contacts__icon">
+                                    <use href="./images/svg/icons.svg#envelope"></use>
+                                </svg>info@auto-parts.com</a>
                         </li>
                     </ul>
                 </address>
                 <!-- <li>
-                  <a href="">Товары для ТО
-                    <img src="./images/svg/" alt="" srcset="" width="50" />
-                  </a>
-                </li> -->
+                          <a href="">Товары для ТО
+                            <img src="./images/svg/" alt="" srcset="" width="50" />
+                          </a>
+                        </li> -->
 
                 <!-- <ul>
-                  <li><a href="">On-line заказ</a></li>
-                  <li><a href="">Регистрация</a></li>
-                  <li><a href="">Личный кабинет</a></li>
-                </ul> -->
+                          <li><a href="">On-line заказ</a></li>
+                          <li><a href="">Регистрация</a></li>
+                          <li><a href="">Личный кабинет</a></li>
+                        </ul> -->
 
 
 
-                <form action="./index.html" class="form-input-search">
-                    <input class="input-search" type="search" placeholder="Какую запчасть ищите?">
-                    <button class="button-search" type="submit">
-                        <ion-icon name="search">
-                        </ion-icon>
-                    </button>
-                </form>
+                <!-- <form action="./index.html" class="form-input-search">
+                            <input class="input-search" type="search" placeholder="Какую запчасть ищите?">
+                            <button class="button-search" type="submit">
+                                <ion-icon name="search">
+                                </ion-icon>
+                            </button>
+                        </form> -->
 
 
 
@@ -161,9 +168,91 @@
         </header>
     </div>
 
-    <section class="about-us-content">
-        <div class="container"></div>
-    </section>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="title__visibility-hidden">Оплата</h2>
+                <h3 class="subtitle">Способы оплаты</h3>
+                <p class="payment-text">Условия оплаты - это важная составляющая коммерческих отношений. Условия оплаты
+                    бывают разными и все
+                    они подразумевают предварительную обоюдную договоренность
+                    сторон процесса покупки-продажи - продавца и покупателя. Мы предлагаем такие способы оплаты:
+                    предоплата, оплата по факту, належенный платеж.</p>
+
+                <details open class="payment-details">
+                    <summary class="payment-summary">Способы оплаты:</summary>
+                    <ol class="payment-list">
+                        <li class="payment-item">Без предоплаты
+                            <p class="payment-description">Оплата осуществляется
+                                покупателем в
+                                отделении службы
+                                доставки или курьеру службы доставки
+                                после получения
+                                товара
+                            </p>
+                        </li>
+                        <li class="payment-item">Предоплата
+                            <p class="payment-description">Платеж за товар
+                                осуществляется
+                                покупателем продавцу по
+                                обоюдному согласию до отправки заказа
+                                службой доставки. Предоплата может быть полной (вся сумма) или частичной (определенный
+                                минимум)
+                            </p>
+                            <ol class="payment-list">
+                                <li class="payment-item payment-gap">Частичная предоплата
+                                    <p class="payment-description">Согласованная часть платежа продавцом с покупателем
+                                        осуществляется до отправки
+                                        заказа
+                                        службой
+                                        доставки
+                                    </p>
+                                </li>
+                                <li class="payment-item payment-gap">Полная предоплата
+                                    <p class="payment-description">Оплата в
+                                        полном размере
+                                        за выбраный товар
+                                        осуществляется покупателем до отправки заказа
+                                        службой доставки
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </details>
+
+                <details class="payment-details">
+                    <summary class="payment-summary">Другие способы оплаты:</summary>
+                    <ol class="payment-list">
+                        <li class="payment-item">Оплата по факту <p class="payment-description">Оплата по факту - это
+                                передача
+                                денег с рук в руки по
+                                факту получения товара. Покупатель может
+                                оплатить товар на месте выполнения соглашения (самовывоз) или заплатить за товар после
+                                его
+                                доставки в указанное место</p>
+                            <ol class="payment-list">
+                                <li class="payment-item payment-gap">Оплата наличными во время самовывоза товара
+                                    покупателем</li>
+                                <li class="payment-item payment-gap">Оплата наличными во время доставки товара силами
+                                    компании
+                                    "Auto-parts
+                                    Ukraine"
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="payment-item">Оплата криптовалютой USDT, BTC, ETH на криптокошелек
+                            <ol class="payment-list">
+                                <li class="payment-item payment-gap">Адрес криптовалютного кошелька для USDT</li>
+                                <li class="payment-item payment-gap">Адрес криптовалютного кошелька для BTC</li>
+                                <li class="payment-item payment-gap">Адрес криптовалютного кошелька для ETH</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </details>
+
+            </div>
+        </section>
     </main>
 
     <footer class="footer-box">
@@ -311,6 +400,153 @@
             </div>
         </div>
     </footer>
+
+    <!-- modal window start -->
+    <div class="modal__backdrop" data-modal-window="modal-request">
+        <div class="modal__body">
+
+            <button class="button modal__close">
+                <svg class="modal-form__svg modal-form__svg--close">
+                    <use href="./images/svg/icons.svg#close-icon"></use>
+                </svg>
+            </button>
+
+            <form action="" class="modal-form">
+
+                <p class="modal__subtitle">Оставьте запрос - мы сообщим о наличии товара</p>
+
+                <label for="person" class="modal-form__discription">
+                    <span>Имя</span>
+                    <span class="modal-form__input-wrapper">
+                        <input id="person" class="modal-form__input" name="person-form" type="text" required>
+                        <span class="modal-form__icon">
+                            <svg class="modal-form__svg">
+                                <use href="./images/svg/icons.svg#person-form"></use>
+                            </svg>
+                        </span>
+                    </span>
+                </label>
+
+                <label for="phone" class="modal-form__discription">
+                    <span>Телефон</span>
+                    <span class="modal-form__input-wrapper">
+                        <input id="phone" class="modal-form__input" name="phone-form" title="xxx xxx xx xx" type="tel"
+                            pattern="[0-9]{3} [0-9}{3} [0-9}{2} [0-9]{2}" minlenght="10" required>
+                        <span class="modal-form__icon">
+                            <svg class="modal-form__svg">
+                                <use href="./images/svg/icons.svg#phone-form"></use>
+                            </svg>
+                        </span>
+                    </span>
+                </label>
+
+                <label for="email" class="modal-form__discription">
+                    <span>Почта</span>
+                    <span class="modal-form__input-wrapper">
+                        <input id="email" class="modal-form__input" name="email-form" type="email" required>
+                        <span class="modal-form__icon">
+                            <svg class="modal-form__svg">
+                                <use href="./images/svg/icons.svg#email-form"></use>
+                            </svg>
+                        </span>
+                    </span>
+                </label>
+
+
+                <ul class="flex-input__comment">
+                    <li class="input__comment-item">
+                        <label class=" modal-form__discription modal-form__discription_textarea">
+                            <span class="name-parametr">Модель</span>
+                            <input name="comment-form" class="input__comment modal-form__input"
+                                placeholder="Введите текст"></input>
+                        </label>
+                    </li>
+                    <li class="input__comment-item">
+                        <label class=" modal-form__discription modal-form__discription_textarea">
+                            <span class="name-parametr">Марка</span>
+                            <input name="comment-form" class="input__comment modal-form__input"
+                                placeholder="Введите текст"></input>
+                        </label>
+                    </li>
+                    <li class="input__comment-item">
+                        <label class=" modal-form__discription modal-form__discription_textarea">
+                            <span class="name-parametr">Тип кузова</span>
+                            <input name="comment-form" class="input__comment modal-form__input"
+                                placeholder="Введите текст"></input>
+                        </label>
+                    </li>
+                    <li class="input__comment-item">
+                        <label class=" modal-form__discription modal-form__discription_textarea">
+                            <span class="name-parametr">Модернизация автомобиля</span>
+                            <input name="comment-form" class="input__comment modal-form__input"
+                                placeholder="Введите текст"></input>
+                        </label>
+                    </li>
+                    <li class="input__comment-item">
+                        <label class=" modal-form__discription modal-form__discription_textarea">
+                            <span class="name-parametr">Год выпуска</span>
+                            <input name="comment-form" class="input__comment modal-form__input"
+                                placeholder="Введите текст"></input>
+                        </label>
+                    </li>
+                    <li class="input__comment-item">
+                        <label class=" modal-form__discription modal-form__discription_textarea">
+                            <span class="name-parametr">Объем и тип двигателя</span>
+                            <input name="comment-form" class="input__comment modal-form__input"
+                                placeholder="Введите текст"></input>
+                        </label>
+                    </li>
+                    <!-- <li class="input__comment-item">
+              <label class=" modal-form__discription modal-form__discription_textarea">
+                <span class="name-parametr">Сторона; размеры; вес; цвет</span>
+                <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
+              </label>
+            </li> -->
+                    <li class="input__comment-item">
+                        <label class=" modal-form__discription modal-form__discription_textarea">
+                            <span class="name-parametr">Дополнительная информация</span>
+                            <input name="comment-form" class="input__comment modal-form__input"
+                                placeholder="Введите текст"></input>
+                        </label>
+                    </li>
+
+                    <li class="input__comment-item">
+                        <label class=" modal-form__discription modal-form__discription_textarea">
+                            <span class="name-parametr">Наименование детали</span>
+                            <input name="comment-form" class="input__comment modal-form__input"
+                                placeholder="Введите текст"></input>
+                        </label>
+                    </li>
+
+                </ul>
+
+                <label for="check-box" class="modal-form__agree-newsletter">
+                    <input type="checkbox" id="check-box" value="agree" name="check" class="modal-form__checkbox"
+                        required />
+                    <span class="checkbox__icon">
+                        <svg class="checkbox__icon--check-mark">
+                            <use href="./images/svg/icons.svg#check-mark"></use>
+                        </svg>
+                    </span>
+
+                    <span class="agree-newsletter__text">Соглашаюсь с рассылкой и принимаю</span>
+                    <a href="./offer.html" class="agreement__link">Условия договора</a>
+                </label>
+
+                </label>
+
+                <button type="submit" class="button button__primary modal-form__button">Отправить</button>
+
+            </form>
+
+        </div>
+    </div>
+    <!-- modal window end -->
+
+
+    <!-- /* modal-new start*/ -->
+    <script src="./js/modal-new.js"></script>
+    <!-- /* modal-new end*/ -->
 
 
 

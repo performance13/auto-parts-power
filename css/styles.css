@@ -22,6 +22,7 @@
     --background-bottom:#373434;
 
     --line-header:#8d8b8c;
+    --input-border:#21212133;
 
     --box-shadow1: 0px 2px 1px 0px #00000033;
     --box-shadow2: 0px 1px 1px 0px #00000024;
@@ -175,6 +176,12 @@ body {
     margin-left: 74px;
 }
 
+.contacts__icon {
+    fill: currentColor;
+    display: inline-block;
+    margin-right: 5px;
+}
+
 
 /* Logo */
 
@@ -217,35 +224,7 @@ body {
     letter-spacing: 0.4em;
 }
 
-/* form-search */
-
-.form-input-search{
-    position: relative;
-}
-
-.input-search {
-    position: absolute;
-    top: -20px;
-    right: 0px;
-
-    width: 250px;
-    height: 42px;
-    font-size: 16px;
-    /* display: inline-block; */
-    text-align: left;
-    color: var(--secondary-text);
-
-    padding-left: 15px;
-    padding-right: 5px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-
-    border: 1px solid var(--line-header);
-    border-radius: 42px;
-    outline: none;
-
-    transition: .3s linear;
-}
+/* form-search  start*/
 
 /* С помощью следующих правил можно задать тексту-подсказке любой цвет,
 поменять начертание и фон поля. Эти селекторы нельзя совмещать в одно правило,
@@ -269,34 +248,92 @@ body {
     background: var(--background-middle);
 } */
 
-/*      end */
+.form-search{
+    width: 480px;
+    height: 54px;
+    position: relative;
+    /* position: fixed; */
+    /* top: 800px; */
 
-.input-search:focus{
-    width: 380px;
-    padding-top: 0px;
-    /* border: 1px solid var(--color-schemes-accent-logo); */
+    margin: 0 auto;
+}
+.form-search__input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid var(--color-schemes-maine);
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 22px;
+    transition: .4s; 
+    /* ростягивание поля*/
+}
+.form-search__label{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    color: var(--color-schemes-maine);
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: top .3s linear;
+    /* поднимание надписи */
+    padding: 2px 14px 2px 8px;
+}
+.form-search__input:focus~label, .form-search__input:hover~label{
+    top: -9px;
+
+    background-color: var(--color-schemes-base);
+
+    background-color: var(--color-schemes-accent-logo);
+
+    /* border-left: 2px solid var(--color-schemes-maine); */
+    /* border-right: 2px solid var(--color-schemes-maine); */
+
+    color: var(--primary-text);
+
+    border-radius: 4px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+
+}
+.form-search__input:focus, .form-search__input:hover{
+    width: 500px;
+    background-color: var(--background-middle);
+
+    border-color: var(--color-schemes-accent-logo);
 }
 
-.input-search:hover,
-.input-search:focus{
-    border: 2px solid var(--color-schemes-accent-logo);
+.overlays__form-search {
+    /* max-width: 1600px; */
+    /* min-height: 600px; */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/png/background-new.png); */
+
+    background-image:
+        url(../images/jpg/banner-autoparts.jpg);
+
+    /* background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/jpg/banner-autoparts.jpg); */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: var(--opposite-text);
+
+    /* width: 100%; */
+    /* max-height: 542px;
+    padding-bottom: 0%; */
 }
-
-
-
-.button-search{
-position: absolute;
-top: -12px;
-right: 10px;
-border: none;
-background-color: inherit;
-border-radius: 50%;
-cursor: pointer;
-padding: 5px;
-/* align-items: center; */
-/* text-align: center; */
-
-}
+/* form-search   end*/
 
 
 
@@ -439,10 +476,6 @@ padding: 5px;
     /* width: 100%; */
     /* max-height: 542px;
     padding-bottom: 0%; */
-
-
-    
-
 }
 
 /* Section__title */
@@ -656,7 +689,7 @@ background-color:var(--color-schemes-base);
     background-color:var(--color-schemes-accent-logo-current);
    }
 
-   /* Текущая страница */
+   /* Текущая страница start*/
 
 .current {
     color:var(--color-schemes-base);
@@ -679,8 +712,10 @@ background-color:var(--color-schemes-base);
     border-radius: 10px;
     position: absolute;
 }
-
-
+.site-nav__link--bottom.current-without-after{
+    color: var(--color-schemes-base);
+}
+   /* Текущая страница  end*/
 
 
 
@@ -1590,18 +1625,103 @@ transition: color 300ms cubic-bezier(0.2, 0, 0.2, 1);
 
 
 /* Payment section     start */
-.guarantee-content {
-    height: 500px;
+.payment-text {
+    text-align: justify;
+    font-size: 16px;
+    /* margin-bottom: 10px; */
 }
 
+.payment-text:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.payment-list {
+    list-style-type: none;
+    counter-reset: number;
+}
+
+.payment-item::before {
+    color: #fff;
+    background: var(--color-schemes-accent-logo);
+    display: inline-block;
+    text-align: center;
+    margin: 3px 3px;
+    line-height: 22px;
+    width: 22px;
+    height: 22px;
+    counter-increment: number;
+    content: counter(number);
+    border-radius: 3px;
+    box-shadow: 2px 2px 0 0 #ccc;
+    margin-top: 10px;
+}
+
+.payment-details {
+    margin-top: 25px;
+}
+
+.payment-summary {
+    margin-bottom: 10px;
+    /* background-color: var(--background-top); */
+    background-color: #59ddff4a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* list-style-type: circle; */
+
+    /* padding-left: 2em;
+    background-image: url(/images/svg/logo.svg);
+    background-position: 0 0;
+    background-size: 1.6em 1.6em;
+    background-repeat: no-repeat; */
+}
+.payment-description{
+    margin-top: 10px;
+}
 /* Payment section      end */
 
 /* Delivery section     start */
-.guarantee-content {
-    height: 500px;
+.delivery-text {
+    text-align: justify;
+    font-size: 16px;
+    /* margin-bottom: 10px; */
 }
-
+.delivery-text:not(:last-child) {
+    margin-bottom: 10px;
+}
+.delivery-list{
+    list-style-type: none;
+    counter-reset: number;
+}
+.delivery-item::before{
+    color: #fff;
+    background: var(--color-schemes-accent-logo);
+    display: inline-block;
+    text-align: center;
+    margin: 3px 3px;
+    line-height: 22px;
+    width: 22px;
+    height: 22px;
+    counter-increment: number;
+    content: counter(number);
+    border-radius: 3px;
+    box-shadow: 2px 2px 0 0 #ccc;
+    margin-top: 10px;
+}
+.delivery-details{
+margin-top: 25px;
+}
+.delivery-summary{
+    margin-bottom: 10px;
+    /* background-color: var(--background-top); */
+    background-color: #59ddff4a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.payment-gap{
+    margin-left: 50px;
+}
 /* Delivery section      end */
+
 
 /* Contacts section     start */
 .contacts-content {
@@ -1778,7 +1898,6 @@ iframe{
   /* < !-- modal window start --> */
 
   
-
   /* фон для модального окна - общая оболочка */
 .modal__backdrop {
     background-color: var(--background-bottom);
@@ -1788,9 +1907,7 @@ iframe{
         rgba(47, 48, 58, 0.4)), */
         url(../images/jpg/about-background1.jpg);
         /* background-size: cover; */
-
-    /* display: none; */
-
+    display: none;
     position: fixed;
     z-index: 16;
     left: 0;
@@ -1804,13 +1921,11 @@ iframe{
 /* тело модального окна */
 .modal__body{
     background-color: var(--background-middle);
-
     border: 1px solid var(--line-header);
     /* min-width: 50%; */
     width: 500px;
     height: 716px;
     z-index: 17;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1820,20 +1935,28 @@ iframe{
 
 /* кнопка закрытия модального окна */
 .modal__close{
-    /* display: block; */
+    display: block;
+    position: absolute;
+    z-index: 1;
     right: 6px;
     top: 6px;
-    position: absolute;
-    color: var(--secondary-text);
-    /* font-size: 30px; */
-    /* font-weight: 700; */
+    height: 34px;
+    width: 35px;
+    background-color: var(--background-middle);
+    fill: var(--secondary-text);
     /* padding: 3px 6px 0px 6px; */
     border-radius: 50%;
     border: 1px solid var(--line-header);
-    height: 38px;
-    width: 38px;
-    text-align: center;
-    cursor: pointer !important;
+    /* text-align: center; */
+}
+
+.button.modal__close:focus,
+.button.modal__close:hover,
+.button.modal__close:active {
+    fill: var(--color-schemes-accent);
+    border: 1px solid var(--color-schemes-accent);
+   
+    background-color: #59d0ff2c;
 }
 
 .modal__subtitle{
@@ -1851,6 +1974,11 @@ iframe{
     position: relative;
     flex-direction: column;
     padding: 30px 20px 20px;
+    /* padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+    
 }
 
 .modal-form__discription{
@@ -1881,7 +2009,7 @@ iframe{
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 42px;
-    border: 1px solid #21212133;
+    border: 1px solid var(--input-border);
     border-radius: 4px;
     cursor: pointer;
 
@@ -1918,12 +2046,13 @@ justify-content: space-between;
 }
 
 .input__comment-item{
-    min-width: 222px;
+    min-width: 220px;
     /* display: flex; */
     /* flex-direction: column; */
-    flex-basis: calc(100 / 4 - 14px);
+    flex-basis: calc((100% - 2 * 14px)/2);
     margin-left: calc(1 * 14px);
     margin-bottom: calc(1 * 10px);
+
     /* justify-content: space-between; */
     /* align-items: center; */
     /* justify-content: center; */
@@ -1945,9 +2074,13 @@ justify-content: space-between;
     height: 18px;
 }
 
+
+
 .modal-form__svg--close{
-    left: 9px;
-    top: 18px;
+    left: 10px;
+    top: 16px;
+    width: 14px;
+    height: 14px;
 }
 
 .modal-form__input:focus + .modal-form__icon, .modal-form__input:hover + .modal-form__icon {
@@ -2016,8 +2149,27 @@ justify-content: space-between;
     line-height: 1.714;
     letter-spacing: .03em;
     color: var(--color-schemes-maine);
-    text-decoration:underline;
+    /* text-decoration:underline; */
+    position: relative;
+    text-decoration: none;
 }
+
+/* плавное подчеркивание ссылки при наведении  start */
+.agreement__link::after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-schemes-base);
+    content: '';
+    transition: width 0.5s ease-out;
+}
+
+.agreement__link:hover::after, .agreement__link:focus::after{
+    width: 100%;
+}
+/* плавное подчеркивание ссылки при наведении  end */
 
 .agreement__link:focus, .agreement__link:hover{
 color: var(--color-schemes-base);
@@ -2031,6 +2183,74 @@ color: var(--color-schemes-base);
 }
 /*   <!-- modal window end --> */
 
+/*   <!-- modal window start для index.html --> */
+ .inputBox-list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     min-height: 10px;
+     /* flex-direction: column; */
+     gap: 10px;
+     margin-top: 14px;
+ }
+ .inputBox{
+    position: relative;
+    width: 220px;
+ }
+ .inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    outline: none;
+    color: var(--secondary-text);
+    font-size: 1em;
+    transition: 0.5s;
+ }
+ .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 14px 10px;
+    pointer-events: none;
+    /* font-size: 0.7em; */
+    font-size: 12px;
+    color: var(--line-header);
+    /* text-transform: uppercase; */
+    text-transform:none;
+    transition: 0.5s;
+
+ }
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: var(--color-schemes-maine);
+    transform: translateX(10px) translateY(-5px);
+    /* font-size: 0.5em; */
+    font-size: 11px;
+    padding: 0 4px;
+    background-color: var(--primary-background);
+    border-left: 1px solid var(--color-schemes-maine);
+    border-right: 1px solid var(--color-schemes-maine);
+    letter-spacing: 0.1em;
+}
+.inputBox:nth-child(1) input:valid~span,
+.inputBox:nth-child(1) input:focus~span,
+.inputBox:nth-child(2) input:valid~span,
+.inputBox:nth-child(2) input:focus~span,
+.inputBox:last-child input:valid~span,
+.inputBox:last-child input:focus~span{
+    background-color: var(--color-schemes-base);
+    color: var(--secondary-text);
+    border-radius: 2px;
+}
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid var(--color-schemes-maine);
+}
+.modal-form__agree-newsletter--index{
+    margin-top: 100px;
+}
+/*   <!-- modal window  end для index.html --> */
 
 /* button fild start */
 .button__fild {
@@ -2151,3 +2371,42 @@ body.lock {
 
 .popup__text {}
 /*   <!-- modal window master-catalog.html end --> */
+
+
+/*  спойлер со скрытым содержимым и чекбоксами  start */
+/* .filter details+details {
+    margin-top: 0.5em;
+} */
+
+/* .filter summary { */
+    /* font-weight: 700; */
+    /* жирный шрифт метки */
+    /* cursor: pointer; */
+    /* курсор на метке имеет вид руки */
+/* } */
+
+/* .filter ul {
+    list-style: none;
+    margin: 0.5em;
+    padding: 0;
+} */
+
+/* .filter summary:hover {
+    color:var(--color-schemes-base); */
+    /* изменение цвета метки при наведении */
+/* } */
+
+/* li label input{
+    display: inline-block;
+    margin-right: 10px;
+
+} */
+
+/* .filter{
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    width: 222px;
+    /* height: 100px; */
+/* } */ 
+/*  спойлер со скрытым содержимым и чекбоксами  end */

@@ -53,20 +53,18 @@
                         </li>
                         <li class="site-nav__item"><a href="./about.html" class="site-nav__link">О нас</a>
                         </li>
-                        <li class="site-nav__item"><a href="./guarantee.html" class="site-nav__link">Гарантия</a>
-                        </li>
+                        <li class="site-nav__item"><a href="./guarantee.html" class="site-nav__link">Гарантия</a></li>
                         <li class="site-nav__item"><a href="./payment.html" class="site-nav__link">Оплата</a>
                         </li>
-                        <li class="site-nav__item"><a href="./delivery.html" class="site-nav__link">Доставка</a>
-                        </li>
-                        <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link">Контакты</a>
-                        </li>
+                        <li class="site-nav__item"><a href="./delivery.html" class="site-nav__link">Доставка</a></li>
+                        <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link">Контакты</a></li>
 
                         <div class="quest">
                             <li class="site-nav__item"><a href="./master-catalog.html"
                                     class="site-nav__link">Каталог</a>
                             </li>
-                            <li class=" site-nav__item"><a href="#request" class="site-nav__link">Запрос по
+                            <li class=" site-nav__item"><a href="#modal-request" data-modal-btn="modal-request"
+                                    class="site-nav__link">Запрос по
                                     параметрам</a>
                             </li>
                         </div>
@@ -104,34 +102,41 @@
 
                 <address>
                     <ul class="contact__list">
-                        <li class="contact__item"><a href="tel:+380997177427" class="contact__link">(099) 717 74 27</a>
+                        <li class="contact__item">
+                            <a href="tel:+380997177427" class="contact__link">
+                                <svg width="10" height="16" class="contacts__icon">
+                                    <use href="./images/svg/icons.svg#smartphone"></use>
+                                </svg>(099) 717 74 27</a>
                         </li>
-                        <li class="contact__item"><a href="mailto:info@auto-parts.com"
-                                class="contact__link">info@auto-parts.com</a>
+
+                        <li class="contact__item"><a href="mailto:info@auto-parts.com" class="contact__link">
+                                <svg width="16" height="12" class="contacts__icon">
+                                    <use href="./images/svg/icons.svg#envelope"></use>
+                                </svg>info@auto-parts.com</a>
                         </li>
                     </ul>
                 </address>
                 <!-- <li>
-                  <a href="">Товары для ТО
-                    <img src="./images/svg/" alt="" srcset="" width="50" />
-                  </a>
-                </li> -->
+                              <a href="">Товары для ТО
+                                <img src="./images/svg/" alt="" srcset="" width="50" />
+                              </a>
+                            </li> -->
 
                 <!-- <ul>
-                  <li><a href="">On-line заказ</a></li>
-                  <li><a href="">Регистрация</a></li>
-                  <li><a href="">Личный кабинет</a></li>
-                </ul> -->
+                              <li><a href="">On-line заказ</a></li>
+                              <li><a href="">Регистрация</a></li>
+                              <li><a href="">Личный кабинет</a></li>
+                            </ul> -->
 
 
 
-                <form action="./index.html" class="form-input-search">
-                    <input class="input-search" type="search" placeholder="Какую запчасть ищите?">
-                    <button class="button-search" type="submit">
-                        <ion-icon name="search">
-                        </ion-icon>
-                    </button>
-                </form>
+                <!-- <form action="./index.html" class="form-input-search">
+                                <input class="input-search" type="search" placeholder="Какую запчасть ищите?">
+                                <button class="button-search" type="submit">
+                                    <ion-icon name="search">
+                                    </ion-icon>
+                                </button>
+                            </form> -->
 
 
 
@@ -164,7 +169,7 @@
         </header>
     </div>
 
-    <section class="about-us-content" style="margin-top: 200px;">
+    <section class="section">
         <div class="container">
             <h2>Публичный договор</h2>
             <h3>Статья 633 Гражданского кодекса Украины. Публичный договор</h3>
@@ -284,7 +289,8 @@
                     <li class="site-nav__item--bottom"><a href="./delivery.html"
                             class="site-nav__link--bottom">Доставка</a>
                     </li>
-                    <li class="site-nav__item--bottom"><a href="./offer.html" class="site-nav__link--bottom">Публичный
+                    <li class="site-nav__item--bottom"><a href="./offer.html"
+                            class="site-nav__link--bottom current-without-after">Публичный
                             <br>договор</a>
                     </li>
                 </ul>

@@ -68,7 +68,10 @@
 
             <div class="quest">
               <li class="site-nav__item"><a href="./master-catalog.html" class="site-nav__link">Каталог</a></li>
-              <li class=" site-nav__item"><a href="#request" class="site-nav__link">Запрос по параметрам</a></li>
+              <li class=" site-nav__item"><a href="#modal-request" data-modal-btn="modal-request"
+                  class="site-nav__link">Запрос по
+                  параметрам</a>
+              </li>
             </div>
 
           </ul>
@@ -422,8 +425,8 @@
 
     <!--  form-search start -->
     <!-- <section> -->
-    <section class="section overlays__form-search" style="background-color:var(--background-middle); padding-top:50px;
-                          padding-bottom:75px">
+    <section class="section overlays__form-search"
+      style="background-color:var(--background-middle); padding-top:90px;                          padding-bottom:90px">
       <div class="container">
         <form class="form-search" action="http://index.html/search/" method="get">
           <h3 class="title__visibility-hidden">Поиск по сайту</h3>
@@ -3378,8 +3381,6 @@
   </footer>
 
 
-
-
   <!-- modal window start -->
   <div class="modal__backdrop" data-modal-window="modal-request">
     <div class="modal__body">
@@ -3391,7 +3392,6 @@
       </button>
 
       <form action="" class="modal-form">
-
         <p class="modal__subtitle">Оставьте запрос - мы сообщим о наличии товара</p>
 
         <label for="person" class="modal-form__discription">
@@ -3432,8 +3432,52 @@
         </label>
 
 
-        <ul class="flex-input__comment">
-          <li class="input__comment-item">
+        <!-- <ul class="flex-input__comment"> -->
+
+
+
+
+        <ul class="inputBox-list">
+          <li class="inputBox">
+            <input type=" text" required>
+            <span class="">Модель</span>
+          </li>
+          <li class="inputBox">
+            <input type=" text" required>
+            <span class="">Марка</span>
+          <li class="inputBox">
+            <input type=" text" required>
+            <span class="">Тип кузова</span>
+          </li>
+          <li class="inputBox">
+            <input type=" text" required>
+            <span class="">Модернизация автомобиля</span>
+          </li>
+          </li>
+          <li class="inputBox">
+            <input type=" text" required>
+            <span class="">Год выпуска</span>
+          </li>
+          <li class="inputBox">
+            <input type=" text" required>
+            <span class="">Объем и тип двигателя</span>
+          <li class="inputBox">
+            <input type=" text" required>
+            <span class="">Дополнительная информация</span>
+          </li>
+          <li class="inputBox">
+            <input type=" text" required>
+            <span class="">Наименование детали</span>
+          </li>
+          </li>
+        </ul>
+
+
+
+
+
+
+        <!-- <li class="input__comment-item">
             <label class=" modal-form__discription modal-form__discription_textarea">
               <span class="name-parametr">Модель</span>
               <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
@@ -3468,30 +3512,33 @@
               <span class="name-parametr">Объем и тип двигателя</span>
               <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
             </label>
-          </li>
-          <!-- <li class="input__comment-item">
+          </li> -->
+
+
+        <!-- <li class="input__comment-item">
                   <label class=" modal-form__discription modal-form__discription_textarea">
                     <span class="name-parametr">Сторона; размеры; вес; цвет</span>
                     <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
                   </label>
                 </li> -->
-          <li class="input__comment-item">
+
+
+        <!-- <li class="input__comment-item">
             <label class=" modal-form__discription modal-form__discription_textarea">
               <span class="name-parametr">Дополнительная информация</span>
               <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
             </label>
           </li>
-
           <li class="input__comment-item">
             <label class=" modal-form__discription modal-form__discription_textarea">
               <span class="name-parametr">Наименование детали</span>
               <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
             </label>
-          </li>
+          </li> -->
 
-        </ul>
+        <!-- </ul> -->
 
-        <label for="check-box" class="modal-form__agree-newsletter">
+        <label for="check-box" class="modal-form__agree-newsletter modal-form__agree-newsletter--index">
           <input type="checkbox" id="check-box" value="agree" name="check" class="modal-form__checkbox" required />
           <span class="checkbox__icon">
             <svg class="checkbox__icon--check-mark">
