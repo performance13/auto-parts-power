@@ -415,6 +415,9 @@ body {
 
 /* header__wrapper */
 /* фиксация header */
+.index-body-heade_gap{
+    padding-top: 174px;
+}
 .header__wrapper--fixed{
     position: fixed;
     top: 0;
@@ -444,7 +447,7 @@ body {
     margin-right: auto;
     margin-bottom: 50px;
 
-    margin-top: 50px;;
+    /* margin-top: 50px;; */
 
     font-weight: 700;
     font-size: 42px;
