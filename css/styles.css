@@ -99,6 +99,13 @@ body {
 
     color: var(--primary-text);
     background-color: var(--primary-background);
+
+    /* глобально запретить выделение start */
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* глобально запретить выделение end */
 }
 
 .container{
@@ -348,6 +355,10 @@ body {
     align-items: center;
     /* justify-content: space-around; */
 }
+.category-nav__link:hover, 
+.category-nav__link:focus{
+color: var(--color-schemes-base);
+}
 
 .category-nav__link{
     /* display: block; */
@@ -415,7 +426,7 @@ body {
 
 /* header__wrapper */
 /* фиксация header */
-.index-body-heade_gap{
+.index-body-head_gap{
     padding-top: 174px;
 }
 .header__wrapper--fixed{
@@ -762,7 +773,7 @@ background-color:var(--color-schemes-base);
     padding-top: 19px;
     padding-bottom: 19px;
     
-    z-index: 10;
+    /* z-index: 10; */
     top: 8px;
     left: -12px;
     letter-spacing: 0em;
@@ -774,7 +785,7 @@ background-color:var(--color-schemes-base);
     padding-top: 19px;
     padding-bottom: 19px;
 
-    z-index: 10;
+    /* z-index: 10; */
     top: 8px;
     left: 127px;
     letter-spacing: 0.4em;
@@ -817,6 +828,16 @@ background-color:var(--color-schemes-base);
 .contact__item--bottom:nth-child(2){
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.contact__item, 
+.contact__item--bottom,
+.logo__holder,
+.point-adress{
+    -ms-user-select: all;
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    user-select: all;
 }
 
 .contact__link--bottom:hover,
@@ -1808,11 +1829,11 @@ margin-top: 25px;
 /* scroll Indicator start*/
 
 .under-header {
-    position: fixed;
+    /* position: fixed;
     top: 168px;
     z-index: 1;
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; */
 }
 
 .header h2 {
@@ -2473,3 +2494,24 @@ body.lock {
     /* height: 100px; */
 /* } */ 
 /*  спойлер со скрытым содержимым и чекбоксами  end */
+
+.chat-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  /* background-image: url("https://cdn-icons-png.flaticon.com/512/1653/1653630.png"); */
+  background-image: url(../images/Vector.svg);
+  background-size: contain;
+
+  cursor: pointer;
+}

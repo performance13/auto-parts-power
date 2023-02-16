@@ -99,7 +99,11 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 15;
+
+  /* z-index убрал чтобы не просвечивался в элементах шапки (header) start */
+  /* z-index: 15; */
+    /* z-index убрал чтобы не просвечивался в элементах шапки (header)  end */
+
   display: flex;
   justify-content: center;
   margin-top: 0;
