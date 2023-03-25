@@ -105,7 +105,7 @@
 $(function () {
 $(window).scroll(function(){ 
  
-    if ($(this).scrollTop() < 5500 && $(this).scrollTop() > 100) {
+    if ($(this).scrollTop() < 5700 && $(this).scrollTop() > 100) {
            $('#visibility-up-down-btn').fadeIn()
         }
     else{

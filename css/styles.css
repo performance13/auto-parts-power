@@ -183,9 +183,17 @@ transform: scale(1.4);
 .add-wishlist__header-top {
     fill: var(--primary-text);
 }
+.current-wishlist {
+    /* color: var(--color-schemes-base); */
+    fill: var(--color-schemes-base);
+}
+
 .add-cart__header-top{
     fill: var(--background-top);
     stroke: var(--primary-text);
+}
+.current-cart {
+    stroke: var(--color-schemes-base);
 }
 
 .quest{
@@ -1238,7 +1246,6 @@ color: var(--color-schemes-accent-logo);
 
 .discount-wishlist-wrapper{
     display: flex;
-
     align-items: center;
     transition: 2s ease-in-out;
     padding: 10px 10px 20px 10px;
@@ -1273,24 +1280,24 @@ color: var(--color-schemes-accent-logo);
 /* wishlist start */
 
 /* -- */
-.wow{
+/* .wow{
     color: red;
 }
 .product {
     position: relative;
     display: inline-block;
-}
+} */
 
-.favorites {
+/* .favorites {
     position: absolute;
     top: 0;
     right: 0;
     width: 55px;
     height: 55px;
     z-index: 1;
-}
+} */
 
-.favorites .image {
+/* .favorites .image {
     position: absolute;
     width: 55px;
     height: 55px;
@@ -1299,9 +1306,9 @@ color: var(--color-schemes-accent-logo);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-}
+} */
 
-.favorites.simple {
+/* .favorites.simple {
     background: url('../images/favorites.png') no-repeat 100% 100%;
 }
 
@@ -1347,9 +1354,10 @@ color: var(--color-schemes-accent-logo);
 
 .favorites .remove:hover {
     background-position: -167px 0;
-}
+} */
 
 /* -- */
+/* два раза указан класс discount-wishlist-wrapper - совместить */
 .discount-wishlist-wrapper{
     position: relative;
 }
@@ -2953,6 +2961,13 @@ body.lock {
 .index-body-head_gap {
     padding-top: 174px;
 }
+/* утилита для увеличения кликабельности ссылки chat-button */
+.chat-button-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+/* утилита для увеличения кликабельности ссылки chat-button */
+
 /* chat-button и увеличение отступа для появления и исчезновения кнопки end */
 
 /* Кнопка вверх и вниз с плавным появлением и плавной прокруткой up-down-btn start */
@@ -2994,3 +3009,9 @@ body.lock {
     opacity: 0;
 }
 /* Кнопка вверх и вниз с плавным появлением и плавной прокруткой up-down-btn end */
+
+/* cart start */
+.list-unstyled{
+    display: none;
+}
+/* cart end */
