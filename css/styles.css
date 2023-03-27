@@ -1661,6 +1661,7 @@ transform: scale(.95);
 .price__wrapper{
     /* flex-grow: 1; */
     padding: 0px 10px;
+    margin: 0 auto;
 }
 
 .add-basket {
@@ -3015,3 +3016,36 @@ body.lock {
     display: none;
 }
 /* cart end */
+
+/* Счетчик start */
+.items{
+    background-color: var(--background-top);
+    border-radius: 8px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 18px;
+    height: 30px;
+    overflow: hidden;
+}
+.items__control{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    text-align: center;    
+}
+.items__control:hover{
+    background-color: var(--color-schemes-base);
+    color: var(--opposite-text);
+}
+.items__current{
+    width: 40px;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+/* Счетчик end */
