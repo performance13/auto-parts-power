@@ -26,8 +26,6 @@
     <link rel="stylesheet" href="./css/styles.css" />
 
 
-
-
     <!-- Slider -->
     <!-- CSS -->
     <link rel="stylesheet" href="./css/itc-slider.css">
@@ -35,9 +33,7 @@
     <script src="./js/itc-slider.js" defer></script>
 
 
-
-
-    <!-- favicone -->
+    <!-- favicon -->
     <link rel="icon" href="./images/logo_normal 35_35.png" sizes="16x16 32x32" type="image/png" />
 </head>
 
@@ -63,9 +59,8 @@
                     <div class="quest">
                         <li class="site-nav__item"><a href="./master-catalog.html" class="site-nav__link">Каталог</a>
                         </li>
-                        <li class=" site-nav__item"><a href="#modal-request" data-modal-btn="modal-request"
-                                class="site-nav__link">Запрос по
-                                параметрам</a>
+                        <li class=" site-nav__item">
+                            <a href="#modal-request" data-modal-btn="modal-request" class="site-nav__link">Запрос по параметрам</a>
                         </li>
                     </div>
 
@@ -298,9 +293,10 @@
                 <p></p>
             </div>
         </section>
-        <section class="section">
-            <div class="container">
 
+        <!-- timer start -->
+        <!-- <section class="section">
+            <div class="container">
                 <div class="timer">
                     <div class="timer__items">
                         <div class="timer__item timer__days">00</div>
@@ -309,9 +305,9 @@
                         <div class="timer__item timer__seconds">00</div>
                     </div>
                 </div>
-
             </div>
-        </section>
+        </section> -->
+        <!-- timer end -->
 
         <!--  -->
 
@@ -321,8 +317,10 @@
 
         <!--  -->
 
-        <div class="website-counter"></div>
+        <!-- website-counter start -->
+        <!-- <div class="website-counter"></div> -->
         <!-- <button id="reset">Reset</button> -->
+        <!-- website-counter end -->
 
         <!--  -->
 
@@ -511,7 +509,7 @@
                     <span>Телефон</span>
                     <span class="modal-form__input-wrapper">
                         <input id="phone" class="modal-form__input" name="phone-form" title="xxx xxx xx xx" type="tel"
-                            pattern="[0-9]{3} [0-9}{3} [0-9}{2} [0-9]{2}" minlenght="10" required>
+                            pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" minlenght="10" required>
                         <span class="modal-form__icon">
                             <svg class="modal-form__svg">
                                 <use href="./images/svg/icons.svg#phone-form"></use>
@@ -625,9 +623,9 @@
 
 
 
-    <!-- /* modal-new start*/ -->
-    <script src="./js/modal-new.js"></script>
-    <!-- /* modal-new end*/ -->
+    <!-- /* modal start*/ -->
+    <script src="./js/modal.js"></script>
+    <!-- /* modal end*/ -->
 
 
 
@@ -640,8 +638,7 @@
 
 
     <!-- Таймер обратного отсчета start -->
-
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
             // конечная дата
             const deadline = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 01);
@@ -683,15 +680,12 @@
             // вызываем функцию countdownTimer каждую секунду
             timerId = setInterval(countdownTimer, 1000);
         });
-    </script>
-
+    </script> -->
     <!-- Таймер обратного отсчета end -->
 
 
-
     <!-- Счетчик посещений start -->
-
-    <script>
+    <!-- <script>
         var counterContainer = document.querySelector(".website-counter");
         var resetButton = document.querySelector("#reset");
         var visitCount = localStorage.getItem("page_view");
@@ -711,8 +705,7 @@
             visitCount = 1;
             localStorage.setItem("page_view", 1);
             counterContainer.innerHTML = visitCount;
-        });</script>
-
+        });</script> -->
     <!-- Счетчик посещений end -->
 
 
