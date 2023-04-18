@@ -104,15 +104,13 @@
 /* visibility-up-down-btn start  */
 $(function () {
 $(window).scroll(function(){ 
- 
     if ($(this).scrollTop() < 5700 && $(this).scrollTop() > 100) {
-           $('#visibility-up-down-btn').fadeIn()
+          $('#visibility-up-down-btn').fadeIn()
         }
     else{
     $('#visibility-up-down-btn').fadeOut(); 
     }
   });
-           
 });
 
 /* visibility-up-down-btn end  */

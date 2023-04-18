@@ -895,9 +895,12 @@ background-color:var(--color-schemes-base);
 .messenger__list{
     display: flex;
 }
-.messenger__item {
-    margin-left: 16px;
+.messenger__list .messenger__item+.messenger__item {
+    margin-left: 10px;
 }
+/* .messenger__item {
+    margin-left: 16px;
+} */
 .messenger__link{
 
 }
@@ -2974,7 +2977,7 @@ body.lock {
 /* Кнопка вверх и вниз с плавным появлением и плавной прокруткой up-down-btn start */
 .up-down-btn {
     position: fixed;
-    bottom: 88px;
+    bottom: 52px;
     right: 30px;
     z-index: 1;
     width: 62px;
