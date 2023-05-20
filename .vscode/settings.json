@@ -1,4 +1,8 @@
 {
   "liveServer.settings.port": 5501,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize",
+  "prettier.tabWidth": 2,
+  "editor.tabCompletion": "on",
+  "editor.acceptSuggestionOnEnter": "off"
 }

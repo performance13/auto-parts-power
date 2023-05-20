@@ -120,13 +120,17 @@
             <li class="contact__item">
               <a href="tel:+380997177427" class="contact__link">
                 <svg width="10" height="16" class="contacts__icon">
+                  
                   <use href="./images/symbol-defs.svg#icon-message-smartphone"></use>
+
                 </svg>(099) 717 74 27</a>
             </li>
 
             <li class="contact__item"><a href="mailto:info@auto-parts.com" class="contact__link">
                 <svg width="16" height="12" class="contacts__icon">
+
                   <use href="./images/symbol-defs.svg#icon-message-envelope"></use>
+
                 </svg>info@auto-parts.com</a>
             </li>
           </ul>
@@ -435,23 +439,45 @@
 
 
     <!--  form-search start -->
-    <!-- <section> -->
-    <section class="section overlays__form-search"
-      style="background-color:var(--background-middle); padding-top:90px;padding-bottom:90px">
-      <div class="container">
-        <form class="form-search" action="http://index.html/search/" method="get">
-          <h3 class="title__visibility-hidden">Поиск по сайту</h3>
-          <input class="form-search__input" type="text" name="" placeholder="">
-          <label class="form-search__label" for="">найти...</label>
-          <!-- <button type="submit" value="найти"> -->
-        </form>
+    <section class="search-section">
+      <div class="container overlays__form-search"
+       style="background-color:var(--background-middle)">
+        <div class="search-box">
+          <input class="search-txt" type="text" name="" placeholder="Type to search">
+          <a class="search-btn" href="#">
+            <svg width="23" height="23" class="search-icon">
+              <use href="./images/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </a>
+                <!-- <button class="search-btn">
+                  <svg width="23" height="23" class="search-icon">
+                    <use href="./images/symbol-defs.svg#icon-search"></use>
+                  </svg>
+                </button> -->
+        </div>
       </div>
     </section>
 
-    <div class="sprite-container">
-      <div class="sprite-image"></div>
-    </div>
+        <section class="search-section">
+          <div class="container overlays__form-search1" style="background-color:var(--background-middle)">
+            <div class="search-box1">
+              <input class="search-txt1" type="text" name="" placeholder="Type to search">
+              <button onclick="buttonClick()" class="search-btn1">
+                <svg width="23" height="23" class="search-icon">
+                  <use href="./images/symbol-defs.svg#icon-search"></use>
+                </svg>
+              </button>
+              <ul class="list">List</ul>
+            </div>
+          </div>
+        </section>
     <!--  form-search   end -->
+
+    <!--  sprite  start -->
+    <!-- <div class="sprite-container">
+      <div class="sprite-image"></div>
+    </div> -->
+    <!--  sprite   end -->
 
 
     <!-- Второй слайдер/Автомобильные запчасти по подкатегориям -->
@@ -3519,21 +3545,21 @@
 
         <ul class="messenger__list">
           <li class="messenger__item ">
-            <a href="#" class="social-link">
+            <a href="#" class="social-link" title="Viber">
               <svg style="width:32px; height:33px" class="social-icon">
                 <use href="./images/symbol-defs.svg#icon-message-viber"></use>
               </svg>
             </a>
           </li>
           <li class="messenger__item ">
-            <a href="#" class="social-link">
+            <a href="#" class="social-link" title="WhatsApp">
               <svg style="width:60px; height:60px" class="social-icon">
                 <use href="./images/symbol-defs.svg#icon-message-whatsapp"></use>
               </svg>
             </a>
           </li>
           <li class="messenger__item ">
-            <a href="#" class="social-link">
+            <a href="#" class="social-link" title="Telegram">
               <svg class="social-icon">
                 <use href="./images/symbol-defs.svg#icon-message-telegram"></use>
               </svg>
@@ -3596,7 +3622,7 @@
               автомобиля</a>
           </li>
           <li class="second-column__item">
-            <a class="second-column__link" href="./service-catalog.html">Товары для ТО</a>
+            <a class="second-column__link" href="./service-catalog.html" title="Новые товары">Товары для ТО</a>
           </li>
           <!-- <li class="second-column__item">
             <form class="form-search" action="http://index.html/search/" method="get">
@@ -3633,7 +3659,7 @@
           <h3 class="schedule__title">График работы</h3>
           <ul>
             <li class="schedule__item">Пн - Пт : 08:00 - 20:00</li>
-            <li class="schedule__item">Сб : 09:00 - 20:00</li>
+            <li class="schedule__item">Сб : 09:00 - 12:00</li>
             <li class="schedule__item">Вс : Выходной</li>
           </ul>
         </div>
@@ -3641,15 +3667,29 @@
         <div class="accept">
           <h3 class="accept__title">Мы принимаем</h3>
           <ul>
-            <li class="accept__item">UAH <img src="./images/svg/card/ukrainian-hryvnia.svg" alt="" srcset="" width="20">
+            <li class="accept__item">
+              <a href="./payment.html#uah">UAH
+                <img src="./images/svg/card/ukrainian-hryvnia.svg" alt="" srcset="" width="20" title="Оплата UAH">
+              </a>
             </li>
 
             <!-- <li class="accept__item">VISA <img src="./images/svg/card/visa.svg" alt="" srcset="" width="35"></li>
               <li class="accept__item">MasterCard <img src="./images/svg/card/mastercard.svg" alt="" srcset=""
                   width="35"></li> -->
-            <li class="accept__item">USDT <img src="./images/svg/card/usdt.svg" alt="" srcset="" width="20"></li>
-            <li class="accept__item">BTC <img src="./images/svg/card/btc.svg" alt="" srcset="" width="20"></li>
-            <li class="accept__item">ETH <img src="./images/svg/card/eth.svg" alt="" srcset="" width="20"></li>
+            <li class="accept__item">
+              <a href="./payment.html#usdt">USDT
+                <img src="./images/svg/card/usdt.svg" alt="" srcset="" width="20" title="Оплата USDT">
+              </a>
+            </li>
+            <li class="accept__item">
+              <a href="./payment.html#btc">BTC
+                <img src="./images/svg/card/btc.svg" alt="" srcset="" width="20" title="Оплата BTC">
+              </a>
+            </li>
+            <li class="accept__item">
+               <a href="./payment.html#eth">ETH<img src="./images/svg/card/eth.svg" alt="" srcset="" width="20" title="Оплата ETH">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -3676,7 +3716,7 @@
 
       <button class="button modal__close">
         <svg class="modal-form__svg modal-form__svg--close">
-          <use href="./images/svg/icons.svg#close-icon"></use>
+          <use href="./images/symbol-defs.svg#close-icon"></use>
         </svg>
       </button>
 
@@ -3689,7 +3729,7 @@
             <input id="person" class="modal-form__input" name="person-form" type="text" required>
             <span class="modal-form__icon">
               <svg class="modal-form__svg">
-                <use href="./images/svg/icons.svg#person-form"></use>
+                <use href="./images/symbol-defs.svg#person-form"></use>
               </svg>
             </span>
           </span>
@@ -3702,7 +3742,7 @@
               pattern="[0-9]{3} [0-9}{3} [0-9}{2} [0-9]{2}" minlenght="10" required>
             <span class="modal-form__icon">
               <svg class="modal-form__svg">
-                <use href="./images/svg/icons.svg#phone-form"></use>
+                <use href="./images/symbol-defs.svg#phone-form"></use>
               </svg>
             </span>
           </span>
@@ -3714,7 +3754,7 @@
             <input id="email" class="modal-form__input" name="email-form" type="email" required>
             <span class="modal-form__icon">
               <svg class="modal-form__svg">
-                <use href="./images/svg/icons.svg#email-form"></use>
+                <use href="./images/symbol-defs.svg#email-form"></use>
               </svg>
             </span>
           </span>
@@ -3811,7 +3851,7 @@
 
 
         <!-- <li class="input__comment-item">
-            <label class=" modal-form__discription modal-form__discription_textarea">
+            <label class=" modal-form__discription modal-form__dicoiscription_textarea">
               <span class="name-parametr">Дополнительная информация</span>
               <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
             </label>
@@ -3829,7 +3869,7 @@
           <input type="checkbox" id="check-box" value="agree" name="check" class="modal-form__checkbox" required />
           <span class="checkbox__icon">
             <svg class="checkbox__icon--check-mark">
-              <use href="./images/svg/icons.svg#check-mark"></use>
+              <use href="./images/symbol-defs.svg#check-mark"></use>
             </svg>
           </span>
 
@@ -3888,6 +3928,10 @@
   <script src="./js/cart.js"></script>
   <!-- cart end -->
 
+  <!-- search-section start  -->
+  <script src="./js/search-section.js"></script>
+  <!-- search-section end -->
+
   <!-- jQuery CDN start -->
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
@@ -3900,6 +3944,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
   <!-- underscore CDN end -->
+
+  
 
   <script src="js/catalog.js" type="text/javascript"></script>
   <script src="js/cart.js" type="text/javascript"></script>
