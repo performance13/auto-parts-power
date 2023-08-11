@@ -31,13 +31,12 @@
 //   return str.slice(0, pos) + '<mark>' + str.slice(pos, pos + len) + '</mark>' + str.slice(pos + len);
 // }
 
+// доступ к формам
 let formAuto = document.forms[0];
 console.log('Form "Поиск по марке автомобиля":', formAuto);
 
 let formCategory = document.forms[1];
 console.log('Form "Поиск по категории запчастей":', formCategory)
-
-
 
 // обнуление символов в input кликом во всей секции - ! но не возвращает изначальное состояние секции   start 
 let clearFormAuto = document.querySelector('.master-catalog-section');
@@ -45,12 +44,8 @@ clearFormAuto.addEventListener('click', function () {
   formAuto.reset();
 });
 
-
 let clearFormCategory = document.querySelector('.catalog-section');
 clearFormCategory.addEventListener('click', function () {
   formCategory.reset();
 });
 // обнуление символов в input кликом во всей секции - ! но не возвращает изначальное состояние секции   end
-
-
-
