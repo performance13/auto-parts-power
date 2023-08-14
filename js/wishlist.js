@@ -1,11 +1,11 @@
 // 1 вариант
 
-// let button = document.querySelectorAll('.wishlist-button');
+// let button = document.querySelectorAll('.wishlist__button');
 // button.addEventListener('click', () => {
 //   button.classList.toggle('active');
 // });
 
-// $(document).on('click', '.wishlist-button', function () {
+// $(document).on('click', '.wishlist__button', function () {
 // 	var fav= $(this).hasClass('simple');
 //     if (!fav) {
 //         $(this).addClass('simple');
@@ -17,7 +17,7 @@
 
 // 2 вариант (работает только на одной карточке)
 
-// let fav = document.querySelector('.wishlist-button');
+// let fav = document.querySelector('.wishlist__button');
 
 // fav.addEventListener('click', () => {
 //   if (fav.classList.contains('no-active')) {
@@ -35,13 +35,13 @@
 function initFavs()
   {
     // Handle Favorites
-    var items = document.getElementsByClassName('wishlist-button');
+    var items = document.getElementsByClassName('wishlist__button');
     for(var x = 0; x < items.length; x++)
     {
       var item = items[x];
       item.addEventListener('click', function(fn)
       {
-        fn.target.closest('.wishlist-button').classList.toggle('active');
+        fn.target.closest('.wishlist__button').classList.toggle('active');
       });
     }
 };

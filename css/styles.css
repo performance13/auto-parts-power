@@ -139,7 +139,7 @@ body {
 }
 /* section__title end */
 
-.title__visibility-hidden {
+.title__visibility_hidden {
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -147,13 +147,91 @@ body {
     position: absolute;
 }
 
+/* button start*/
+.button {
+    /* font-family: inherit; */
+    font-family: "Open Sans", sans-serif;
+
+    background-color: var(--primary-background);
+    color: var(--primary-text);
+
+    font-size: 20px;
+    padding: 8px 16px;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border: transparent;
+    /* text-decoration: none; */
+    cursor: pointer;
+}
+
+.button__primary {
+    background-color: var(--color-schemes-maine);
+
+    color: var(--primary-background);
+    ;
+}
+
+.button__primary:hover {
+    background-color: var(--color-schemes-base);
+}
+
+.button__secondary {
+    background-color: var(--color-schemes-accent-logo);
+
+    color: var(--primary-background);
+}
+
+.button__secondary:hover {
+    background-color: var(--color-schemes-accent-logo-current);
+}
+/* button end*/
+
+
+
+
+/* текущая страница start*/
+.current {
+    color: var(--color-schemes-base);
+    /* для установки ::after */
+    position: relative;
+}
+
+.current::after {
+    display: block;
+    content: '';
+    text-align: center;
+    width: 100%;
+    height: 1px;
+    bottom: -1px;
+    background-repeat: 40px;
+    background-color: var(--color-schemes-base);
+    border: 1px solid;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.site-nav__link--bottom.current-without-after {
+    color: var(--color-schemes-base);
+}
+/* текущая страница  end*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* utility end */
 
 
 /* header start */
-
 /* фиксация header  в  index.html start*/
 .header_position_fixed {
     position: fixed;
@@ -682,6 +760,12 @@ body {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+/* 6 карточек в слайдере*/
+.slider__item.slider__subitem {
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+}
 /* slider-section second Автомобильные запчасти по подкатегориям end */
 
 
@@ -704,6 +788,448 @@ body {
 /* slider-section third Автомобильные запчасти по марке автомобиля end */
 
 
+/* slider-section_new start */
+
+.slider-section_new {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.slider__item.slider__item_new {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+/* slider-section_new end */
+
+
+/* slider-section_viewed start */
+
+.slider-section_viewed {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.slider__item.slider__item_viewed {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+/* slider-section_viewed end */
+
+
+/* карточка товара start */
+.product__item {
+    display: flex;
+    flex-basis: calc(100% / 5 - 10px);
+    border: 1px solid var(--color-schemes-base);
+    border-radius: 4px;
+    margin-left: calc(1 * 10px);
+    margin-bottom: calc(1 * 10px);
+    /* убрать маркер в карточках карусели */
+    list-style: none;
+}
+
+.product__item:hover {
+    box-shadow: 0px 2px 1px 0px #00000033, 
+                0px 1px 1px 0px #00000024,
+                0px 1px 3px 0px #0000001f;
+}
+
+.product__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.discount-wishlist__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 2s ease-in-out;
+    padding: 10px 10px 20px 10px;
+}
+
+.discount {
+    display: inline-block;
+    font-size: 16px;
+    background-color: var(--color-schemes-accent);
+    color: var(--opposite-text);
+    padding: 6px 6px 6px 6px;
+    margin-top: 8px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-schemes-accent);
+    border-radius: 4px;
+    border: transparent;
+}
+
+/* Скрывает дисконт в секции Что новенького */
+.discount__visibility_hidden {
+    visibility: hidden;
+}
+
+/* точное перемещение в начало секций во время клика: Что новенького, Ранее просматривалт, Избранное start */
+#new,
+#view,
+#fav {
+    padding-top: 240px;
+    margin-top: -240px;
+}
+/* точное перемещение в начало секций во время клика: Что новенького, Ранее просматривалт, Избранное end */
+
+/* wishlist start */
+.wishlist__button {
+    position: absolute;
+    right: 48px;
+    top: 8px;
+    cursor: pointer;
+    transition: .4s;
+    perspective: 100px;
+}
+
+.wishlist__button:active {
+    transform: scale(.95);
+}
+
+.wishlist__add {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transition: .6s;
+}
+
+.wishlist__button>.wishlist__add {
+    fill: var(--background-top);
+    animation: first 2s ease;
+}
+
+@keyframes first {
+    0% {
+        top: 25%;
+        opacity: 1;
+        fill: var(--color-schemes-accent-logo);
+        width: auto;
+    }
+
+    25% {
+        top: -42px;
+        opacity: 1;
+        fill: var(--background-top);
+        width: auto;
+    }
+
+    50% {
+        top: 80px;
+        opacity: 0;
+        fill: none;
+        width: auto;
+    }
+
+    75% {
+        top: -42px;
+        opacity: 1;
+        fill: var(--background-top);
+        width: auto;
+    }
+
+    99% {
+        top: 0px;
+        opacity: 1;
+        fill: var(--background-top);
+        width: auto;
+    }
+
+    100% {
+        top: 25%;
+        opacity: 1;
+        fill: var(--background-top);
+        transform: scale(1);
+        width: auto;
+    }
+}
+
+.wishlist__button.active>.wishlist__add {
+    fill: var(--color-schemes-accent-logo);
+    animation: active 2s ease;
+}
+
+@keyframes active {
+
+    0% {
+        top: 25%;
+        opacity: 1;
+        fill: var(--background-top);
+        width: auto;
+    }
+
+    25% {
+        top: -42px;
+        opacity: 1;
+        fill: var(--background-top);
+        width: auto;
+    }
+
+    50% {
+        top: 80px;
+        opacity: 0;
+        fill: none;
+        width: auto;
+    }
+
+    75% {
+        top: -42px;
+        opacity: 1;
+        fill: var(--color-schemes-accent-logo);
+        width: auto;
+    }
+
+    99% {
+        top: 0px;
+        opacity: 1;
+        fill: var(--color-schemes-accent-logo);
+        width: auto;
+    }
+
+    100% {
+        top: 25%;
+        opacity: 1;
+        fill: var(--color-schemes-accent-logo);
+        transform: scale(1);
+        width: auto;
+    }
+}
+
+.svg-pit {
+    position: absolute;
+    right: -32px;
+    top: 25px;
+    width: 30px;
+    height: 15px;
+    background-color: #eff1f3f8;
+    /* background-color: var(--background-top); */
+    /* background-color: white; */
+    border-radius: 50%;
+    transform: skew(55deg) rotateX(70deg);
+    z-index: -2;
+    box-shadow: inset 0 0 0 .5px #fafafaf8;
+    animation: hidden 2s;
+    animation-timing-function: ease;
+    opacity: 0;
+    transform: scale(0);
+}
+
+@keyframes hidden {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    25% {
+        opacity: 0;
+        transform: scale(1.4, .5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.4, .5);
+    }
+
+    75% {
+        opacity: 1;
+        transform: scale(1.4, .5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.wishlist__button.active .svg-pit {
+    animation: width 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes width {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    25% {
+        opacity: 0;
+        transform: scale(1.4, .5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.4, .5);
+    }
+
+    75% {
+        opacity: 1;
+        transform: scale(1.4, .5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+/* wishlist end */
+
+.product__img-wrapper {
+    transition: 1s ease-in-out;
+    /* margin-bottom: 20px; */
+    /* убирает белый фон картинки */
+    mix-blend-mode: multiply;
+}
+
+.product__img-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.product__text-wrapper {
+    flex-grow: 1;
+    padding: 20px 10px 20px;
+}
+
+.product__title {
+    /* margin-left: 8px; */
+    margin-bottom: 10px;
+    font-size: 24px;
+    /* блок заголовка карточки имеет фиксированную высоту */
+    /* min-height: 80px; */
+    min-height: 50px;
+}
+
+.product__description {
+    /* margin-left: 8px; */
+    /* margin-bottom: 20px; */
+    font-size: 16px;
+}
+
+.feedback-basket__wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 8px; */
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    /* flex-grow: 1; */
+}
+
+.rating-feedback-cart__wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.rating-feedback__wrapper {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.feedback-rating {
+    display: inline-flex;
+    font-size: 24px;
+    color: var(--color-schemes-accent-logo);
+}
+
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    letter-spacing: 0em;
+}
+
+.rating__item {
+    font-size: 34px;
+    line-height: 1;
+    color: var(--background-top);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.rating__item:hover,
+.rating__item:hover~.rating__item {
+    color: var(--color-schemes-accent-logo);
+}
+
+.rating[data-total-value="1"] .rating__item:nth-child(n+5),
+.rating[data-total-value="2"] .rating__item:nth-child(n+4),
+.rating[data-total-value="3"] .rating__item:nth-child(n+3),
+.rating[data-total-value="4"] .rating__item:nth-child(n+2),
+.rating[data-total-value="5"] .rating__item:nth-child(n+1) {
+    color: var(--color-schemes-accent-logo);
+}
+
+.feedback {
+    font-size: 14px;
+}
+
+.cart__add {
+    fill: var(--background-top);
+}
+
+.cart__button {
+    padding: 0;
+}
+
+.cart__button:active {
+    transform: scale(.95);
+}
+
+.cart__button.active>.cart__add {
+    fill: var(--color-schemes-accent-logo);
+}
+
+.price-delivery__wrapper {
+    /* flex-grow: 1; */
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+.price_old {
+    font-size: 16px;
+    color: var(--line-header);
+    text-decoration: line-through;
+    text-decoration-color: var(--color-schemes-accent);
+    /* margin-left: 8px; */
+    /* margin-bottom: 10px; */
+}
+
+.price_current {
+    font-size: 24px;
+    /* margin-left: 8px; */
+    /* margin-bottom: 10px; */
+}
+
+.delivery {
+    font-size: 14px;
+    /* margin-left: 8px; */
+    margin-bottom: 20px;
+    color: var(--color-schemes-accent-logo);
+}
+
+.buy__button {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: var(--color-schemes-maine);
+    color: var(--opposite-text);
+    /* padding: 8px 16px;
+    font-size: 20px; */
+    text-align: center;
+    width: 100%;
+}
+
+.buy__button:hover,
+.buy__button:focus {
+    background-color: var(--color-schemes-base);
+    transition: color 300ms cubic-bezier(0.2, 0, 0.2, 1);
+}
+/* карточка товара end */
 
 
 
@@ -729,12 +1255,7 @@ body {
 
 
 
-
-
-
-
-
-
+/* master-catalog.html start */
 
 /* form-search  start*/
 
@@ -1002,23 +1523,6 @@ mark {
 
 
 
-/* Slider Автомобильные запчасти по подкатегориям */
-
-
-
-/* Slider Автомобильные запчасти по марке автомобиля */
-
-
-
-/* Section slider */
-
-
-
-/* 6 карточек в слайдере*/
-.slider__item.slider__subitem{
-    flex: 0 0 16.66%;
-    max-width: 16.66%;
-}
 
 
 
@@ -1033,97 +1537,9 @@ mark {
 
 
 
-/* Slider-section--new */
 
-.slider-section--new{
-    padding-top: 50px;
-    padding-bottom: 25px;
-}
 
-.slider__item.slider__item--new{
-    flex: 0 0 20%;
-    max-width: 20%;
-}
 
-/* Slider-section--viewed */
-
-.slider-section--viewed {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.slider__item.slider__item--viewed{
-    flex: 0 0 20%;
-    max-width: 20%;
-}
-
-/* Button */
-
-.button{
-    /* font-family: inherit; */
-    font-family: "Open Sans", sans-serif;
-
-    background-color:var(--primary-background);
-    color:var(--primary-text);
-
-    font-size: 20px;
-    padding: 8px 16px;
-    display: inline-block;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    border: transparent;
-    /* text-decoration: none; */
-    cursor: pointer;
-}
-
-.button__primary{
-    background-color:var(--color-schemes-maine);
-
-    color: var(--primary-background);
-    ;
-}
-
-.button__primary:hover{
-background-color:var(--color-schemes-base);
-}
-
-.button__secondary {
-    background-color: var(--color-schemes-accent-logo);
-
-    color: var(--primary-background);
-   }
-
-.button__secondary:hover{
-    background-color:var(--color-schemes-accent-logo-current);
-}
-
-   /* Текущая страница start*/
-
-.current {
-    color:var(--color-schemes-base);
-
-/* Для установки ::after */
-    position: relative;
-}
-
-.current::after{
-    display: block;
-    content: '';
-    text-align: center;
-    width: 100%;
-    height: 1px;
-    bottom: -1px;
-
-    background-repeat: 40px;
-    background-color:var(--color-schemes-base);
-    border: 1px solid;
-    border-radius: 10px;
-    position: absolute;
-}
-.site-nav__link--bottom.current-without-after{
-    color: var(--color-schemes-base);
-}
-   /* Текущая страница  end*/
 
 /* Footer */
 
@@ -1517,546 +1933,13 @@ color: var(--color-schemes-accent-logo);
     /* align-self: stretch; */
     margin-left: calc(-1 * 10px);
     margin-bottom: calc(-1 * 10px);
-
-    /* justify-content: space-between; */
-}
-
-.product-item {
-    /* width: 250px;
-    margin: 0 auto;
-    padding: 10px 10px 0px 10px;
-    flex-grow: 1; */
-
-    display: flex;
-   /* flex-direction: column; */
-
-    /* justify-content:space-between; */
-
-    /* max-width: 280px; */
-    /* flex-basis: calc(25% - 5px); */
-    flex-basis: calc(100% / 5 - 10px);
-
-    border: 1px solid var(--color-schemes-base);
-    border-radius: 4px;
-
-    margin-left: calc(1 * 10px);
-    margin-bottom: calc(1 * 10px);
-
-    /* убрать маркер в карточках карусели */
-    list-style: none;
-    
-}
-
-.product-item:hover{
-    box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
-}
-
-.product-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-/* убирает белый фон картинки */
-.product-img-wrapper{
-    mix-blend-mode: multiply;
-}
-
-.discount-wishlist-wrapper{
-    display: flex;
-    align-items: center;
-    transition: 2s ease-in-out;
-    padding: 10px 10px 20px 10px;
-}
-
-.discount{
-    display:inline-block;
-    font-size: 16px;
-    background-color: var(--color-schemes-accent);
-    color: var(--opposite-text);
-
-    padding: 6px 6px 6px 6px;
-    margin-top: 8px;
-    margin-right: auto;
-    margin-bottom: 10px;
-    border: 1px solid var(--color-schemes-accent);
-    border-radius: 4px;
-    border: transparent;
-}
-
-/* Скрывает дисконт в секции Что новенького */
-.discount__visibility-hidden{
-    visibility: hidden;
-}
-/* точное перемещение в начало секций: Что новенького, Ранее просматривалт, Избранное start */
-#new, #view, #fav{
-    padding-top: 240px;
-    margin-top: -240px;
-}
-/* точное перемещение в начало секций: Что новенького, Ранее просматривалт, Избранное end */
-
-/* wishlist start */
-
-/* -- */
-/* .wow{
-    color: red;
-}
-.product {
-    position: relative;
-    display: inline-block;
-} */
-
-/* .favorites {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 55px;
-    height: 55px;
-    z-index: 1;
-} */
-
-/* .favorites .image {
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    background: url('../images/favorites.png') no-repeat;
-    cursor: pointer;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-} */
-
-/* .favorites.simple {
-    background: url('../images/favorites.png') no-repeat 100% 100%;
-}
-
-.favorites .add {
-    background-position: 0 0;
-    -webkit-transform: rotate3d(1, 1, 0, 0deg);
-    -moz-transform: rotate3d(1, 1, 0, 0deg);
-    -ms-transform: rotate3d(1, 1, 0, 0deg);
-    -o-transform: rotate3d(1, 1, 0, 0deg);
-    transform: rotate3d(1, 1, 0, 0deg);
-}
-
-.favorites.simple .add {
-    -webkit-transform: rotate3d(1, 1, 0, 180deg);
-    -moz-transform: rotate3d(1, 1, 0, 180deg);
-    -ms-transform: rotate3d(1, 1, 0, 180deg);
-    -o-transform: rotate3d(1, 1, 0, 180deg);
-    transform: rotate3d(1, 1, 0, 180deg);
-}
-
-.favorites:hover .add,
-.favorites.simple .add {
-    background-position: -56px 0;
-}
-
-.favorites .remove {
-    background-position: -111px 0;
-    -webkit-transform: rotate3d(1, 1, 0, 180deg);
-    -moz-transform: rotate3d(1, 1, 0, 180deg);
-    -ms-transform: rotate3d(1, 1, 0, 180deg);
-    -o-transform: rotate3d(1, 1, 0, 180deg);
-    transform: rotate3d(1, 1, 0, 180deg);
 }
 
 
-.favorites.simple .remove {
-    -webkit-transform: rotate3d(1, 1, 0, 0deg);
-    -moz-transform: rotate3d(1, 1, 0, 0deg);
-    -ms-transform: rotate3d(1, 1, 0, 0deg);
-    -o-transform: rotate3d(1, 1, 0, 0deg);
-    transform: rotate3d(1, 1, 0, 0deg);
-}
-
-.favorites .remove:hover {
-    background-position: -167px 0;
-} */
-
-/* -- */
-/* два раза указан класс discount-wishlist-wrapper - совместить */
-.discount-wishlist-wrapper{
-    position: relative;
-}
-.wishlist-button{
-    position: absolute;
-        right: 48px;
-        top: 8px;
-    cursor: pointer;
-    transition: .4s;
-    perspective: 100px;
-}
-.wishlist-button:active{
-transform: scale(.95);
-}
-.add-wishlist{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    transition: .6s;
-}
-.wishlist-button > .add-wishlist{
-    fill: var(--background-top);
-    animation: first 2s ease;
-}
-@keyframes first{
-    0% {
-        top: 25%;
-        opacity: 1;
-        fill: var(--color-schemes-accent-logo);
-        width: auto;
-    }
-    25%{
-        top: -42px;
-        opacity: 1;
-        fill: var(--background-top);
-        width: auto;
-    }
-    50% {
-        top: 80px;
-        opacity: 0;
-        fill: none;
-        width: auto;
-    }
-    75% {
-        top: -42px;
-        opacity: 1;
-        fill: var(--background-top);
-        width: auto;
-    }
-    99% {
-        top: 0px;
-        opacity: 1;
-        fill: var(--background-top);
-        width: auto;
-    }
-    100% {
-        top: 25%;
-        opacity: 1;
-        fill: var(--background-top);
-        transform: scale(1);
-        width: auto;
-    }
-}
-.wishlist-button.active > .add-wishlist{
-    fill: var(--color-schemes-accent-logo);
-    animation: active 2s ease;
-}
-@keyframes active{
-    
-        0% {
-            top: 25%;
-            opacity: 1;
-            fill: var(--background-top);
-            width: auto;
-        }
-        25% {
-            top: -42px;
-            opacity: 1;
-            fill: var(--background-top);
-            width: auto;
-        }
-        50% {
-            top: 80px;
-            opacity: 0;
-            fill: none;
-            width: auto;
-        }
-        75% {
-            top: -42px;
-            opacity: 1;
-            fill: var(--color-schemes-accent-logo);
-            width: auto;
-        }
-        99% {
-            top: 0px;
-            opacity: 1;
-            fill: var(--color-schemes-accent-logo);
-            width: auto;
-        }
-        100% {
-            top: 25%;
-            opacity: 1;
-            fill: var(--color-schemes-accent-logo);
-            transform: scale(1);
-            width: auto;
-        }
-    }
-    .svg-pit{
-        position: absolute;
-        right: -32px;
-        top: 25px;
-        width: 30px;
-        height: 15px;
-        background-color: #eff1f3f8;
-        /* background-color: var(--background-top); */
-        /* background-color: white; */
-        border-radius: 50%;
-        transform: skew(55deg) rotateX(70deg);
-        z-index: -2;
-        box-shadow: inset 0 0 0 .5px #fafafaf8;
-        animation: hidden 2s;
-        animation-timing-function: ease;
-        opacity: 0;
-        transform: scale(0);
-}
-@keyframes hidden {
-    0% {
-        opacity: 0;
-        transform: scale(0);
-    }
-    25% {
-        opacity: 0;
-        transform: scale(1.4, .5);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.4, .5);
-    }
-    75% {
-        opacity: 1;
-        transform: scale(1.4, .5);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(0);
-    }
-}
-.wishlist-button.active .svg-pit{
-    animation: width 2s;
-    animation-timing-function: ease;
-}
-@keyframes width{
-    0% {
-        opacity: 0;
-        transform: scale(0);
-        }
-    25% {
-        opacity: 0;
-        transform: scale(1.4, .5);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.4, .5);
-    }
-    75% {
-        opacity: 1;
-        transform: scale(1.4, .5);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(0);
-    }
-}
-/* wishlist end */
-
-.product-img-wrapper {
-    transition: 1s ease-in-out;
-    /* margin-bottom: 20px; */
-}
-
-.product-img-wrapper:hover {
-    transform: scale(1.05);
-}
-
-
-.product-text-wrapper{
-    flex-grow: 1;
-    padding: 20px 10px 20px;
-}
-
-.product-title {
-    /* margin-left: 8px; */
-    margin-bottom: 10px;
-    font-size: 24px;
-
-    /* блок заголовка карточки имеет фиксированную высоту */
-    /* min-height: 80px; */
-    min-height: 50px;
-}
-
-.product-description {
-    /* margin-left: 8px; */
-    /* margin-bottom: 20px; */
-    font-size: 16px;
-}
-
-.feedback-recommend-basket-wrapper {
-    display: flex;
-    justify-content: space-between;
-    /* margin-left: 8px; */
-    margin-bottom: 10px;
-    padding: 0px 10px ;
-
-    /* flex-grow: 1; */
-
-}
-
-/* feedback-rating start */
-.rating-feedback-recommended-cart{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
-}
-.rating-feedback-recommended{
-    display: inline-flex;
-    flex-direction: column;
-}
-
-.feedback-rating {
-    display: inline-flex;
-    font-size: 24px;
-    color: var(--color-schemes-accent-logo);
-}
-
-.rating{
-    display: inline-flex;
-    flex-direction: row-reverse;
-    letter-spacing: 0em;
-}
-.rating__item{
-    font-size: 34px;
-    line-height: 1;
-    color: var(--background-top);
-    cursor: pointer;
-    transition: .2s;
-}
-.rating__item:hover, 
-.rating__item:hover ~ .rating__item{
-    color: var(--color-schemes-accent-logo);
-}
-
-.rating[data-total-value="1"] .rating__item:nth-child(n+5),
-.rating[data-total-value="2"] .rating__item:nth-child(n+4),
-.rating[data-total-value="3"] .rating__item:nth-child(n+3),
-.rating[data-total-value="4"] .rating__item:nth-child(n+2),
-.rating[data-total-value="5"] .rating__item:nth-child(n+1){
-    color: var(--color-schemes-accent-logo);
-}
-
-.add-cart {
-    fill: var(--background-top);
-}
-
-.cart-button {
-    padding: 0;
-}
-
-.cart-button:active {
-    transform: scale(.95);
-}
-
-.cart-button.active>.add-cart {
-    fill: var(--color-schemes-accent-logo);
-}
-.wishlist{
-
-}
-.add{
-    align-items: center;
-    justify-content: center;
-}
-.no-active {
-    fill: blue;
-}
-.active{
-    fill: red;
-}
-/* feedback-rating end */
 
 
 
 
-.feedback-recommend {
-    font-size: 14px;
-}
-
-.price__wrapper{
-    /* flex-grow: 1; */
-    padding: 0px 10px;
-    margin: 0 auto;
-}
-
-.add-basket {
-    /* display: inline-block; */
-    font-size: 38px;
-    margin-top: auto;
-    margin-bottom: auto;
-    /* text-align:center;
-    vertical-align: baseline; */
-
-    color: var(--color-schemes-accent-logo);
-
-    /* padding: 6px 4px 0px 6px; */
-
-    /* border: 1px solid var(--color-schemes-accent-logo); */
-    /* border-radius: 4px; */
-
-    /* position: absolute;
-    transform: translate(400%, 642%); */
-
-    color: var(--color-schemes-accent-logo);
-    
-}
-
-.add-basket:hover,
-.add-basket:focus{
-    
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.price-old {
-    font-size: 16px;
-    color: var(--line-header);
-    text-decoration: line-through;
-    text-decoration-color: var(--color-schemes-accent);
-    /* margin-left: 8px; */
-    /* margin-bottom: 10px; */
-}
-
-.price-current {
-    font-size: 24px;
-    /* margin-left: 8px; */
-    /* margin-bottom: 10px; */
-}
-
-/* .price-basket-wrapper{
-    display: flex;
-    justify-content: space-between;
-} */
-
-
-
-.delivery-day {
-    font-size: 14px;
-    /* margin-left: 8px; */
-    margin-bottom: 20px;
-    color: var(--color-schemes-accent-logo);
-}
-
-.buy-button {
-    display: inline-block;
-    margin: 0 auto;
-    background-color: var(--color-schemes-maine);
-    color: var(--opposite-text);
-    /* padding: 8px 16px;
-    font-size: 20px; */
-    text-align: center;
-    width: 100%;
-}
-
-.buy-button:hover,
-.buy-button:focus {
-background-color: var(--color-schemes-base);  
-transition: color 300ms cubic-bezier(0.2, 0, 0.2, 1);
-    
-}
 
 
 /* Favorite */
