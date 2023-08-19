@@ -63,6 +63,14 @@
   left: 0;
 }
 
+/* кастомные start*/
+/* точечное переопределение верхнего свойства,- смещение стрелки 'prev' на 10px вправо */
+.slider-section_new .slider__control[data-slide="prev"],
+.slider-section_viewed .slider__control[data-slide="prev"]{
+  left: 10px;
+}
+/* кастомные end*/
+
 .slider__control[data-slide="next"] {
   right: 0;
 }
@@ -148,3 +156,5 @@
 
   background-color: rgb(255 205 0 / 25%)
 }
+
+

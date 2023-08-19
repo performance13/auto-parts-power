@@ -3251,3 +3251,8 @@ body.lock {
 .model-search__input:focus-within{
     background-color: #008cba;
 }
+
+
+.slider__control[data-slide="prev"] {
+    left: 10px;
+}
