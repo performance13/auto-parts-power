@@ -25,16 +25,11 @@
   <!-- CSS файл -->
   <link rel="stylesheet" href="./css/styles.css" />
 
-
-
-
   <!-- Slider -->
   <!-- CSS -->
   <link rel="stylesheet" href="./css/itc-slider.css">
   <!-- JavaScript -->
   <script src="./js/itc-slider.js" defer></script>
-
-
 
   <!-- favicon -->
   <link rel="icon" href="./images/logo_normal 35_35.png" sizes="16x16 32x32" type="image/png" />
@@ -42,34 +37,33 @@
 
 <body>
 
-  <div class="header__wrapper ">
-    <header class="header-top">
+    <!-- header-top start -->
+    <header class="header-top sticky">
       <div class="container">
 
         <nav class="site-nav">
+
           <ul class="site-nav__list">
 
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Главная</a>
-            </li>
-            <li class="site-nav__item"><a href="./about.html" class="site-nav__link">О нас</a>
-            </li>
-            <li class="site-nav__item"><a href="./guarantee.html" class="site-nav__link">Гарантия</a></li>
-            <li class="site-nav__item"><a href="./payment.html" class="site-nav__link">Оплата</a>
-            </li>
-            <li class="site-nav__item"><a href="./delivery.html" class="site-nav__link">Доставка</a>
-            </li>
-            <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link">Контакты</a>
-            </li>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Главная</a></li>
+            <li class="site-nav__item">
+              <a href="./about.html" class="site-nav__link">О нас</a></li>
+            <li class="site-nav__item">
+              <a href="./guarantee.html" class="site-nav__link">Гарантия</a></li>
+            <li class="site-nav__item">
+              <a href="./payment.html" class="site-nav__link">Оплата</a></li>
+            <li class="site-nav__item">
+              <a href="./delivery.html" class="site-nav__link">Доставка</a></li>
+            <li class="site-nav__item">
+              <a href="./contacts.html" class="site-nav__link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="./master-catalog.html" class="site-nav__link header_current">Каталог</a></li>
 
-            <div class="quest">
-              <li class="site-nav__item"><a href="./master-catalog.html" class="site-nav__link current">Каталог</a>
-              </li>
+            <ul class="request">
               <li class=" site-nav__item">
-                <a href="#modal-request" data-modal-btn="modal-request" class="site-nav__link">Запрос по
-                  параметрам</a>
-              </li>
-            </div>
-
+                <a href="#modal-request" data-modal-btn="modal-request" class="site-nav__link">Запрос по параметрам</a></li>
+            </ul>
           </ul>
 
           <ul class="lang-switcher__list">
@@ -77,27 +71,49 @@
                 title="Мовний інтерфейс в процесі розробки">ua</a></li>
             <li class="lang-switcher__item"><a class="lang-switcher__link" href="#">ru</a></li>
           </ul>
+
+          <ul class="wish-cart__list">
+            <li class="wish__item">
+              <a class="wish__link" href="./wishlist.html" title="Избранное">
+                <svg width="20" height="20" class="wish__icon">
+                  <use href="./images/symbol-defs.svg#icon-heart">
+                  </use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="cart__item">
+              <a class="cart__link" rel="nofollow" href="./cart.html" title="Корзина покупок">
+                <svg width="23" height="23" class="cart__icon">
+                  <use href="./images/symbol-defs.svg#icon-finance-cart3">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
         </nav>
+
       </div>
     </header>
+    <!-- header-top end -->
 
+    <!-- header-middle start -->
     <header class="header-middle">
       <div class="container">
 
         <div class="header-middle__list">
-          <div class="logo__holder">
-            <a href=" index.html" class="logo" lang="" title="">
-              <img class="logo-img--header" src="./images/svg/logo.svg" alt="Auto-parts Ukraine" srcset="" width="90" />
+          <div class="logo">
+            <a href="index.html" class="logo__link" lang="" title="">
+              <img class="logo__img_header" src="./images/svg/logo.svg" alt="Auto-parts Ukraine" srcset="" width="90" />
 
-              <div class="logo__text">
-                <span class="logo__text--auto">Auto
-                </span>
+              <div class="logo__name">
+                <span class="logo__name_first">Auto</span>
+                <span class="logo__name_second">parts</span>
+              </div>
 
-                <span class="logo__text--parts">parts
-                </span>
             </a>
           </div>
-
         </div>
 
         <address>
@@ -105,50 +121,30 @@
             <li class="contact__item">
               <a href="tel:+380997177427" class="contact__link">
                 <svg width="10" height="16" class="contacts__icon">
-                  <use href="./images/svg/icons.svg#smartphone"></use>
-                </svg>(099) 717 74 27</a>
+                  <use href="./images/symbol-defs.svg#icon-message-smartphone"></use>
+                </svg>(099) 717 74 27
+              </a>
             </li>
 
-            <li class="contact__item"><a href="mailto:info@auto-parts.com" class="contact__link">
+            <li class="contact__item">
+              <a href="mailto:info@auto-parts.com" class="contact__link">
                 <svg width="16" height="12" class="contacts__icon">
-                  <use href="./images/svg/icons.svg#envelope"></use>
-                </svg>info@auto-parts.com</a>
+                  <use href="./images/symbol-defs.svg#icon-message-envelope"></use>
+                </svg>info@auto-parts.com
+              </a>
             </li>
           </ul>
-        </address>
-        <!-- <li>
-                      <a href="">Товары для ТО
-                        <img src="./images/svg/" alt="" srcset="" width="50" />
-                      </a>
-                    </li> -->
-
-        <!-- <ul>
-                      <li><a href="">On-line заказ</a></li>
-                      <li><a href="">Регистрация</a></li>
-                      <li><a href="">Личный кабинет</a></li>
-                    </ul> -->
-
-
-
-        <!-- <form action="./index.html" class="form-input-search">
-          <input class="input-search" type="search" placeholder="Какую запчасть ищите?">
-          <button class="button-search" type="submit">
-            <ion-icon name="search">
-            </ion-icon>
-          </button>
-        </form> -->
-
-
-
-
+        </address>    
+        
       </div>
-
     </header>
+    <!-- header-middle end -->
 
+    <!-- header-bottom start -->
     <header class="header-bottom">
       <div class="container">
         <nav class="category-nav">
-          <h2 class="section__title title__visibility-hidden">Основные категории автомобильных запчастей</h2>
+          <h2 class="title__visibility_hidden">Основные категории автомобильных запчастей</h2>
           <ul class="category-nav__list">
             <li><a href="http://" class="category-nav__link">Кузовные детали</a></li>
             <li><a href="http://" class="category-nav__link">Рулевое управление</a></li>
@@ -160,66 +156,58 @@
             <li><a href="http://" class="category-nav__link">Тормозная система</a></li>
             <li><a href="http://" class="category-nav__link">Электрические механизмы</a></li>
             <li><a href="http://" class="category-nav__link">Оптика</a></li>
-            <li><a href="http://" class="category-nav__link">Система выпуска</a>
-            </li>
-
+            <li><a href="http://" class="category-nav__link">Система выпуска</a></li>
           </ul>
         </nav>
       </div>
     </header>
-  </div>
+    <!-- header-bottom end -->
+
 
   <main>
 
-    <section class="section">
+    <section class="section stiky">
       <div class="container">
         <div class="button__fild">
-
-          <a href="#modal-request" class="button button__secondary button__secondary_master-catalog"
-            data-modal-btn="modal-request">Запрос на
-            поиск</a>
-
-          <!-- <button class="button button__secondary button__secondary_master-catalog" type="button">
-            <span class="button__label">Запрос на поиск</span>
-          </button> -->
-
+          <a href="#modal-request" class="button button__secondary" data-modal-btn="modal-request">Запрос на поиск</a>
           <a href="#brands-auto" class="button button__secondary">Выбор по марке автомобиля</a>
           <a href="#categories-auto" class="button button__secondary">Выбор по категориям</a>
+          <a href="#subcategories-auto" class="button button__secondary">Выбор по категориям</a>
         </div>
-
       </div>
     </section>
 
-    <section class=" master-catalog-section">
+    <!--  auto-catalog start -->
+    <section class="auto-catalog">
       <div class="container">
-        <h2 class="title__visibility-hidden">Каталог автозапчастей</h2>
-        <h3 id="brands-auto" class="section__title">Выбор запчастей по марке автомобиля</h3>
+        <h2 id="brands-auto" class="title__visibility_hidden">Каталог автозапчастей</h2>
+        <h3 class="section__title">Выбор запчастей по марке автомобиля</h3>
 
         <!--  form-search start -->
-        <section class="section"
-          style="background-color:var(--background-middle);padding-top:25px; padding-bottom:100px">
+        <section class="section">
           <div class="container">
             <form class="form-search" action="http://index.html/search/" method="get">
-              <h3 class="title__visibility-hidden">Поиск по марке автомобиля</h3>
+              <h3 class="title__visibility_hidden">Поиск по марке автомобиля</h3>
               <input class="model-search__input" type="text" name="" placeholder="" id="search-model__input" value="" autocomplete="off">
-              <label class="model-search__label" for="">найти...</label>
+              <label class="model-search__label" for="">Поиск . . .</label>
               <!-- <button type="submit" value="найти"> -->
             </form>
           </div>
-          <!-- form-search   end -->
+        </section>
+        <!-- form-search end -->
 
-          <ul class="brand__list search-model__input">
+        <ul class="brand__list search-model__input">
             <li class="brand__item">
-              <div class="auto-brand__thumb">
+              <div class="brand__thumb">
                 <!-- запись через img, а не через svg спрайт: -->
                 <!-- <a href="" lang="en">
                   <div class="img-wrapper">
                     <img src="./images/png/models/audi-logo.png" alt="" width="100%" />
                   </div>
                 </a> -->
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">acura акура</p>
-                  <svg width="" height="" class="auto__icon">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">acura акура</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-acura">
                     </use>
                   </svg>
@@ -228,10 +216,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">alfa romeo альфа ромео</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">alfa romeo альфа ромео</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-alfaromeo">
                     </use>
                   </svg>
@@ -240,10 +228,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">aston martin астон мартин</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">aston martin астон мартин</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-astonmartin">
                     </use>
                   </svg>
@@ -252,10 +240,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">audi ауди</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">audi ауди</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-audi">
                     </use>
                   </svg>
@@ -264,10 +252,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">bentley бентли</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">bentley бентли</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-bentley">
                     </use>
                   </svg>
@@ -276,10 +264,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">bmw бмв</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">bmw бмв</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-bmw">
                     </use>
                   </svg>
@@ -288,10 +276,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">buick бьюик</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">buick бьюик</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-buick">
                     </use>
                   </svg>
@@ -300,10 +288,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">cadillac кадиллак</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">cadillac кадиллак</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-cadillac">
                     </use>
                   </svg>
@@ -312,10 +300,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">chevrolet шевролет</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">chevrolet шевролет</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-chevrolet">
                     </use>
                   </svg>
@@ -324,10 +312,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">chrysler крайслер</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">chrysler крайслер</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-chrysler">
                     </use>
                   </svg>
@@ -336,10 +324,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">citroen ситроен</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">citroen ситроен</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-citroen">
                     </use>
                   </svg>
@@ -348,10 +336,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">dacia дачия</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">dacia дачия</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-dacia">
                     </use>
                   </svg>
@@ -360,10 +348,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">daewoo деу</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">daewoo деу</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-daewoo">
                     </use>
                   </svg>
@@ -372,10 +360,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">daihatsu даихатсу</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">daihatsu даихатсу</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-daihatsu">
                     </use>
                   </svg>
@@ -384,10 +372,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">dodge додж</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">dodge додж</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-dodge">
                     </use>
                   </svg>
@@ -396,10 +384,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">ferrari феррари</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">ferrari феррари</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-ferrari">
                     </use>
                   </svg>
@@ -408,10 +396,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">fiat фиат</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">fiat фиат</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-fiat">
                     </use>
                   </svg>
@@ -420,10 +408,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">ford форд</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">ford форд</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-ford">
                     </use>
                   </svg>
@@ -432,10 +420,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">gmc джи эм си</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">gmc джи эм си</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-gmc">
                     </use>
                   </svg>
@@ -444,10 +432,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">honda хонда</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">honda хонда</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-honda">
                     </use>
                   </svg>
@@ -456,10 +444,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">hummer хаммер</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">hummer хаммер</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-hummer">
                     </use>
                   </svg>
@@ -468,10 +456,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">hyundai хюндай</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">hyundai хюндай</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-hyundai">
                     </use>
                   </svg>
@@ -480,10 +468,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">infinii инфинити</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">infinii инфинити</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-infiniti">
                     </use>
                   </svg>
@@ -492,10 +480,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">isuzu исузу</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">isuzu исузу</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-isuzu">
                     </use>
                   </svg>
@@ -504,10 +492,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">iveco ивеко</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">iveco ивеко</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-iveco">
                     </use>
                   </svg>
@@ -516,10 +504,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">jaguar ягуар</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">jaguar ягуар</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-jaguar">
                     </use>
                   </svg>
@@ -528,10 +516,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">jeep джып</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">jeep джып</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-jeep">
                     </use>
                   </svg>
@@ -540,10 +528,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">kia киа</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">kia киа</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-kia">
                     </use>
                   </svg>
@@ -552,10 +540,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">lamborghini ламборджини</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">lamborghini ламборджини</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-lamborghini">
                     </use>
                   </svg>
@@ -564,10 +552,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">lancia лянча</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">lancia лянча</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-lancia">
                     </use>
                   </svg>
@@ -576,10 +564,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">land rover ленд ровер</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">land rover ленд ровер</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-landrover">
                     </use>
                   </svg>
@@ -588,10 +576,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">lexus лексус</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">lexus лексус</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-lexus">
                     </use>
                   </svg>
@@ -600,10 +588,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">lincoln линкольн</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">lincoln линкольн</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-lincoln">
                     </use>
                   </svg>
@@ -612,10 +600,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">lotus лотус</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">lotus лотус</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-lotus">
                     </use>
                   </svg>
@@ -624,10 +612,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">maserati мазератти</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">maserati мазератти</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-maserati">
                     </use>
                   </svg>
@@ -636,10 +624,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">mazda мазда</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">mazda мазда</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-mazda">
                     </use>
                   </svg>
@@ -648,10 +636,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">mercedes benz мерседес бенц</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">mercedes benz мерседес бенц</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-mercedesbenz">
                     </use>
                   </svg>
@@ -660,10 +648,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">mini мини</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">mini мини</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-mini">
                     </use>
                   </svg>
@@ -672,10 +660,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">mitsubishi митсубиши</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">mitsubishi митсубиши</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-mitsubishi">
                     </use>
                   </svg>
@@ -684,10 +672,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">nissan ниссан</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">nissan ниссан</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-nissan">
                     </use>
                   </svg>
@@ -696,10 +684,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">opel опель</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">opel опель</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-opel">
                     </use>
                   </svg>
@@ -708,10 +696,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">peugeot пежо</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">peugeot пежо</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-peugeot">
                     </use>
                   </svg>
@@ -720,10 +708,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">plymouth плимут</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">plymouth плимут</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-plymouth">
                     </use>
                   </svg>
@@ -732,10 +720,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">pontiac понтиак</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">pontiac понтиак</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-pontiac">
                     </use>
                   </svg>
@@ -744,10 +732,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">porsche порше</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">porsche порше</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-porsche">
                     </use>
                   </svg>
@@ -756,10 +744,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">renault рено</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">renault рено</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-renault">
                     </use>
                   </svg>
@@ -768,10 +756,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">rover ровер</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">rover ровер</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-rover">
                     </use>
                   </svg>
@@ -780,10 +768,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">saab сааб</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">saab сааб</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-saab">
                     </use>
                   </svg>
@@ -792,10 +780,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">seat сиат</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">seat сиат</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-seat">
                     </use>
                   </svg>
@@ -804,10 +792,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">skoda шкода</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">skoda шкода</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-skoda">
                     </use>
                   </svg>
@@ -816,10 +804,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">smart смарт</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">smart смарт</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-smart">
                     </use>
                   </svg>
@@ -828,10 +816,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">ssang yong санг йонг</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">ssang yong санг йонг</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-ssangyong">
                     </use>
                   </svg>
@@ -840,10 +828,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">subaru субару</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">subaru субару</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-subaru">
                     </use>
                   </svg>
@@ -852,10 +840,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">suzuki сузуки</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">suzuki сузуки</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-suzuki">
                     </use>
                   </svg>
@@ -864,10 +852,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">tesla тесла</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">tesla тесла</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-tesla">
                     </use>
                   </svg>
@@ -876,10 +864,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">toyota тойота</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">toyota тойота</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-toyota">
                     </use>
                   </svg>
@@ -888,10 +876,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">volvo вольво</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">volvo вольво</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-volvo">
                     </use>
                   </svg>
@@ -900,10 +888,10 @@
             </li>
 
             <li class="brand__item">
-              <div class="auto-brand__thumb">
-                <a href="http://" target="_blank" rel="noopener noreferrer" class="auto__link">
-                  <p class="auto__name">volkswagen фольксваген</p>
-                  <svg width="" height="" class="auto__icon">
+              <div class="brand__thumb">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="brand__link">
+                  <p class="brand__name">volkswagen фольксваген</p>
+                  <svg width="" height="" class="brand__icon">
                     <use href="./images/symbol-defs.svg#icon-auto-volkswagen">
                     </use>
                   </svg>
@@ -911,28 +899,27 @@
               </div>
             </li> 
 
-          </ul>
+        </ul>
       </div>
-
     </section>
+    <!--  auto-catalog end -->
 
-    <section class="catalog-section">
+    <!--  categories-section start -->
+    <section class="categories-section">
       <div class="container">
         <h3 id="categories-auto" class="section__title">Выбор запчастей по категориям</h3>
 
         <!--  form-search start -->
-        <section class="section"
-          style="background-color:var(--background-middle);padding-top:25px;padding-bottom:100px">
+        <section class="section">
           <div class="container">
-
             <form class="form-search autocomplete__form" action="http://index.html/search/" method="get">
-              <h3 class="title__visibility-hidden">Поиск по категориям</h3>
+              <h3 class="title__visibility_hidden">Поиск по категориям</h3>
 
-              <input class="category-search__input autocomplete__input" type="text" name="" placeholder="НАЙТИ..."  id="autocomplete" autocomplete="off">
+              <input class="categories-search__input autocomplete__input" type="text" name="" placeholder="ПОИСК . . ."  id="autocomplete" autocomplete="off">
               <!-- <label class="category-search__label label__autocomplete" for="">найти...</label> -->
             </form>
-
           </div>
+        </section>
           <!-- form-search   end -->
 
           <ul class="parts-categories__list">
@@ -943,89 +930,97 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/body-parts.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Кузовные детали</p>
+                <p class="parts-categories__name">Кузовные детали</p>
               </a>
-
             </li>
+
             <li class="parts-categories__item"> 
               <!-- <p class="category__name">Тормозная система</p> -->
               <a href="">
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/brakes.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Тормозная система</p>
+                <p class="parts-categories__name">Тормозная система</p>
               </a>
             </li>
+
             <li class="parts-categories__item"> 
               <!-- <p class="category__name">Полуоси</p> -->
               <a href="">
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/chassis-shafts.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Полуоси</p>
+                <p class="parts-categories__name">Полуоси</p>
               </a>
             </li>
+
             <li class="parts-categories__item"> 
               <!-- <p class="category__name">Вентиляторы охлаждения радиатора</p> -->
               <a href="">
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/radiator-cooling-fan.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Вентиляторы охлаждения радиатора</p>
+                <p class="parts-categories__name">Вентиляторы охлаждения радиатора</p>
               </a>
             </li>
+
             <li class="parts-categories__item"> 
               <!-- <p class="category__name">Радиатор охлаждения</p> -->
               <a href="">
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/cooling-radiator.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Радиатор охлаждения</p>
+                <p class="parts-categories__name">Радиатор охлаждения</p>
               </a>
             </li>
+
             <li class="parts-categories__item">
               <!-- <p class="category__name">Радиатор кондиционирования</p> -->
               <a href="">
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/cooling-radiator.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Радиатор кондиционирования</p>
+                <p class="parts-categories__name">Радиатор кондиционирования</p>
               </a>
             </li>
+
             <li class="parts-categories__item"> 
               <!-- <p class="category__name">Электронные компоненты</p> -->
               <a href="">
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/electronic-parts.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Электронные компоненты</p>
+                <p class="parts-categories__name">Электронные компоненты</p>
               </a>
             </li>
+
             <li class="parts-categories__item">
               <!-- <p class="category__name">Двигатели, детали двигателя</p> -->
               <a href="">
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/engine-engineparts.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Двигатели, детали двигателя</p>
+                <p class="parts-categories__name">Двигатели, детали двигателя</p>
               </a>
             </li>
+
             <li class="parts-categories__item"> 
               <!-- <p class="category__name">Выхлопная система</p> -->
               <a href="">
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/exhaust-system.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Выхлопная система</p>
+                <p class="parts-categories__name">Выхлопная система</p>
               </a>
             </li>
+
             <li class="parts-categories__item">
               <!-- <p class="category__name">Топливная система</p> -->
               <a href="">
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/fuel-system.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Топливная система</p>
+                <p class="parts-categories__name">Топливная система</p>
               </a>
             </li>
 
@@ -1035,7 +1030,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/gearbox-transmission.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Коробка передач</p>
+                <p class="parts-categories__name">Коробка передач</p>
               </a>
             </li>
 
@@ -1045,7 +1040,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/airconditioning-system.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Система кондиционирования</p>
+                <p class="parts-categories__name">Система кондиционирования</p>
               </a>
             </li>
 
@@ -1055,7 +1050,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/interior.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Интерьер</p>
+                <p class="parts-categories__name">Интерьер</p>
               </a>
             </li>
 
@@ -1065,7 +1060,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/lights.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Фары, фонари, поворотники, противотуманки</p>
+                <p class="parts-categories__name">Фары, фонари, поворотники, противотуманки</p>
               </a>
             </li>
 
@@ -1075,7 +1070,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/locking-system.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Замки, ручки, ключи</p>
+                <p class="parts-categories__name">Замки, ручки, ключи</p>
               </a>
             </li>
 
@@ -1085,7 +1080,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/mirrors.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Зеркала</p>
+                <p class="parts-categories__name">Зеркала</p>
               </a>
             </li>
 
@@ -1095,7 +1090,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/radio-audio-infotainment.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Аудио техника и аккустика</p>
+                <p class="parts-categories__name">Аудио техника и аккустика</p>
               </a>
             </li>
 
@@ -1105,7 +1100,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/steering.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Рули</p>
+                <p class="parts-categories__name">Рули</p>
               </a>
             </li>
 
@@ -1115,7 +1110,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/steering.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Рулевые рейки</p>
+                <p class="parts-categories__name">Рулевые рейки</p>
               </a>
             </li>
 
@@ -1125,7 +1120,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/switches-contacts.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Кнопки и переключатели</p>
+                <p class="parts-categories__name">Кнопки и переключатели</p>
               </a>
             </li>
 
@@ -1135,7 +1130,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/switches-contacts.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Стеклоподъемники</p>
+                <p class="parts-categories__name">Стеклоподъемники</p>
               </a>
             </li>
 
@@ -1145,7 +1140,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/tools-equipment.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Инструменты</p>
+                <p class="parts-categories__name">Инструменты</p>
               </a>
             </li>
 
@@ -1155,7 +1150,7 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/wipers.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Механизм дворников</p>
+                <p class="parts-categories__name">Механизм дворников</p>
               </a>
             </li>
 
@@ -1165,163 +1160,315 @@
                 <div class="img-wrapper">
                   <img src="./images/svg/categories/wipers.svg" alt="" width="100%" />
                 </div>
-                <p class="name-category">Товары без категории</p>
+                <p class="parts-categories__name">Товары без категории</p>
               </a>
             </li>
 
           </ul>
-
       </div>
-
-
-
     </section>
+    <!--  categories-section end -->
+
+        <!--  categories-section start -->
+    <section class="categories-section">
+      <div class="container">
+        <h3 id="subcategories-auto" class="section__title">Выбор запчастей по подкатегориям</h3>
+
+        <!--  form-search start -->
+        <section class="section">
+          <div class="container">
+            <form class="form-search autocomplete__form" action="http://index.html/search/" method="get">
+              <h3 class="title__visibility_hidden">Поиск по подкатегориям</h3>
+
+              <input class="categories-search__input autocomplete__input" type="text" name="" placeholder="ПОИСК . . ."  id="autocomplete" autocomplete="off">
+              <!-- <label class="category-search__label label__autocomplete" for="">найти...</label> -->
+            </form>
+          </div>
+        </section>
+          <!-- form-search   end -->
+
+          <ul class="parts-categories__list">
+
+            <li class="parts-categories__item"> 
+              <!-- <p class="category__name">Кузовные детали</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Кузовные детали</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item"> 
+              <!-- <p class="category__name">Тормозная система</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Тормозная система</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item"> 
+              <!-- <p class="category__name">Полуоси</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Полуоси</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item"> 
+              <!-- <p class="category__name">Вентиляторы охлаждения радиатора</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Вентиляторы охлаждения радиатора</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item"> 
+              <!-- <p class="category__name">Радиатор охлаждения</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Радиатор охлаждения</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item">
+              <!-- <p class="category__name">Радиатор кондиционирования</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Радиатор кондиционирования</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item"> 
+              <!-- <p class="category__name">Электронные компоненты</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Электронные компоненты</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item">
+              <!-- <p class="category__name">Двигатели, детали двигателя</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Двигатели, детали двигателя</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item"> 
+              <!-- <p class="category__name">Выхлопная система</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Выхлопная система</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item">
+              <!-- <p class="category__name">Топливная система</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Топливная система</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item"> 
+              <!-- <p class="category__name">Коробка передач</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Коробка передач</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item"> 
+              <!-- <p class="category__name">Система кондиционирования</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Система кондиционирования</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item"> 
+              <!-- <p class="category__name">Интерьер</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Интерьер</p>
+              </a>
+            </li>
+
+            <li class="parts-categories__item">
+              <!-- <p class="category__name">Фары, фонари, поворотники, противотуманки</p> -->
+              <a href="">
+                <div class="img-wrapper">
+                  <img src="./test/10106.png" alt="" width="100%" />
+                </div>
+                <p class="parts-categories__name">Фары, фонари, поворотники, противотуманки</p>
+              </a>
+            </li>
+
+          </ul>
+      </div>
+    </section>
+    <!--  categories-section end -->
+
   </main>
 
-  <footer class="footer-box">
-    <div class="container">
-  
-      <div class="first-column">
-  
-        <div class="logo__holder--footer">
-          <a href=" index.html" class="logo" lang="" title="">
-            <img class="logo-img--footer" src="./images/svg/logo.svg" alt="Auto-parts Ukraine" srcset="" width="90" />
-            <div class="logo__text--footer">
-              <span class="logo__text--auto-footer">Auto</span>
-              <span class="logo__text--parts-footer">parts</span>
-  
-              <p class="logo__footer-sign">
-                <span class="footer-sign--first">оригинальные
-                </span>
-                <span class="footer-sign--second">автозапчасти
-                  <span>
+  <!-- footer start -->
+  <!-- footer__box start -->
+  <footer class="footer__box">
+    <div class="container flex">
+
+      <!-- footer__column_first start -->
+      <div class="footer__column_first">
+
+        <div class="footer__logo">
+          <a href=" index.html" class="logo__link" lang="" title="">
+            <img class="footer__logo__img" src="./images/svg/logo.svg" alt="Auto-parts Ukraine" srcset="" width="90" />
+            
+            <div>
+              <span class="footer__logo__name_first">Auto</span>
+              <span class="footer__logo__name_second">parts</span>
+            
+              <p class="footer__logo__sign">
+                <span class="footer__logo__sign_first">оригинальные</span>
+                <span class="footer__logo__sign_second">автозапчасти</span>
               </p>
+            </div>
+              
           </a>
         </div>
-  
+
         <address>
-          <ul class="contact__list--bottom">
-            <li class="contact__item--bottom"><a href="tel:+380997177427" class="contact__link--bottom">(099) 717 74
-                27</a>
+          <ul class="footer__contact__list">
+            <li class="footer__contact__item">
+              <a href="tel:+380997177427" class="footer__contact__link">(099) 717 74 27</a>
             </li>
-            <li class="contact__item--bottom"><a href="mailto:info@auto-parts.com"
-                class="contact__link--bottom">info@auto-parts.com</a>
+            <li class="footer__contact__item">
+              <a href="mailto:info@auto-parts.com"
+                class="footer__contact__link">info@auto-parts.com</a>
             </li>
           </ul>
         </address>
-  
+
         <ul class="messenger__list">
           <li class="messenger__item ">
-            <a href="#" class="social-link" title="Viber">
-              <svg style="width:32px; height:33px" class="social-icon">
+            <a href="#" class="messenger__link" title="Viber">
+              <svg style="width:32px; height:33px" class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-message-viber"></use>
               </svg>
             </a>
           </li>
           <li class="messenger__item ">
-            <a href="#" class="social-link" title="WhatsApp">
-              <svg style="width:60px; height:60px" class="social-icon">
+            <a href="#" class="messenger__link" title="WhatsApp">
+              <svg style="width:60px; height:60px" class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-message-whatsapp"></use>
               </svg>
             </a>
           </li>
           <li class="messenger__item ">
-            <a href="#" class="social-link" title="Telegram">
-              <svg class="social-icon">
+            <a href="#" class="messenger__link" title="Telegram">
+              <svg class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-message-telegram"></use>
               </svg>
             </a>
           </li>
         </ul>
-  
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <svg class="social-icon">
+
+        <ul class="messenger__list">
+          <li class="messenger__item">
+            <a href="#" class="messenger__link">
+              <svg class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-social-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <svg class="social-icon">
+          <li class="messenger__item">
+            <a href="#" class="messenger__link">
+              <svg class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-social-twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <svg class="social-icon">
+          <li class="messenger__item">
+            <a href="#" class="messenger__link">
+              <svg class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-social-linkedin"></use>
               </svg>
             </a>
           </li>
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <svg class="social-icon">
+          <li class="messenger__item">
+            <a href="#" class="messenger__link">
+              <svg class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-social-facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
-  
+
       </div>
-  
-  
-  
-      <div class="second-column">
-        <h3 class="second-column__subtitle title__visibility-hidden"></h3>
-  
-        <ul class="second-column__list">
-          <li class="second-column__item">
-            <a class="second-column__link" href="./master-catalog.html">Каталог автозапчастей</a>
+      <!-- footer__column_first end -->
+
+      <!-- footer__column_second start -->
+      <div class="footer__column_second">
+   
+        <ul class="footer__list_column_second">
+          <li class="footer__item_column_second">
+            <a class="footer__link_column_second footer_current" href="./master-catalog.html">Каталог автозапчастей</a>
           </li>
-          <li class="second-column__item">
-            <a class="second-column__link" href="./master-catalog.html#categories-auto">Каталог автозапчастей по
-              категориям</a>
+          <li class="footer__item_column_second">
+            <a class="footer__link_column_second" href="#categories-auto">Каталог автозапчастей по категориям</a>
           </li>
-          <li class="second-column__item">
-            <a class="second-column__link" href="./master-catalog.html">Каталог автозапчастей по
-              подкатегориям</a>
+          <li class="footer__item_column_second">
+            <a class="footer__link_column_second" href="#subcategories-auto">Каталог автозапчастей по подкатегориям</a>
           </li>
-          <li class="second-column__item">
-            <a class="second-column__link" href="./master-catalog.html#brands-auto">Каталог автозапчастей по марке
-              автомобиля</a>
+          <li class="footer__item_column_second">
+            <a class="footer__link_column_second" href="#brands-auto">Каталог автозапчастей по марке автомобиля</a>
           </li>
-          <li class="second-column__item">
-            <a class="second-column__link" href="./service-catalog.html">Товары для ТО</a>
+          <li class="footer__item_column_second">
+            <a class="footer__link_column_second" href="./service-catalog.html" title="Новые товары">Товары для ТО</a>
           </li>
-          <!-- <li class="second-column__item">
-              <form class="form-search" action="http://index.html/search/" method="get">
-                <h3 class="title__visibility-hidden">Поиск по сайту</h3>
-                <input class="form-search__input" type="text" name="" placeholder="">
-                <label class="form-search__label" for="">найти...</label>
-              </form>
-            </li> -->
-  
       </div>
-  
-  
-      <div class="third-column">
+      <!-- footer__column_second end -->
+
+      <!-- footer__column_third start -->
+      <div class="footer__column_third">
         <ul class="site-nav__list--bottom">
-          <li class="site-nav__item--bottom"><a href="#" class="site-nav__link--bottom current--bottom">Главная</a>
-          </li>
-          <li class="site-nav__item--bottom"><a href="./about.html" class="site-nav__link--bottom">О нас</a>
-          </li>
-          <li class="site-nav__item--bottom"><a href="./guarantee.html" class="site-nav__link--bottom">Гарантия</a>
-          </li>
-          <li class="site-nav__item--bottom"><a href="./payment.html" class="site-nav__link--bottom">Оплата</a></li>
-          <li class="site-nav__item--bottom"><a href="./delivery.html" class="site-nav__link--bottom">Доставка</a>
-          </li>
-          <li class="site-nav__item--bottom"><a href="./offer.html" class="site-nav__link--bottom">Публичный <br>
-              договор</a>
-          </li>
+          <li class="footer__site-nav__item"><a href="#" class="footer__site-nav__link">Главная</a></li>
+          <li class="footer__site-nav__item"><a href="./about.html" class="footer__site-nav__link">О нас</a></li>
+          <li class="footer__site-nav__item"><a href="./guarantee.html" class="footer__site-nav__link">Гарантия</a></li>
+          <li class="footer__site-nav__item"><a href="./payment.html" class="footer__site-nav__link">Оплата</a></li>
+          <li class="footer__site-nav__item"><a href="./delivery.html" class="footer__site-nav__link">Доставка</a></li>
+          <li class="footer__site-nav__item"><a href="./agreement.html" class="footer__site-nav__link">Публичный<br>договор</a></li>
         </ul>
       </div>
-  
-  
-  
-      <div class="fourth-column">
+      <!-- footer__column_third end -->
+
+      <!-- footer__column_fourth start -->
+      <div>
+
         <div class="schedule">
           <h3 class="schedule__title">График работы</h3>
           <ul>
@@ -1330,56 +1477,63 @@
             <li class="schedule__item">Вс : Выходной</li>
           </ul>
         </div>
-  
+
         <div class="accept">
           <h3 class="accept__title">Мы принимаем</h3>
           <ul>
+            <ul class="flex">
+              <li class="accept__item">MasterCard <img src="./images/svg/card/mastercard.svg" alt="" srcset="" width="35">
+              </li>
+              <li class="accept__item">VISA <img src="./images/svg/card/visa.svg" alt="" srcset="" width="35">
+              </li>
+            </ul>
+            
             <li class="accept__item">
-              <a href="./payment.html#uah">UAH
+              <a href="./payment.html#uah" title="5457 0822 7305 9837  ПриватБанк">UAH
                 <img src="./images/svg/card/ukrainian-hryvnia.svg" alt="" srcset="" width="20" title="Оплата UAH">
               </a>
             </li>
-  
-            <!-- <li class="accept__item">VISA <img src="./images/svg/card/visa.svg" alt="" srcset="" width="35"></li>
-                <li class="accept__item">MasterCard <img src="./images/svg/card/mastercard.svg" alt="" srcset=""
-                    width="35"></li> -->
             <li class="accept__item">
-              <a href="./payment.html#usdt">USDT
+              <a href="./payment.html#usdt" title="TGm9CkQoSTujV2e6zHsfL9RvKJP8qmdYzx  Сеть TRC20">USDT
                 <img src="./images/svg/card/usdt.svg" alt="" srcset="" width="20" title="Оплата USDT">
               </a>
             </li>
             <li class="accept__item">
-              <a href="./payment.html#btc">BTC
+              <a href="./payment.html#btc" title="1F24omHQymddnZymMFdCd1PuPQ1r7ytH3P  Сеть BTC">BTC
                 <img src="./images/svg/card/btc.svg" alt="" srcset="" width="20" title="Оплата BTC">
               </a>
             </li>
             <li class="accept__item">
-              <a href="./payment.html#eth">ETH<img src="./images/svg/card/eth.svg" alt="" srcset="" width="20"
-                  title="Оплата ETH">
+               <a href="./payment.html#eth" title="0x5f757a218143d4b6e46a4a4f6d5f56b8d7b20f27  Сеть ERC20">ETH
+                <img src="./images/svg/card/eth.svg" alt="" srcset="" width="20" title="Оплата ETH">
               </a>
             </li>
           </ul>
         </div>
-      </div>
-  
-  
-    </div>
-  
-  </footer>
 
-  <footer class="footer-box__bottom">
+      </div>
+      <!-- footer__column_fourth end -->
+
+    </div>
+  </footer>
+  <!-- footer__box end -->
+
+  <!-- footer__copyright start -->
+  <footer class="footer__copyright">
     <div class="container">
 
       <div class="copyright">
-        <h3 class="title__visibility-hidden">Авторские права</h3>
+        <h3 class="title__visibility_hidden">Авторские права</h3>
         <p class="copyright-text">&copy; Auto-parts Ukraine community, 2022. Все права защищены</p>
       </div>
-
-
-
     </div>
   </footer>
+  <!-- footer__copyright end -->
+  <!-- footer end -->
 
+  <!-- кнопка вверх start -->
+  <a class="up-btn" title="Наверх">&#8679;</a>
+  <!-- кнопка вверх end -->
 
   <!-- modal window start -->
   <div class="modal__backdrop" data-modal-window="modal-request">
@@ -1501,7 +1655,7 @@
           </span>
 
           <span class="agree-newsletter__text">Соглашаюсь с рассылкой и принимаю</span>
-          <a href="./offer.html" class="agreement__link">Условия договора</a>
+          <a href="./agreement.html" class="agreement__link">Условия договора</a>
         </label>
 
         </label>
@@ -1528,6 +1682,7 @@
   <script src="./js/search-category__input.js"></script>
   <!-- /* search-page__category end*/ -->
   
+
   <!-- /* search-category__autocomplete start*/ -->
   <script src="./js/search-category__autocomplete.js"></script>
 
@@ -1538,12 +1693,23 @@
         Autocomplete('#autocomplete', categories)
       })
     })
-  </script> -->
-  <!-- /* search-category__autocomplete end*/
+  </script>
+  <!-- /* search-category__autocomplete end*/ -->
 
-    <!-- /* click start*/ -->
-    <script src="./js/click.js"></script>
-    <!-- /* click end*/ -->
+
+  <!-- /* click start*/ -->
+  <script src="./js/click.js"></script>
+  <!-- /* click end*/ -->
+
+  <!-- /* up-btn_master-catalog start*/ -->
+  <script src="./js/up-btn_master-catalog.js" defer></script>
+  <!-- /* up-btn_master-catalog end*/ -->
+
+    <!-- jQuery CDN start -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+  </script>
+  <!-- jQuery CDN end -->
 
 </body>
 

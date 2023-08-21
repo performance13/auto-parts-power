@@ -31,46 +31,47 @@
   <link rel="icon" href="./images/logo_normal 35_35.png" sizes="16x16 32x32" type="image/png" />
 </head>
 
-<body class="index-body-head_gap">
+<body>
 
-  <div class="header__wrapper--fixed">
-    <header class="header-top">
+
+    <!-- header-top start -->
+    <header class="header-top sticky">
       <div class="container">
 
         <nav class="site-nav">
+
           <ul class="site-nav__list">
 
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Главная</a>
-            </li>
-            <li class="site-nav__item"><a href="./about.html" class="site-nav__link">О нас</a>
-            </li>
-            <li class="site-nav__item"><a href="./guarantee.html" class="site-nav__link">Гарантия</a></li>
-            <li class="site-nav__item"><a href="./payment.html" class="site-nav__link">Оплата</a></li>
-            <li class="site-nav__item"><a href="./delivery.html" class="site-nav__link">Доставка</a></li>
-            <li class="site-nav__item"><a href="./contacts.html" class="site-nav__link">Контакты</a></li>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Главная</a></li>
+            <li class="site-nav__item">
+              <a href="./about.html" class="site-nav__link header_current">О нас</a></li>
+            <li class="site-nav__item">
+              <a href="./guarantee.html" class="site-nav__link">Гарантия</a></li>
+            <li class="site-nav__item">
+              <a href="./payment.html" class="site-nav__link">Оплата</a></li>
+            <li class="site-nav__item">
+              <a href="./delivery.html" class="site-nav__link">Доставка</a></li>
+            <li class="site-nav__item">
+              <a href="./contacts.html" class="site-nav__link">Контакты</a></li>
+            <li class="site-nav__item">
+                <a href="./master-catalog.html" class="site-nav__link">Каталог</a></li>
 
-            <div class="quest">
-              <li class="site-nav__item"><a href="./master-catalog.html" class="site-nav__link">Каталог</a></li>
-              <li class=" site-nav__item"><a href="#modal-request" data-modal-btn="modal-request"
-                  class="site-nav__link">Запрос по
-                  параметрам</a>
-              </li>
-            </div>
-
+            <ul class="request">
+              <li class=" site-nav__item">
+                <a href="#modal-request" data-modal-btn="modal-request" class="site-nav__link">Запрос по параметрам</a></li>
+            </ul>
           </ul>
 
           <ul class="lang-switcher__list">
-            <li class="lang-switcher__item">
-              <a class="lang-switcher__link" href="#" title="Мовний інтерфейс в процесі розробки">ua</a>
-            </li>
-            <li class="lang-switcher__item">
-              <a class="lang-switcher__link" href="#" title="">ru</a>
-            </li>
+            <li class="lang-switcher__item"><a class="lang-switcher__link" href="#"
+                title="Мовний інтерфейс в процесі розробки">ua</a></li>
+            <li class="lang-switcher__item"><a class="lang-switcher__link" href="#">ru</a></li>
           </ul>
 
           <ul class="wish-cart__list">
             <li class="wish__item">
-              <a href="./wishlist.html" class="wish__link" title="Избранное">
+              <a class="wish__link" href="./wishlist.html" title="Избранное">
                 <svg width="20" height="20" class="wish__icon wish_current">
                   <use href="./images/symbol-defs.svg#icon-heart">
                   </use>
@@ -79,7 +80,7 @@
             </li>
 
             <li class="cart__item">
-              <a class="cart__link" href="./cart.html" title="Корзина покупок">
+              <a class="cart__link" rel="nofollow" href="./cart.html" title="Корзина покупок">
                 <svg width="23" height="23" class="cart__icon">
                   <use href="./images/symbol-defs.svg#icon-finance-cart3">
                   </use>
@@ -89,26 +90,27 @@
           </ul>
 
         </nav>
+
       </div>
     </header>
+    <!-- header-top end -->
 
+    <!-- header-middle start -->
     <header class="header-middle">
       <div class="container">
 
         <div class="header-middle__list">
-          <div class="logo__holder">
-            <a href=" index.html" class="logo" lang="" title="">
-              <img class="logo-img--header" src="./images/svg/logo.svg" alt="Auto-parts Ukraine" srcset="" width="90" />
+          <div class="logo">
+            <a href="index.html" class="logo__link" lang="" title="">
+              <img class="logo__img_header" src="./images/svg/logo.svg" alt="Auto-parts Ukraine" srcset="" width="90" />
 
-              <div class="logo__text">
-                <span class="logo__text--auto">Auto
-                </span>
+              <div class="logo__name">
+                <span class="logo__name_first">Auto</span>
+                <span class="logo__name_second">parts</span>
+              </div>
 
-                <span class="logo__text--parts">parts
-                </span>
             </a>
           </div>
-
         </div>
 
         <address>
@@ -117,25 +119,29 @@
               <a href="tel:+380997177427" class="contact__link">
                 <svg width="10" height="16" class="contacts__icon">
                   <use href="./images/symbol-defs.svg#icon-message-smartphone"></use>
-                </svg>(099) 717 74 27</a>
+                </svg>(099) 717 74 27
+              </a>
             </li>
 
-            <li class="contact__item"><a href="mailto:info@auto-parts.com" class="contact__link">
+            <li class="contact__item">
+              <a href="mailto:info@auto-parts.com" class="contact__link">
                 <svg width="16" height="12" class="contacts__icon">
                   <use href="./images/symbol-defs.svg#icon-message-envelope"></use>
-                </svg>info@auto-parts.com</a>
+                </svg>info@auto-parts.com
+              </a>
             </li>
           </ul>
-        </address>
-
+        </address>    
+        
       </div>
-
     </header>
+    <!-- header-middle end -->
 
+    <!-- header-bottom start -->
     <header class="header-bottom">
       <div class="container">
         <nav class="category-nav">
-          <h2 class="title__visibility-hidden">Основные категории автомобильных запчастей</h2>
+          <h2 class="title__visibility_hidden">Основные категории автомобильных запчастей</h2>
           <ul class="category-nav__list">
             <li><a href="http://" class="category-nav__link">Кузовные детали</a></li>
             <li><a href="http://" class="category-nav__link">Рулевое управление</a></li>
@@ -147,25 +153,17 @@
             <li><a href="http://" class="category-nav__link">Тормозная система</a></li>
             <li><a href="http://" class="category-nav__link">Электрические механизмы</a></li>
             <li><a href="http://" class="category-nav__link">Оптика</a></li>
-            <li><a href="http://" class="category-nav__link">Система выпуска</a>
-            </li>
-
+            <li><a href="http://" class="category-nav__link">Система выпуска</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <!-- header-bottom end -->
 
-    <!-- /* scroll Indicator start*/ -->
-    <div class="under-header">
-      <!-- <h2>Scroll Indicator</h2> -->
-      <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
-      </div>
-    </div>
-    <!-- /* scroll Indicator end*/ -->
 
-  </div>
   <main>
+
+
     <!-- Избранное -->
     <section class="favorite">
       <div class="container">
@@ -254,152 +252,146 @@
         </ul>
       </div>
     </section>
+
+
   </main>
 
-  <footer class="footer-box">
-    <div class="container">
-  
-      <div class="first-column">
-  
-        <div class="logo__holder--footer">
-          <a href=" index.html" class="logo" lang="" title="">
-            <img class="logo-img--footer" src="./images/svg/logo.svg" alt="Auto-parts Ukraine" srcset="" width="90" />
-            <div class="logo__text--footer">
-              <span class="logo__text--auto-footer">Auto</span>
-              <span class="logo__text--parts-footer">parts</span>
-  
-              <p class="logo__footer-sign">
-                <span class="footer-sign--first">оригинальные
-                </span>
-                <span class="footer-sign--second">автозапчасти
-                  <span>
+
+  <!-- footer start -->
+  <!-- footer__box start -->
+  <footer class="footer__box">
+    <div class="container flex">
+
+      <!-- footer__column_first start -->
+      <div class="footer__column_first">
+
+        <div class="footer__logo">
+          <a href=" index.html" class="logo__link" lang="" title="">
+            <img class="footer__logo__img" src="./images/svg/logo.svg" alt="Auto-parts Ukraine" srcset="" width="90" />
+            
+            <div>
+              <span class="footer__logo__name_first">Auto</span>
+              <span class="footer__logo__name_second">parts</span>
+            
+              <p class="footer__logo__sign">
+                <span class="footer__logo__sign_first">оригинальные</span>
+                <span class="footer__logo__sign_second">автозапчасти</span>
               </p>
+            </div>
+              
           </a>
         </div>
-  
+
         <address>
-          <ul class="contact__list--bottom">
-            <li class="contact__item--bottom"><a href="tel:+380997177427" class="contact__link--bottom">(099) 717 74
-                27</a>
+          <ul class="footer__contact__list">
+            <li class="footer__contact__item">
+              <a href="tel:+380997177427" class="footer__contact__link">(099) 717 74 27</a>
             </li>
-            <li class="contact__item--bottom"><a href="mailto:info@auto-parts.com"
-                class="contact__link--bottom">info@auto-parts.com</a>
+            <li class="footer__contact__item">
+              <a href="mailto:info@auto-parts.com"
+                class="footer__contact__link">info@auto-parts.com</a>
             </li>
           </ul>
         </address>
-  
+
         <ul class="messenger__list">
           <li class="messenger__item ">
-            <a href="#" class="social-link" title="Viber">
-              <svg style="width:32px; height:33px" class="social-icon">
+            <a href="#" class="messenger__link" title="Viber">
+              <svg style="width:32px; height:33px" class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-message-viber"></use>
               </svg>
             </a>
           </li>
           <li class="messenger__item ">
-            <a href="#" class="social-link" title="WhatsApp">
-              <svg style="width:60px; height:60px" class="social-icon">
+            <a href="#" class="messenger__link" title="WhatsApp">
+              <svg style="width:60px; height:60px" class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-message-whatsapp"></use>
               </svg>
             </a>
           </li>
           <li class="messenger__item ">
-            <a href="#" class="social-link" title="Telegram">
-              <svg class="social-icon">
+            <a href="#" class="messenger__link" title="Telegram">
+              <svg class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-message-telegram"></use>
               </svg>
             </a>
           </li>
         </ul>
-  
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <svg class="social-icon">
+
+        <ul class="messenger__list">
+          <li class="messenger__item">
+            <a href="#" class="messenger__link">
+              <svg class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-social-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <svg class="social-icon">
+          <li class="messenger__item">
+            <a href="#" class="messenger__link">
+              <svg class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-social-twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <svg class="social-icon">
+          <li class="messenger__item">
+            <a href="#" class="messenger__link">
+              <svg class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-social-linkedin"></use>
               </svg>
             </a>
           </li>
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <svg class="social-icon">
+          <li class="messenger__item">
+            <a href="#" class="messenger__link">
+              <svg class="messenger__icon">
                 <use href="./images/symbol-defs.svg#icon-social-facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
-  
+
       </div>
-  
-  
-  
-      <div class="second-column">
-        <h3 class="second-column__subtitle title__visibility-hidden"></h3>
-  
-        <ul class="second-column__list">
-          <li class="second-column__item">
-            <a class="second-column__link" href="./master-catalog.html">Каталог автозапчастей</a>
+      <!-- footer__column_first end -->
+
+      <!-- footer__column_second start -->
+      <div class="footer__column_second">
+   
+        <ul class="footer__list_column_second">
+          <li class="footer__item_column_second">
+            <a class="footer__link_column_second" href="./master-catalog.html">Каталог автозапчастей</a>
           </li>
-          <li class="second-column__item">
-            <a class="second-column__link" href="./master-catalog.html#categories-auto">Каталог автозапчастей по
+          <li class="footer__item_column_second">
+            <a class="footer__link_column_second" href="./master-catalog.html#categories-auto">Каталог автозапчастей по
               категориям</a>
           </li>
-          <li class="second-column__item">
-            <a class="second-column__link" href="./master-catalog.html">Каталог автозапчастей по
+          <li class="footer__item_column_second">
+            <a class="footer__link_column_second" href="./master-catalog.html">Каталог автозапчастей по
               подкатегориям</a>
           </li>
-          <li class="second-column__item">
-            <a class="second-column__link" href="./master-catalog.html#brands-auto">Каталог автозапчастей по марке
+          <li class="footer__item_column_second">
+            <a class="footer__link_column_second" href="./master-catalog.html#brands-auto">Каталог автозапчастей по марке
               автомобиля</a>
           </li>
-          <li class="second-column__item">
-            <a class="second-column__link" href="./service-catalog.html">Товары для ТО</a>
+          <li class="footer__item_column_second">
+            <a class="footer__link_column_second" href="./service-catalog.html" title="Новые товары">Товары для ТО</a>
           </li>
-          <!-- <li class="second-column__item">
-              <form class="form-search" action="http://index.html/search/" method="get">
-                <h3 class="title__visibility-hidden">Поиск по сайту</h3>
-                <input class="form-search__input" type="text" name="" placeholder="">
-                <label class="form-search__label" for="">найти...</label>
-              </form>
-            </li> -->
-  
       </div>
-  
-  
-      <div class="third-column">
+      <!-- footer__column_second end -->
+
+      <!-- footer__column_third start -->
+      <div class="footer__column_third">
         <ul class="site-nav__list--bottom">
-          <li class="site-nav__item--bottom"><a href="#" class="site-nav__link--bottom current--bottom">Главная</a>
-          </li>
-          <li class="site-nav__item--bottom"><a href="./about.html" class="site-nav__link--bottom">О нас</a>
-          </li>
-          <li class="site-nav__item--bottom"><a href="./guarantee.html" class="site-nav__link--bottom">Гарантия</a>
-          </li>
-          <li class="site-nav__item--bottom"><a href="./payment.html" class="site-nav__link--bottom">Оплата</a></li>
-          <li class="site-nav__item--bottom"><a href="./delivery.html" class="site-nav__link--bottom">Доставка</a>
-          </li>
-          <li class="site-nav__item--bottom"><a href="./offer.html" class="site-nav__link--bottom">Публичный <br>
-              договор</a>
-          </li>
+          <li class="footer__site-nav__item"><a href="./index.html" class="footer__site-nav__link">Главная</a></li>
+          <li class="footer__site-nav__item"><a href="./about.html" class="footer__site-nav__link footer_current">О нас</a></li>
+          <li class="footer__site-nav__item"><a href="./guarantee.html" class="footer__site-nav__link">Гарантия</a></li>
+          <li class="footer__site-nav__item"><a href="./payment.html" class="footer__site-nav__link">Оплата</a></li>
+          <li class="footer__site-nav__item"><a href="./delivery.html" class="footer__site-nav__link">Доставка</a></li>
+          <li class="footer__site-nav__item"><a href="./agreement.html" class="footer__site-nav__link">Публичный<br>договор</a></li>
         </ul>
       </div>
-  
-  
-  
-      <div class="fourth-column">
+      <!-- footer__column_third end -->
+
+      <!-- footer__column_fourth start -->
+      <div>
         <div class="schedule">
           <h3 class="schedule__title">График работы</h3>
           <ul>
@@ -408,52 +400,59 @@
             <li class="schedule__item">Вс : Выходной</li>
           </ul>
         </div>
-  
+
         <div class="accept">
           <h3 class="accept__title">Мы принимаем</h3>
           <ul>
+            <ul class="flex">
+              <li class="accept__item">MasterCard <img src="./images/svg/card/mastercard.svg" alt="" srcset="" width="35">
+              </li>
+              <li class="accept__item">VISA <img src="./images/svg/card/visa.svg" alt="" srcset="" width="35">
+              </li>
+            </ul>
+            
             <li class="accept__item">
-              <a href="./payment.html#uah">UAH
+              <a href="./payment.html#uah" title="5457 0822 7305 9837  ПриватБанк">UAH
                 <img src="./images/svg/card/ukrainian-hryvnia.svg" alt="" srcset="" width="20" title="Оплата UAH">
               </a>
             </li>
-  
-            <!-- <li class="accept__item">VISA <img src="./images/svg/card/visa.svg" alt="" srcset="" width="35"></li>
-                <li class="accept__item">MasterCard <img src="./images/svg/card/mastercard.svg" alt="" srcset=""
-                    width="35"></li> -->
             <li class="accept__item">
-              <a href="./payment.html#usdt">USDT
+              <a href="./payment.html#usdt" title="TGm9CkQoSTujV2e6zHsfL9RvKJP8qmdYzx  Сеть TRC20">USDT
                 <img src="./images/svg/card/usdt.svg" alt="" srcset="" width="20" title="Оплата USDT">
               </a>
             </li>
             <li class="accept__item">
-              <a href="./payment.html#btc">BTC
+              <a href="./payment.html#btc" title="1F24omHQymddnZymMFdCd1PuPQ1r7ytH3P  Сеть BTC">BTC
                 <img src="./images/svg/card/btc.svg" alt="" srcset="" width="20" title="Оплата BTC">
               </a>
             </li>
             <li class="accept__item">
-              <a href="./payment.html#eth">ETH<img src="./images/svg/card/eth.svg" alt="" srcset="" width="20"
-                  title="Оплата ETH">
+               <a href="./payment.html#eth" title="0x5f757a218143d4b6e46a4a4f6d5f56b8d7b20f27  Сеть ERC20">ETH
+                <img src="./images/svg/card/eth.svg" alt="" srcset="" width="20" title="Оплата ETH">
               </a>
             </li>
           </ul>
         </div>
       </div>
-  
-  
-    </div>
-  
-  </footer>
+      <!-- footer__column_fourth end -->
 
-  <footer class="footer-box__bottom">
+    </div>
+  </footer>
+  <!-- footer__box end -->
+
+  <!-- footer__copyright start -->
+  <footer class="footer__copyright">
     <div class="container">
 
       <div class="copyright">
-        <h3 class="title__visibility-hidden">Авторские права</h3>
+        <h3 class="title__visibility_hidden">Авторские права</h3>
         <p class="copyright-text">&copy; Auto-parts Ukraine community, 2022. Все права защищены</p>
       </div>
     </div>
   </footer>
+  <!-- footer__copyright end -->
+  <!-- footer end -->  
+
 
   <!-- modal window start -->
   <div class="modal__backdrop" data-modal-window="modal-request">
@@ -621,7 +620,7 @@
           </span>
 
           <span class="agree-newsletter__text">Соглашаюсь с рассылкой и принимаю</span>
-          <a href="./offer.html" class="agreement__link">Условия договора</a>
+          <a href="./agreement.html" class="agreement__link">Условия договора</a>
         </label>
 
         </label>

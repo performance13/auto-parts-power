@@ -206,42 +206,6 @@
             </div>
         </section>
 
-        <!-- timer start -->
-        <!-- <section class="section">
-            <div class="container">
-                <div class="timer">
-                    <div class="timer__items">
-                        <div class="timer__item timer__days">00</div>
-                        <div class="timer__item timer__hours">00</div>
-                        <div class="timer__item timer__minutes">00</div>
-                        <div class="timer__item timer__seconds">00</div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- timer end -->
-
-        <!--  -->
-
-
-
-
-
-        <!--  -->
-
-        <!-- website-counter start -->
-        <!-- <div class="website-counter"></div> -->
-        <!-- <button id="reset">Reset</button> -->
-        <!-- website-counter end -->
-
-        <!--  -->
-
-
-
-
-
-        <!--  -->
-
     </main>
 
 
@@ -373,7 +337,7 @@
           <li class="footer__site-nav__item"><a href="./guarantee.html" class="footer__site-nav__link footer_current">Гарантия</a></li>
           <li class="footer__site-nav__item"><a href="./payment.html" class="footer__site-nav__link">Оплата</a></li>
           <li class="footer__site-nav__item"><a href="./delivery.html" class="footer__site-nav__link">Доставка</a></li>
-          <li class="footer__site-nav__item"><a href="./offer.html" class="footer__site-nav__link">Публичный<br>договор</a></li>
+          <li class="footer__site-nav__item"><a href="./agreement.html" class="footer__site-nav__link">Публичный<br>договор</a></li>
         </ul>
       </div>
       <!-- footer__column_third end -->
@@ -454,7 +418,7 @@
 
             <form action="" class="modal-form">
 
-                <p class="modal__subtitle">Оставьте запрос - мы сообщим о наличии товара</p>
+              <p class="modal__subtitle">Оставьте запрос - мы сообщим о наличии товара</p>
 
                 <label for="person" class="modal-form__discription">
                     <span>Имя</span>
@@ -538,11 +502,11 @@
                         </label>
                     </li>
                     <!-- <li class="input__comment-item">
-              <label class=" modal-form__discription modal-form__discription_textarea">
-                <span class="name-parametr">Сторона; размеры; вес; цвет</span>
-                <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
-              </label>
-            </li> -->
+                      <label class=" modal-form__discription modal-form__discription_textarea">
+                        <span class="name-parametr">Сторона; размеры; вес; цвет</span>
+                        <input name="comment-form" class="input__comment modal-form__input" placeholder="Введите текст"></input>
+                      </label>
+                    </li> -->
                     <li class="input__comment-item">
                         <label class=" modal-form__discription modal-form__discription_textarea">
                             <span class="name-parametr">Дополнительная информация</span>
@@ -558,7 +522,6 @@
                                 placeholder="Введите текст"></input>
                         </label>
                     </li>
-
                 </ul>
 
                 <label for="check-box" class="modal-form__agree-newsletter">
@@ -571,9 +534,7 @@
                     </span>
 
                     <span class="agree-newsletter__text">Соглашаюсь с рассылкой и принимаю</span>
-                    <a href="./offer.html" class="agreement__link">Условия договора</a>
-                </label>
-
+                    <a href="./agreement.html" class="agreement__link">Условия договора</a>
                 </label>
 
                 <button type="submit" class="button button__primary modal-form__button">Отправить</button>
@@ -584,101 +545,9 @@
     </div>
     <!-- modal window end -->
 
-
-
     <!-- /* modal start*/ -->
     <script src="./js/modal.js"></script>
     <!-- /* modal end*/ -->
-
-
-
-
-
-    <!-- https://ionic.io/ionicons/usage -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- https://ionic.io/ionicons/usage -->
-
-
-    <!-- Таймер обратного отсчета start -->
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // конечная дата
-            const deadline = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 01);
-            // id таймера
-            let timerId = null;
-            // склонение числительных
-            function declensionNum(num, words) {
-                return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
-            }
-            // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
-            function countdownTimer() {
-                const diff = deadline - new Date();
-                if (diff <= 0) {
-                    clearInterval(timerId);
-                }
-                const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
-                const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
-                const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
-                const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
-                $days.textContent = days < 10 ? '0' + days : days;
-                $hours.textContent = hours < 10 ? '0' + hours : hours;
-                $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
-                $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
-                $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
-                $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
-                $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
-                $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
-            }
-
-
-
-            // получаем элементы, содержащие компоненты даты
-            const $days = document.querySelector('.timer__days');
-            const $hours = document.querySelector('.timer__hours');
-            const $minutes = document.querySelector('.timer__minutes');
-            const $seconds = document.querySelector('.timer__seconds');
-            // вызываем функцию countdownTimer
-            countdownTimer();
-            // вызываем функцию countdownTimer каждую секунду
-            timerId = setInterval(countdownTimer, 1000);
-        });
-    </script> -->
-    <!-- Таймер обратного отсчета end -->
-
-
-    <!-- Счетчик посещений start -->
-    <!-- <script>
-        var counterContainer = document.querySelector(".website-counter");
-        var resetButton = document.querySelector("#reset");
-        var visitCount = localStorage.getItem("page_view");
-
-        // Check if page_view entry is present
-        if (visitCount) {
-            visitCount = Number(visitCount) + 1;
-            localStorage.setItem("page_view", visitCount);
-        } else {
-            visitCount = 1;
-            localStorage.setItem("page_view", 1);
-        }
-        counterContainer.innerHTML = visitCount;
-
-        // Adding onClick event listener
-        resetButton.addEventListener("click", () => {
-            visitCount = 1;
-            localStorage.setItem("page_view", 1);
-            counterContainer.innerHTML = visitCount;
-        });</script> -->
-    <!-- Счетчик посещений end -->
-
-
-    <!--  -->
-    <script>
-
-
-
-    </script>
-    <!--  -->
 
 </body>
 
