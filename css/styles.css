@@ -2705,7 +2705,6 @@ color: var(--color-schemes-base);
     /* text-transform: uppercase; */
     text-transform:none;
     transition: 0.5s;
-
  }
 
 .inputBox input:valid ~ span,
@@ -2818,6 +2817,7 @@ color: var(--color-schemes-base);
 }
 /* Кнопка вверх и вниз с плавным появлением и плавной прокруткой up-down-btn end */
 
+ /* кнопка вверх start */
 .up-btn {
     position: fixed;
     bottom: 52px;
@@ -2842,6 +2842,7 @@ color: var(--color-schemes-base);
     filter: brightness(1.5);
     outline: none;
 }
+ /* кнопка вверх end */
 
 /* cart start */
 /* .list-unstyled{
