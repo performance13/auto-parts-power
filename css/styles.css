@@ -2472,7 +2472,7 @@ mark {
     padding-left: 20px; */
 }
 
-.modal-form__discription{
+.modal-form__description{
     display: block;
     margin-bottom: 10px;
     font-weight: 400;
@@ -2482,7 +2482,7 @@ mark {
     color: #757575;
 }
 
-.modal-form__discription_textarea{
+.modal-form__description_textarea{
     /* margin-bottom: 20px; */
 }
 
